@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jean-David Benamou | LN&#39;s webpage</title>
+    <link>https://LucaNenna.github.io/authors/jean-david-benamou/</link>
+      <atom:link href="https://LucaNenna.github.io/authors/jean-david-benamou/index.xml" rel="self" type="application/rss+xml" />
+    <description>Jean-David Benamou</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 01 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://LucaNenna.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Jean-David Benamou</title>
+      <link>https://LucaNenna.github.io/authors/jean-david-benamou/</link>
+    </image>
+    
+    <item>
+      <title>An entropy minimization approach to second-order variational mean-field games</title>
+      <link>https://LucaNenna.github.io/publication/journal-article6/</link>
+      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/publication/journal-article6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Generalized incompressible flows, multi-marginal transport and Sinkhorn algorithm</title>
+      <link>https://LucaNenna.github.io/publication/journal-article5/</link>
+      <pubDate>Mon, 06 May 2019 00:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/publication/journal-article5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Numerical Method to solve Multi-Marginal Optimal Transport Problems with Coulomb Cost</title>
+      <link>https://LucaNenna.github.io/publication/journal-article2/</link>
+      <pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/publication/journal-article2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Iterative Bregman projections for regularized transportation problems</title>
+      <link>https://LucaNenna.github.io/publication/journal-article/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/publication/journal-article/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

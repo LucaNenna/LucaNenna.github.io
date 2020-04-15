@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Augusto Gerolin | LN&#39;s webpage</title>
+    <link>https://LucaNenna.github.io/authors/augusto-gerolin/</link>
+      <atom:link href="https://LucaNenna.github.io/authors/augusto-gerolin/index.xml" rel="self" type="application/rss+xml" />
+    <description>Augusto Gerolin</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 07 Aug 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://LucaNenna.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Augusto Gerolin</title>
+      <link>https://LucaNenna.github.io/authors/augusto-gerolin/</link>
+    </image>
+    
+    <item>
+      <title>Optimal transportation theory with repulsive costs</title>
+      <link>https://LucaNenna.github.io/publication/journal-article1/</link>
+      <pubDate>Mon, 07 Aug 2017 00:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/publication/journal-article1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The strictly-correlated electron functional for spherically symmetric systems revisited</title>
+      <link>https://LucaNenna.github.io/publication/journal-article4/</link>
+      <pubDate>Thu, 16 Feb 2017 00:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/publication/journal-article4/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

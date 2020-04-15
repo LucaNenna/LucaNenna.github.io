@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Marco Cuturi | LN&#39;s webpage</title>
+    <link>https://LucaNenna.github.io/authors/marco-cuturi/</link>
+      <atom:link href="https://LucaNenna.github.io/authors/marco-cuturi/index.xml" rel="self" type="application/rss+xml" />
+    <description>Marco Cuturi</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Sep 2015 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://LucaNenna.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Marco Cuturi</title>
+      <link>https://LucaNenna.github.io/authors/marco-cuturi/</link>
+    </image>
+    
+    <item>
+      <title>Iterative Bregman projections for regularized transportation problems</title>
+      <link>https://LucaNenna.github.io/publication/journal-article/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/publication/journal-article/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
