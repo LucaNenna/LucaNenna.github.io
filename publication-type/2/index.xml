@@ -2,77 +2,77 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>2 | LN&#39;s webpage</title>
-    <link>https://lucanenna.github.io/publication-type/2/</link>
-      <atom:link href="https://lucanenna.github.io/publication-type/2/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://LucaNenna.github.io/publication-type/2/</link>
+      <atom:link href="https://LucaNenna.github.io/publication-type/2/index.xml" rel="self" type="application/rss+xml" />
     <description>2</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Feb 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://lucanenna.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://LucaNenna.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>2</title>
-      <link>https://lucanenna.github.io/publication-type/2/</link>
+      <link>https://LucaNenna.github.io/publication-type/2/</link>
     </image>
     
     <item>
       <title>Variational problems involving unequal dimensional optimal transport</title>
-      <link>https://lucanenna.github.io/publication/journal-article8/</link>
+      <link>https://LucaNenna.github.io/publication/journal-article8/</link>
       <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>https://lucanenna.github.io/publication/journal-article8/</guid>
+      <guid>https://LucaNenna.github.io/publication/journal-article8/</guid>
       <description></description>
     </item>
     
     <item>
       <title>An entropy minimization approach to second-order variational mean-field games</title>
-      <link>https://lucanenna.github.io/publication/journal-article6/</link>
+      <link>https://LucaNenna.github.io/publication/journal-article6/</link>
       <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>https://lucanenna.github.io/publication/journal-article6/</guid>
+      <guid>https://LucaNenna.github.io/publication/journal-article6/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Generalized incompressible flows, multi-marginal transport and Sinkhorn algorithm</title>
-      <link>https://lucanenna.github.io/publication/journal-article5/</link>
+      <link>https://LucaNenna.github.io/publication/journal-article5/</link>
       <pubDate>Mon, 06 May 2019 00:00:00 +0000</pubDate>
-      <guid>https://lucanenna.github.io/publication/journal-article5/</guid>
+      <guid>https://LucaNenna.github.io/publication/journal-article5/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Optimal transportation theory with repulsive costs</title>
-      <link>https://lucanenna.github.io/publication/journal-article1/</link>
+      <link>https://LucaNenna.github.io/publication/journal-article1/</link>
       <pubDate>Mon, 07 Aug 2017 00:00:00 +0000</pubDate>
-      <guid>https://lucanenna.github.io/publication/journal-article1/</guid>
+      <guid>https://LucaNenna.github.io/publication/journal-article1/</guid>
       <description></description>
     </item>
     
     <item>
       <title>The strictly-correlated electron functional for spherically symmetric systems revisited</title>
-      <link>https://lucanenna.github.io/publication/journal-article4/</link>
+      <link>https://LucaNenna.github.io/publication/journal-article4/</link>
       <pubDate>Thu, 16 Feb 2017 00:00:00 +0000</pubDate>
-      <guid>https://lucanenna.github.io/publication/journal-article4/</guid>
+      <guid>https://LucaNenna.github.io/publication/journal-article4/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Computation of Cournot–Nash Equilibria by Entropic Regularization</title>
-      <link>https://lucanenna.github.io/publication/journal-article7/</link>
+      <link>https://LucaNenna.github.io/publication/journal-article7/</link>
       <pubDate>Fri, 09 Sep 2016 00:00:00 +0000</pubDate>
-      <guid>https://lucanenna.github.io/publication/journal-article7/</guid>
+      <guid>https://LucaNenna.github.io/publication/journal-article7/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A Numerical Method to solve Multi-Marginal Optimal Transport Problems with Coulomb Cost</title>
-      <link>https://lucanenna.github.io/publication/journal-article2/</link>
+      <link>https://LucaNenna.github.io/publication/journal-article2/</link>
       <pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate>
-      <guid>https://lucanenna.github.io/publication/journal-article2/</guid>
+      <guid>https://LucaNenna.github.io/publication/journal-article2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Iterative Bregman projections for regularized transportation problems</title>
-      <link>https://lucanenna.github.io/publication/journal-article/</link>
+      <link>https://LucaNenna.github.io/publication/journal-article/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
-      <guid>https://lucanenna.github.io/publication/journal-article/</guid>
+      <guid>https://LucaNenna.github.io/publication/journal-article/</guid>
       <description></description>
     </item>
     

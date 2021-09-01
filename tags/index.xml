@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags | LN&#39;s webpage</title>
-    <link>https://lucanenna.github.io/tags/</link>
-      <atom:link href="https://lucanenna.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://LucaNenna.github.io/tags/</link>
+      <atom:link href="https://LucaNenna.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Feb 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://lucanenna.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://LucaNenna.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Tags</title>
-      <link>https://lucanenna.github.io/tags/</link>
+      <link>https://LucaNenna.github.io/tags/</link>
     </image>
     
   </channel>
