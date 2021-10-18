@@ -5,12 +5,28 @@
     <link>https://LucaNenna.github.io/</link>
       <atom:link href="https://LucaNenna.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>LN&#39;s webpage</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 06 Sep 2021 14:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 15 Nov 2021 15:45:00 +0000</lastBuildDate>
     <image>
       <url>https://LucaNenna.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>LN&#39;s webpage</title>
       <link>https://LucaNenna.github.io/</link>
     </image>
+    
+    <item>
+      <title>Schrödinger Problem and Mean-field PDE Systems: Computational and Theoretical Advances</title>
+      <link>https://LucaNenna.github.io/talk/schrodinger-problem-and-mean-field-pde-systems-computational-and-theoretical-advances/</link>
+      <pubDate>Mon, 15 Nov 2021 15:45:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/schrodinger-problem-and-mean-field-pde-systems-computational-and-theoretical-advances/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CalVa Seminar</title>
+      <link>https://LucaNenna.github.io/talk/calva-seminar/</link>
+      <pubDate>Mon, 25 Oct 2021 11:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/calva-seminar/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Workshop on Schrödinger problem and Optimal Transport</title>
