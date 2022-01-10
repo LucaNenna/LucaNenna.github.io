@@ -2,10 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://LucaNenna.github.io/publication-type/2/</loc>
-    <lastmod>2022-01-02T00:00:00+00:00</lastmod>
+    <loc>https://LucaNenna.github.io/talk/analysis-and-pde-seminar/</loc>
+    <lastmod>2022-01-21T14:30:00+00:00</lastmod>
   </url><url>
     <loc>https://LucaNenna.github.io/</loc>
+    <lastmod>2022-01-21T14:30:00+00:00</lastmod>
+  </url><url>
+    <loc>https://LucaNenna.github.io/event/</loc>
+    <lastmod>2022-01-21T14:30:00+00:00</lastmod>
+  </url><url>
+    <loc>https://LucaNenna.github.io/publication-type/2/</loc>
     <lastmod>2022-01-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://LucaNenna.github.io/publication_types/</loc>
@@ -23,8 +29,8 @@
     <loc>https://LucaNenna.github.io/publication/journal-article9/</loc>
     <lastmod>2022-01-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://LucaNenna.github.io/event/</loc>
-    <lastmod>2021-11-15T15:45:00+00:00</lastmod>
+    <loc>https://LucaNenna.github.io/talk/departement-seminar/</loc>
+    <lastmod>2021-12-16T14:30:00+00:00</lastmod>
   </url><url>
     <loc>https://LucaNenna.github.io/talk/schrodinger-problem-and-mean-field-pde-systems-computational-and-theoretical-advances/</loc>
     <lastmod>2021-11-15T15:45:00+00:00</lastmod>
