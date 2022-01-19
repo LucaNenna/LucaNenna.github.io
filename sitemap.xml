@@ -2,6 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://LucaNenna.github.io/gdt/gdtot/</loc>
+  </url><url>
     <loc>https://LucaNenna.github.io/teaching/optimaltransport/</loc>
   </url><url>
     <loc>https://LucaNenna.github.io/talk/analysis-and-pde-seminar/</loc>
@@ -14,19 +16,22 @@
     <lastmod>2022-01-21T14:30:00+00:00</lastmod>
   </url><url>
     <loc>https://LucaNenna.github.io/publication-type/2/</loc>
-    <lastmod>2022-01-02T00:00:00+00:00</lastmod>
+    <lastmod>2022-01-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://LucaNenna.github.io/publication/journal-article10/</loc>
+    <lastmod>2022-01-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://LucaNenna.github.io/publication_types/</loc>
-    <lastmod>2022-01-02T00:00:00+00:00</lastmod>
+    <lastmod>2022-01-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://LucaNenna.github.io/publication/</loc>
-    <lastmod>2022-01-02T00:00:00+00:00</lastmod>
+    <lastmod>2022-01-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://LucaNenna.github.io/tag/source-themes/</loc>
-    <lastmod>2022-01-02T00:00:00+00:00</lastmod>
+    <lastmod>2022-01-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://LucaNenna.github.io/tags/</loc>
-    <lastmod>2022-01-02T00:00:00+00:00</lastmod>
+    <lastmod>2022-01-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://LucaNenna.github.io/publication/journal-article9/</loc>
     <lastmod>2022-01-02T00:00:00+00:00</lastmod>
@@ -115,6 +120,8 @@
     <loc>https://LucaNenna.github.io/admin/</loc>
   </url><url>
     <loc>https://LucaNenna.github.io/categories/</loc>
+  </url><url>
+    <loc>https://LucaNenna.github.io/gdt/</loc>
   </url><url>
     <loc>https://LucaNenna.github.io/teaching/</loc>
   </url>
