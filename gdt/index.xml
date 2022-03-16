@@ -32,14 +32,9 @@
 &lt;h3 id=&#34;prochaine-séances-&#34;&gt;Prochaine séances :&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;14/02/2022&lt;br&gt;
-14h00 &lt;a href=&#34;https://flavienleger.github.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Flavien Léger&lt;/a&gt; : An introduction to Z-mappings&lt;br&gt;
-15h00 &lt;a href=&#34;https://remi.flamary.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rémi Flamary&lt;/a&gt; : CO-Optimal Transport : Optimal Transport across non registered space.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
 &lt;p&gt;21/03/2022&lt;br&gt;
-14h00 &lt;a href=&#34;https://akorba.github.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Anna Korba&lt;/a&gt; : TBD&lt;br&gt;
-15h00 &lt;a href=&#34;https://meyerscetbon.github.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Meyer Scetbon&lt;/a&gt; : TBD&lt;/p&gt;
+14h00 &lt;a href=&#34;https://akorba.github.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Anna Korba&lt;/a&gt; : Kernel Stein Discrepancy Descent.&lt;br&gt;
+15h00 &lt;a href=&#34;https://meyerscetbon.github.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Meyer Scetbon&lt;/a&gt; : A New Regularization Scheme for Optimal Transport Using Low-Rank Constraints.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;04/04/2022&lt;br&gt;
@@ -58,6 +53,11 @@
 &lt;/ul&gt;
 &lt;h3 id=&#34;séances-passées-&#34;&gt;Séances passées :&lt;/h3&gt;
 &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;14/02/2022&lt;br&gt;
+14h00 &lt;a href=&#34;https://flavienleger.github.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Flavien Léger&lt;/a&gt; : An introduction to Z-mappings.&lt;br&gt;
+15h00 &lt;a href=&#34;https://remi.flamary.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rémi Flamary&lt;/a&gt; : CO-Optimal Transport : Optimal Transport across non registered space.&lt;/p&gt;
+&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;03/01/2022&lt;br&gt;
 14h00 &lt;a href=&#34;http://quentin.mrgt.fr&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Quentin Mérigot&lt;/a&gt;&lt;br&gt;
