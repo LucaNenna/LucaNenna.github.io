@@ -32,14 +32,9 @@
 &lt;h3 id=&#34;prochaine-séances-&#34;&gt;Prochaine séances :&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;04/04/2022&lt;br&gt;
-14h00 &lt;a href=&#34;http://web.math.unifi.it/users/depascal/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Luigi De Pascale&lt;/a&gt; : Optimal transport, wave functions and single electron densities.&lt;br&gt;
-15h00 &lt;a href=&#34;http://angkor.univ-mlv.fr/~vialard/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;François-Xavier Vialard&lt;/a&gt;: TBD&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
 &lt;p&gt;16/05/2022&lt;br&gt;
-14h00 &lt;a href=&#34;https://www.imo.universite-paris-saclay.fr/~mirebeau/Main_page.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Jean-Marie Mirebeau&lt;/a&gt; : TBD&lt;br&gt;
-15h00 &lt;a href=&#34;https://hichamjanati.github.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hicham Janati&lt;/a&gt; : TBD&lt;/p&gt;
+14h00 &lt;a href=&#34;https://www.imo.universite-paris-saclay.fr/~mirebeau/Main_page.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Jean-Marie Mirebeau&lt;/a&gt; : Estimations locales pour les solutions de schémas à stencil étendu.&lt;br&gt;
+15h00 &lt;a href=&#34;https://hichamjanati.github.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hicham Janati&lt;/a&gt; : Mind the reference measure of entropic OT: a study on Gaussian measures.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;27/06/2022&lt;br&gt;
@@ -49,6 +44,11 @@
 &lt;/ul&gt;
 &lt;h3 id=&#34;séances-passées-&#34;&gt;Séances passées :&lt;/h3&gt;
 &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;04/04/2022&lt;br&gt;
+14h00 &lt;a href=&#34;http://web.math.unifi.it/users/depascal/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Luigi De Pascale&lt;/a&gt; : Optimal transport, wave functions and single electron densities.&lt;br&gt;
+15h00 &lt;a href=&#34;http://angkor.univ-mlv.fr/~vialard/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;François-Xavier Vialard&lt;/a&gt;: Two topics related to optimal transport and machine learning and PDE’s.&lt;/p&gt;
+&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;21/03/2022&lt;br&gt;
 14h00 &lt;a href=&#34;https://akorba.github.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Anna Korba&lt;/a&gt; : Kernel Stein Discrepancy Descent.&lt;br&gt;
