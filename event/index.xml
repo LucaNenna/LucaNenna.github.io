@@ -5,12 +5,36 @@
     <link>https://LucaNenna.github.io/event/</link>
       <atom:link href="https://LucaNenna.github.io/event/index.xml" rel="self" type="application/rss+xml" />
     <description>Recent &amp; Upcoming Talks</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 14 Oct 2022 11:30:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 05 Jun 2023 11:30:00 +0000</lastBuildDate>
     <image>
       <url>https://LucaNenna.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Recent &amp; Upcoming Talks</title>
       <link>https://LucaNenna.github.io/event/</link>
     </image>
+    
+    <item>
+      <title>Emerging topics in applications of Optimal Transport</title>
+      <link>https://LucaNenna.github.io/talk/emerging-topics-in-applications-of-optimal-transport/</link>
+      <pubDate>Mon, 05 Jun 2023 11:30:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/emerging-topics-in-applications-of-optimal-transport/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Interpolation of Measures</title>
+      <link>https://LucaNenna.github.io/talk/interpolation-of-measures/</link>
+      <pubDate>Tue, 24 Jan 2023 11:30:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/interpolation-of-measures/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PGMO days</title>
+      <link>https://LucaNenna.github.io/talk/pgmo-days/</link>
+      <pubDate>Tue, 29 Nov 2022 11:30:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/pgmo-days/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>SAMM seminar</title>

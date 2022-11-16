@@ -5,7 +5,7 @@
     <link>https://LucaNenna.github.io/</link>
       <atom:link href="https://LucaNenna.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>LN&#39;s webpage</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 19 Oct 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 05 Jun 2023 11:30:00 +0000</lastBuildDate>
     <image>
       <url>https://LucaNenna.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>LN&#39;s webpage</title>
@@ -31,12 +31,17 @@
 &lt;p&gt;&lt;a href=&#34;https://www.imo.universite-paris-saclay.fr/fr/contacts/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Institut de mathématique d&amp;rsquo;Orsay (IMO)&lt;/a&gt; bâtiment 307. Salle 3L15.&lt;/p&gt;
 &lt;h3 id=&#34;prochaine-séances-&#34;&gt;Prochaine séances :&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;03/10/2022&lt;br&gt;
-14h00 &lt;a href=&#34;https://www.ceremade.dauphine.fr/~pegon/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paul Pegon&lt;/a&gt; : Vitesse de convergence de coûts généraux en transport optimal entropique.&lt;br&gt;
-15h15 &lt;a href=&#34;https://team.inria.fr/matherials/team-members/virginie-ehrlacher-galland/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Virginie Ehrlacher&lt;/a&gt; : Boundary stabilization of cross-diffusion systems in moving domains.&lt;/li&gt;
+&lt;li&gt;21/11/2022&lt;br&gt;
+14h00 Thomas Bonis : (Non-optimal) Transport through diffusion processes applied to sampling.&lt;br&gt;
+15h15 Sara Farinelli : An application of optimal control to normalizing flows.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;séances-passées-&#34;&gt;Séances passées :&lt;/h3&gt;
 &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;03/10/2022&lt;br&gt;
+14h00 &lt;a href=&#34;https://www.ceremade.dauphine.fr/~pegon/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paul Pegon&lt;/a&gt; : Vitesse de convergence de coûts généraux en transport optimal entropique.&lt;br&gt;
+15h15 &lt;a href=&#34;https://team.inria.fr/matherials/team-members/virginie-ehrlacher-galland/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Virginie Ehrlacher&lt;/a&gt; : Boundary stabilization of cross-diffusion systems in moving domains.&lt;/p&gt;
+&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;27/06/2022&lt;br&gt;
 14h00 &lt;a href=&#34;https://www.irit.fr/~Elsa.Cazelles/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Elsa Cazelles&lt;/a&gt; : Barycenters for probability distributions based on optimal weak mass transport.&lt;br&gt;
@@ -90,6 +95,38 @@ l&amp;rsquo;hydrodynamique d&amp;rsquo;Euler.&lt;br&gt;
 &lt;li&gt;&lt;a href=&#34;https://team.inria.fr/mokaplan/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Team Mokaplan&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Emerging topics in applications of Optimal Transport</title>
+      <link>https://LucaNenna.github.io/talk/emerging-topics-in-applications-of-optimal-transport/</link>
+      <pubDate>Mon, 05 Jun 2023 11:30:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/emerging-topics-in-applications-of-optimal-transport/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Interpolation of Measures</title>
+      <link>https://LucaNenna.github.io/talk/interpolation-of-measures/</link>
+      <pubDate>Tue, 24 Jan 2023 11:30:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/interpolation-of-measures/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PGMO days</title>
+      <link>https://LucaNenna.github.io/talk/pgmo-days/</link>
+      <pubDate>Tue, 29 Nov 2022 11:30:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/pgmo-days/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Robust risk management via multi-marginal optimal transport</title>
+      <link>https://LucaNenna.github.io/publication/journal-article12/</link>
+      <pubDate>Wed, 16 Nov 2022 00:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/publication/journal-article12/</guid>
+      <description></description>
     </item>
     
     <item>
