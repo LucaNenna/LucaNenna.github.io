@@ -5,12 +5,36 @@
     <link>https://LucaNenna.github.io/publication-type/2/</link>
       <atom:link href="https://LucaNenna.github.io/publication-type/2/index.xml" rel="self" type="application/rss+xml" />
     <description>2</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 19 Oct 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Mar 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://LucaNenna.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>2</title>
       <link>https://LucaNenna.github.io/publication-type/2/</link>
     </image>
+    
+    <item>
+      <title>Universal diagonal estimates for minimizers of the Levy-Lieb functional</title>
+      <link>https://LucaNenna.github.io/publication/journal-article14/</link>
+      <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/publication/journal-article14/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An ODE characterisation of multi-marginal optimal transport</title>
+      <link>https://LucaNenna.github.io/publication/journal-article13/</link>
+      <pubDate>Wed, 16 Nov 2022 00:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/publication/journal-article13/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Robust risk management via multi-marginal optimal transport</title>
+      <link>https://LucaNenna.github.io/publication/journal-article12/</link>
+      <pubDate>Wed, 16 Nov 2022 00:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/publication/journal-article12/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>A note on Cournot-Nash equilibria and Optimal Transport between unequal dimensions</title>
