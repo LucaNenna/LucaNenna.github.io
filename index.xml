@@ -32,14 +32,9 @@
 &lt;h3 id=&#34;prochaine-séances-&#34;&gt;Prochaine séances :&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;20/03/2023&lt;br&gt;
-14h00 TBD&lt;br&gt;
-15h15 TBD.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;17/04/2023&lt;br&gt;
-14h00 TBD&lt;br&gt;
-15h15 TBD.&lt;/p&gt;
+&lt;p&gt;24/04/2023&lt;br&gt;
+14h00 Vincent Divol : Estimation d&amp;rsquo;applications de transport optimal : le cas semi-discret&lt;br&gt;
+15h15 Gabriele Todeschi : L1 optimal transport for vector valued measures and application to Full Waveform Inversion.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;22/05/2023&lt;br&gt;
@@ -53,6 +48,10 @@ ALL DAY!!!&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;séances-passées-&#34;&gt;Séances passées :&lt;/h3&gt;
 &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;20/03/2023&lt;br&gt;
+14h00 Théo Lacombe : Homogeneous Unbalanced Regularized Optimal Transport\&lt;/p&gt;
+&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;13/02/2023&lt;br&gt;
 14h00 Pierre-Cyril Aubin :  c-concavity through tropical functional analysis: analogues of reproducing kernels and optimization&lt;br&gt;
@@ -154,6 +153,14 @@ l&amp;rsquo;hydrodynamique d&amp;rsquo;Euler.&lt;br&gt;
       <link>https://LucaNenna.github.io/talk/emerging-topics-in-applications-of-optimal-transport/</link>
       <pubDate>Mon, 05 Jun 2023 11:30:00 +0000</pubDate>
       <guid>https://LucaNenna.github.io/talk/emerging-topics-in-applications-of-optimal-transport/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Optimization and Optimal Control  in Burgundy</title>
+      <link>https://LucaNenna.github.io/talk/optimization-and-optimal-control-in-burgundy/</link>
+      <pubDate>Tue, 09 May 2023 09:30:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/optimization-and-optimal-control-in-burgundy/</guid>
       <description></description>
     </item>
     
