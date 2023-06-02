@@ -31,23 +31,22 @@
 &lt;p&gt;&lt;a href=&#34;https://www.imo.universite-paris-saclay.fr/fr/contacts/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Institut de mathématique d&amp;rsquo;Orsay (IMO)&lt;/a&gt; bâtiment 307. Salle 3L15.&lt;/p&gt;
 &lt;h3 id=&#34;prochaine-séances-&#34;&gt;Prochaine séances :&lt;/h3&gt;
 &lt;ul&gt;
+&lt;li&gt;10/07/2023&lt;br&gt;
+14h00 Jean-David Benamou&lt;br&gt;
+15h00 François Golse.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;séances-passées-&#34;&gt;Séances passées :&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;22/05/2023&lt;br&gt;
+14h00 Rodrigue Lelotte : The (numerics of) multimarginal optimal transport in statistical physics&lt;br&gt;
+15h15 Laurent Pfeiffer : Generalized conditional gradient method for potential mean field games.&lt;/p&gt;
+&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;24/04/2023&lt;br&gt;
 14h00 Vincent Divol : Estimation d&amp;rsquo;applications de transport optimal : le cas semi-discret&lt;br&gt;
 15h15 Gabriele Todeschi : L1 optimal transport for vector valued measures and application to Full Waveform Inversion.&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;22/05/2023&lt;br&gt;
-14h00 TBD&lt;br&gt;
-15h15 TBD.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;12/06/2023&lt;br&gt;
-ALL DAY!!!&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;séances-passées-&#34;&gt;Séances passées :&lt;/h3&gt;
-&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;20/03/2023&lt;br&gt;
 14h00 Théo Lacombe : Homogeneous Unbalanced Regularized Optimal Transport\&lt;/p&gt;
@@ -153,6 +152,14 @@ l&amp;rsquo;hydrodynamique d&amp;rsquo;Euler.&lt;br&gt;
       <link>https://LucaNenna.github.io/talk/emerging-topics-in-applications-of-optimal-transport/</link>
       <pubDate>Mon, 05 Jun 2023 11:30:00 +0000</pubDate>
       <guid>https://LucaNenna.github.io/talk/emerging-topics-in-applications-of-optimal-transport/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A sparse approximation of the Lieb functional with moment constraints</title>
+      <link>https://LucaNenna.github.io/publication/journal-article15/</link>
+      <pubDate>Fri, 02 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/publication/journal-article15/</guid>
       <description></description>
     </item>
     
