@@ -17,35 +17,39 @@ NB : nous écrire pour être ajouté à la liste de diffusion du GdT
  [Institut de mathématique d'Orsay (IMO)](https://www.imo.universite-paris-saclay.fr/fr/contacts/) bâtiment 307. Salle 3L15.
 
  ### Prochaine séances :
+  
+- 10/07/2023\
+   14h00 Jean-David Benamou : Entropic Optimal Transport solution of the Semi-Geostrophic equation\
+   15h00 François Golse : La distance de Wasserstein dans le monde quantique.
+
+### Séances passées :
+
+ - 22/05/2023\
+  14h00 Rodrigue Lelotte : The (numerics of) multimarginal optimal transport in statistical physics \
+  15h15 Laurent Pfeiffer : Generalized conditional gradient method for potential mean field games.
+
+- 24/04/2023\
+  14h00 Vincent Divol : Estimation d'applications de transport optimal : le cas semi-discret\
+  15h15 Gabriele Todeschi : L1 optimal transport for vector valued measures and application to Full Waveform Inversion.
+  
+
+- 20/03/2023\
+  14h00 Théo Lacombe : Homogeneous Unbalanced Regularized Optimal Transport\
+
+
+- 13/02/2023\
+  14h00 Pierre-Cyril Aubin :  c-concavity through tropical functional analysis: analogues of reproducing kernels and optimization\
+  15h15 Guillaume Carlier : Théorème de Hewitt et Savage pour des familles échangeables finies.
+
+- 23/01/2023\
+  10h30 Andrea Natale : Gradient flows of interacting Voronoi cells and their continuous limits.\
+  11h45 Hugo Lavenant : Optimal transport distance between completely random measures with applications in Bayesian statistics.
+  
 
 - 12/12/2022\
   14h00 Giuseppe Buttazzo : On the representation of Blaschke-Santaló diagrams.\
   15h15 Andrew Warren : Properties of some nonlocal Wasserstein-type distances.  
-  
-- 23/01/2023\
-  14h00 TBD\
-  15h15 TBD.
-  
-- 13/02/2023\
-  14h00 TBD\
-  15h15 TBD.
 
-- 20/03/2023\
-  14h00 TBD\
-  15h15 TBD.
-
-- 17/04/2023\
-  14h00 TBD\
-  15h15 TBD.
-  
- - 22/05/2023\
-  14h00 TBD\
-  15h15 TBD.
-  
- - 12/06/2023\
-   ALL DAY!!!
-
-### Séances passées :
 
 - 21/11/2022\
   14h00 Thomas Bonis : (Non-optimal) Transport through diffusion processes applied to sampling.\

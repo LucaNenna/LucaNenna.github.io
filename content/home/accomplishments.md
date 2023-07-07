@@ -23,14 +23,6 @@ date_format: Jan 2006
 #   Leave other parameters empty if not required.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 item:
-- #certificate_url: https://www.coursera.org
-  date_end: "2023-02-21"
-  date_start: "2023-02-21"
-  description: ""
-  organization: LAMME Université de Evry
-  #organization_url: https://www.coursera.org
-  title: Journée transport optimal
-  #url: "/teaching/optimaltransport"
 
 - #certificate_url: https://www.coursera.org
   date_end: "2023-06-01"
@@ -41,15 +33,37 @@ item:
   title: I will be on secondement in Matherials team
   #url: "https://sites.google.com/view/schromoka-2021-conference"
 
-- date_end: "2023-01-24"
-  date_start: "2023-01-25"
+- date_end: "2023-09-18"
+  date_start: "2023-09-20"
   description: ""
-  organization: Lagrange center
+  organization: TU Dortmund
   #organization_url: https://www.coursera.org
-  title: workshop *Interpolation of measures*
-  #url: "http://samm.univ-paris1.fr/-Seminaire-du-SAMM-"
+  title: Summer school on Optimal Transport 
+ # url: "https://opti-phy.sciencesconf.org"
 
 
+- date_end: "2024-01-12"
+  date_start: "2024-01-08"
+  description: ""
+  organization: Universidad Técnica Federico Santa María
+  #organization_url: https://www.coursera.org
+  title: Numerical methods for optimal transport problems, mean field games, and multi-agent dynamics
+  url: "https://eventos.cmm.uchile.cl/num2otmfg/"
+
+#- date_end: "2023-06-21"
+ # date_start: "2023-06-30"
+ # description: ""
+ # organization: University of Lisbon 
+ # #organization_url: https://www.coursera.org
+ # title: I will be in Lisbon working with Léonard Monsaigeon
+ # url: "https://www.sites.google.com/view/lmonsaingeon/home"
+
+#- date_end: "2023-06-05"
+#  date_start: "2023-06-09"
+#  description: ""
+#  organization: ETH
+    #organization_url: https://www.coursera.org
+#  title: Emerging topics in applications of optimal transport
 design:
   columns: '2'
 ---

@@ -14,14 +14,14 @@ organizations:
   url: https://www.universite-paris-saclay.fr/en
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests lie at the intersection of Optimal Transport, Mathematical Physics, Mathematical Economics and Numerical Analysi
+bio: My research interests lie at the intersection of Optimal Transport, Mathematical Physics, Mathematical Economics and Numerical Analysis
 
 # Interests to show in About widget
 interests:
 - Optimal Transport
 - Mathematical Physics
 - Mathematical Economics
-- Numerical Analysis
+- Numerical Optimization
 
 # Education to show in About widget
 education:
@@ -68,13 +68,14 @@ highlight_name: false
 ---
 
 Hello! Welcome to my website!
-I am a maître de conférences (:= associate professor) in the [department of Mathematics at Paris-Saclay University](https://www.imo.universite-paris-saclay.fr/en/).
-I am also a member of the ERC team [MDFT](https://www.ceremade.dauphine.fr/~lewin/mdft.html) and the [ANR MAGA](http://quentin.mrgt.fr/projects/maga/index.html#members).
+I am a maître de conférences in applied mathematics (:= associate professor) in the [department of Mathematics at Paris-Saclay University](https://www.imo.universite-paris-saclay.fr/en/). 
 
-Before that, I was a CNRS post-doc under the supervision of [Mathieu Lewin](https://www.ceremade.dauphine.fr/%7Elewin/).
+Before that, I was a post-doc under the supervision of [Mathieu Lewin](https://www.ceremade.dauphine.fr/%7Elewin/).
 
 In December 2016 I completed my Ph.D. under the supervision of [Jean-David Benamou](https://who.rocq.inria.fr/Jean-David.Benamou/) and [Guillaume Carlier](https://www.ceremade.dauphine.fr/~carlier/).
 
-With Quentin Mérigot I organise a monthly seminar on [Optimal Transport, PDE and Machine Learning]({{< ref "GdT/GdTOT/index.md" >}}) at [LMO](https://www.imo.universite-paris-saclay.fr/en/). 
+$\bullet$ My research interests lie at the intersection of Optimal Transport, Mathematical Physics, Mathematical Economics and Numerical Optimization.
+
+$\bullet$ With Quentin Mérigot I organise a monthly seminar on [Optimal Transport, PDE and Machine Learning]({{< ref "GdT/GdTOT/index.md" >}}) at [LMO](https://www.imo.universite-paris-saclay.fr/en/). 
 
 <a class="twitter-timeline" data-height="300" data-theme="light" href="https://twitter.com/NenLuke?ref_src=twsrc%5Etfw">Tweets by NenLuke</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
