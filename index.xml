@@ -32,8 +32,8 @@
 &lt;h3 id=&#34;prochaine-séances-&#34;&gt;Prochaine séances :&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;10/07/2023&lt;br&gt;
-14h00 Jean-David Benamou&lt;br&gt;
-15h00 François Golse.&lt;/li&gt;
+14h00 Jean-David Benamou : Entropic Optimal Transport solution of the Semi-Geostrophic equation&lt;br&gt;
+15h00 François Golse : La distance de Wasserstein dans le monde quantique.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;séances-passées-&#34;&gt;Séances passées :&lt;/h3&gt;
 &lt;ul&gt;
@@ -136,6 +136,14 @@ l&amp;rsquo;hydrodynamique d&amp;rsquo;Euler.&lt;br&gt;
       <link>https://LucaNenna.github.io/talk/summer-school-optimal-transport/</link>
       <pubDate>Mon, 18 Sep 2023 09:30:00 +0000</pubDate>
       <guid>https://LucaNenna.github.io/talk/summer-school-optimal-transport/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Convergence rate of entropy-regularized multi-marginal optimal transport costs</title>
+      <link>https://LucaNenna.github.io/publication/journal-article16/</link>
+      <pubDate>Thu, 06 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/publication/journal-article16/</guid>
       <description></description>
     </item>
     
