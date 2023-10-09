@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ANRs | LN&#39;s webpage</title>
+    <link>https://LucaNenna.github.io/anr/</link>
+      <atom:link href="https://LucaNenna.github.io/anr/index.xml" rel="self" type="application/rss+xml" />
+    <description>ANRs</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
+    <image>
+      <url>https://LucaNenna.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>ANRs</title>
+      <link>https://LucaNenna.github.io/anr/</link>
+    </image>
+    
+    <item>
+      <title>ANR Project GOTA</title>
+      <link>https://LucaNenna.github.io/anr/gota/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/anr/gota/</guid>
+      <description>&lt;h1 id=&#34;insginseneralized-insoinsptimal-instinsransport-and-insainspplications&#34;&gt;&lt;ins&gt;&lt;strong&gt;G&lt;/strong&gt;&lt;/ins&gt;eneralized &lt;ins&gt;&lt;strong&gt;O&lt;/strong&gt;&lt;/ins&gt;ptimal &lt;ins&gt;&lt;strong&gt;T&lt;/strong&gt;&lt;/ins&gt;ransport and &lt;ins&gt;&lt;strong&gt;A&lt;/strong&gt;&lt;/ins&gt;pplications&lt;/h1&gt;
+&lt;p&gt;&lt;img align=&#34;LEFT&#34; src=&#34;GOTA.jpg&#34; alt=&#34;drawing&#34; width=&#34;350&#34;/&gt;  &lt;img align=&#34;right&#34; src=&#34;ANR.jpg&#34; alt=&#34;drawing&#34; width=&#34;350&#34;/&gt;&lt;/p&gt;
+&lt;h3 id=&#34;members&#34;&gt;Members:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://lucanenna.github.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Luca Nenna&lt;/a&gt;  (P.I.),  Maître de conférences at Université Paris-Saclay.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://sites.google.com/site/labordemax2/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Maxime Laborde&lt;/a&gt;, Maître de conférences at Université Paris-Cité.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.ceremade.dauphine.fr/~pegon/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paul Pegon&lt;/a&gt;, Maître de conférences at Université Paris-Dauphine.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;open-positions&#34;&gt;Open positions:&lt;/h3&gt;
+&lt;p&gt;Stay tuned!&lt;/p&gt;
+&lt;h3 id=&#34;objectives-of-the-project&#34;&gt;Objectives of the project:&lt;/h3&gt;
+&lt;p&gt;This project deals with some generalizations and applications of Optimal Transport theory with a particular focus on three main topics: multi-marginal optimal transport, multi-population models and multi-marginal entropic optimal transport.
+The transition from the classical case to the &lt;strong&gt;multi-population&lt;/strong&gt; carries some difficulties which make all these problems more delicate to treat  both from the theoretical and numerical points of view.
+As for the former the main questions concern the dimension of the support of the solution, the development of  tools for analysing PDEs involving more populations and the first-order expansion of the multi-marginal entropic regularized problem under some mild assumption on the cost function. As regards the numerical side the main objective, common to the three over mentioned topics, consists in developing suitable numerical methods to deal with the so-called &lt;strong&gt;curse of the dimensionality&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;publications-and-preprints&#34;&gt;Publications and preprints:&lt;/h3&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

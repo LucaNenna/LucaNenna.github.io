@@ -2,6 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://LucaNenna.github.io/anr/gota/</loc>
+  </url><url>
     <loc>https://LucaNenna.github.io/teaching/anum/</loc>
   </url><url>
     <loc>https://LucaNenna.github.io/gdt/gdtot/</loc>
@@ -165,6 +167,8 @@
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://LucaNenna.github.io/admin/</loc>
+  </url><url>
+    <loc>https://LucaNenna.github.io/anr/</loc>
   </url><url>
     <loc>https://LucaNenna.github.io/categories/</loc>
   </url><url>
