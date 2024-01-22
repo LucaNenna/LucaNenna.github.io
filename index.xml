@@ -5,7 +5,7 @@
     <link>https://LucaNenna.github.io/</link>
       <atom:link href="https://LucaNenna.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>LN&#39;s webpage</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 18 Sep 2023 09:30:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 10 Jun 2024 09:30:00 +0000</lastBuildDate>
     <image>
       <url>https://LucaNenna.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>LN&#39;s webpage</title>
@@ -18,7 +18,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://LucaNenna.github.io/anr/gota/</guid>
       <description>&lt;h1 id=&#34;insginseneralized-insoinsptimal-instinsransport-and-insainspplications&#34;&gt;&lt;ins&gt;&lt;strong&gt;G&lt;/strong&gt;&lt;/ins&gt;eneralized &lt;ins&gt;&lt;strong&gt;O&lt;/strong&gt;&lt;/ins&gt;ptimal &lt;ins&gt;&lt;strong&gt;T&lt;/strong&gt;&lt;/ins&gt;ransport and &lt;ins&gt;&lt;strong&gt;A&lt;/strong&gt;&lt;/ins&gt;pplications&lt;/h1&gt;
-&lt;p&gt;&lt;img align=&#34;LEFT&#34; src=&#34;GOTA.jpg&#34; alt=&#34;drawing&#34; width=&#34;366&#34;/&gt;  &lt;img align=&#34;right&#34; src=&#34;ANR.jpg&#34; alt=&#34;drawing&#34; width=&#34;350&#34;/&gt;&lt;/p&gt;
+&lt;img align=&#34;Left&#34; src=&#34;ANR-logo-2021-sigle.pdf&#34; alt=&#34;drawing&#34; width=&#34;430&#34;/&gt;
+&lt;img align=&#34;right&#34; src=&#34;GOTA.jpg&#34; alt=&#34;drawing&#34; width=&#34;280&#34;/&gt;   
 &lt;h3 id=&#34;members&#34;&gt;Members:&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -166,6 +167,54 @@ l&amp;rsquo;hydrodynamique d&amp;rsquo;Euler.&lt;br&gt;
 &lt;li&gt;&lt;a href=&#34;https://team.inria.fr/mokaplan/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Team Mokaplan&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>4th Italian Meeting on Probability and Mathematical Statistics</title>
+      <link>https://LucaNenna.github.io/talk/4th-italian-meeting-on-probability-and-mathematical-statistics/</link>
+      <pubDate>Mon, 10 Jun 2024 09:30:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/4th-italian-meeting-on-probability-and-mathematical-statistics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EMC2 seminar</title>
+      <link>https://LucaNenna.github.io/talk/emc2-seminar/</link>
+      <pubDate>Mon, 12 Feb 2024 09:30:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/emc2-seminar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kick-off meeting of the ANR SOCOT</title>
+      <link>https://LucaNenna.github.io/talk/kick-off-meeting-of-the-anr-socot/</link>
+      <pubDate>Mon, 29 Jan 2024 09:30:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/kick-off-meeting-of-the-anr-socot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ANEDP seminar</title>
+      <link>https://LucaNenna.github.io/talk/anedp-seminar/</link>
+      <pubDate>Thu, 25 Jan 2024 09:30:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/anedp-seminar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Numerical methods for tOptimal Transport, Mean-Field Games and Multi-Agent systems</title>
+      <link>https://LucaNenna.github.io/talk/numerical-methods-for-toptimal-transport-mean-field-games-and-multi-agent-systems/</link>
+      <pubDate>Mon, 08 Jan 2024 09:30:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/numerical-methods-for-toptimal-transport-mean-field-games-and-multi-agent-systems/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PGMO days</title>
+      <link>https://LucaNenna.github.io/talk/pgmo-days/</link>
+      <pubDate>Wed, 29 Nov 2023 09:30:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/pgmo-days/</guid>
+      <description></description>
     </item>
     
     <item>
