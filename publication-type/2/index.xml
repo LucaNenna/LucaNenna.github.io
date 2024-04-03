@@ -5,12 +5,36 @@
     <link>https://LucaNenna.github.io/publication-type/2/</link>
       <atom:link href="https://LucaNenna.github.io/publication-type/2/index.xml" rel="self" type="application/rss+xml" />
     <description>2</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Mar 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 02 Apr 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://LucaNenna.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>2</title>
       <link>https://LucaNenna.github.io/publication-type/2/</link>
     </image>
+    
+    <item>
+      <title>An ordinary differential equation for entropic optimal transport and its linearly constrained variants</title>
+      <link>https://LucaNenna.github.io/publication/journal-article17/</link>
+      <pubDate>Tue, 02 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/publication/journal-article17/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Convergence rate of entropy-regularized multi-marginal optimal transport costs</title>
+      <link>https://LucaNenna.github.io/publication/journal-article16/</link>
+      <pubDate>Thu, 06 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/publication/journal-article16/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A sparse approximation of the Lieb functional with moment constraints</title>
+      <link>https://LucaNenna.github.io/publication/journal-article15/</link>
+      <pubDate>Fri, 02 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/publication/journal-article15/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Universal diagonal estimates for minimizers of the Levy-Lieb functional</title>
