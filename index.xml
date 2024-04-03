@@ -1,22 +1,243 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Publications | LN&#39;s webpage</title>
-    <link>https://LucaNenna.github.io/publication/</link>
-      <atom:link href="https://LucaNenna.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
-    <description>Publications</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 02 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <title>LN&#39;s webpage</title>
+    <link>https://LucaNenna.github.io/</link>
+      <atom:link href="https://LucaNenna.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <description>LN&#39;s webpage</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 14 Jul 2024 09:30:00 +0000</lastBuildDate>
     <image>
       <url>https://LucaNenna.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
-      <title>Publications</title>
-      <link>https://LucaNenna.github.io/publication/</link>
+      <title>LN&#39;s webpage</title>
+      <link>https://LucaNenna.github.io/</link>
     </image>
+    
+    <item>
+      <title>ANR Project GOTA</title>
+      <link>https://LucaNenna.github.io/anr/gota/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/anr/gota/</guid>
+      <description>&lt;h1 id=&#34;insginseneralized-insoinsptimal-instinsransport-and-insainspplications&#34;&gt;&lt;ins&gt;&lt;strong&gt;G&lt;/strong&gt;&lt;/ins&gt;eneralized &lt;ins&gt;&lt;strong&gt;O&lt;/strong&gt;&lt;/ins&gt;ptimal &lt;ins&gt;&lt;strong&gt;T&lt;/strong&gt;&lt;/ins&gt;ransport and &lt;ins&gt;&lt;strong&gt;A&lt;/strong&gt;&lt;/ins&gt;pplications&lt;/h1&gt;
+&lt;img align=&#34;Left&#34; src=&#34;ANR-logo-2021-sigle.pdf&#34; alt=&#34;drawing&#34; width=&#34;430&#34;/&gt;
+&lt;img align=&#34;right&#34; src=&#34;GOTA.jpg&#34; alt=&#34;drawing&#34; width=&#34;280&#34;/&gt;   
+&lt;h3 id=&#34;members&#34;&gt;Members:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://lucanenna.github.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Luca Nenna&lt;/a&gt;  (P.I.),  Maître de conférences at Université Paris-Saclay.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://sites.google.com/site/labordemax2/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Maxime Laborde&lt;/a&gt;, Maître de conférences at Université Paris-Cité.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.ceremade.dauphine.fr/~pegon/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paul Pegon&lt;/a&gt;, Maître de conférences at Université Paris-Dauphine.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;open-positions&#34;&gt;Open positions:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://nbviewer.org/github/LucaNenna/Stage/blob/main/Descriptif_sujet_IALieb-2.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;M2 internship&lt;/a&gt; on neural networks and Lieb functional. Co-supervision with &lt;a href=&#34;https://team.inria.fr/matherials/team-members/virginie-ehrlacher-galland/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Virginie Ehrlacher&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://LucaNenna.github.io/anr/gota/M2_entropic.pdf&#34;&gt;M2 internship&lt;/a&gt; on Entropic Optimal Transport. Co-supervision with &lt;a href=&#34;https://www.ceremade.dauphine.fr/~pegon/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paul Pegon&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;objectives-of-the-project&#34;&gt;Objectives of the project:&lt;/h3&gt;
+&lt;p&gt;This project deals with some generalizations and applications of Optimal Transport theory with a particular focus on three main topics: multi-marginal optimal transport, multi-population models and multi-marginal entropic optimal transport.
+The transition from the classical case to the &lt;strong&gt;multi-population&lt;/strong&gt; carries some difficulties which make all these problems more delicate to treat  both from the theoretical and numerical points of view.
+As for the former the main questions concern the dimension of the support of the solution, the development of  tools for analysing PDEs involving more populations and the first-order expansion of the multi-marginal entropic regularized problem under some mild assumption on the cost function. As regards the numerical side the main objective, common to the three over mentioned topics, consists in developing suitable numerical methods to deal with the so-called &lt;strong&gt;curse of the dimensionality&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;publications-and-preprints&#34;&gt;Publications and preprints:&lt;/h3&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>GdT Transport Optimal, EDP et Machine Learning</title>
+      <link>https://LucaNenna.github.io/gdt/gdtot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/gdt/gdtot/</guid>
+      <description>&lt;h3 id=&#34;organisateurs-&#34;&gt;Organisateurs :&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://quentin.mrgt.fr&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Quentin Mérigot&lt;/a&gt; (&lt;a href=&#34;mailto:quentin.merigot@universite-paris-saclay.fr&#34;&gt;quentin.merigot@universite-paris-saclay.fr&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Luca Nenna (vous êtes déjà sur ma page web 😃) (&lt;a href=&#34;mailto:luca.nenna@universite-paris-saclay.fr&#34;&gt;luca.nenna@universite-paris-saclay.fr&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;NB : nous écrire pour être ajouté à la liste de diffusion du GdT&lt;/p&gt;
+&lt;h3 id=&#34;où-nous-trouver-&#34;&gt;Où nous trouver :&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.imo.universite-paris-saclay.fr/fr/contacts/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Institut de mathématique d&amp;rsquo;Orsay (IMO)&lt;/a&gt; bâtiment 307. Salle 3L15.&lt;/p&gt;
+&lt;h3 id=&#34;prochaine-séances-&#34;&gt;Prochaine séances :&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;16/10/2023&lt;br&gt;
+14h00 Karol Bołbotowski: Optimal design of grillages via optimal transport&lt;br&gt;
+15h00 Cyril Letrouit : The emergence of clusters in self-attention dynamics.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;séances-passées-&#34;&gt;Séances passées :&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;10/07/2023&lt;br&gt;
+14h00 Jean-David Benamou : Entropic Optimal Transport solution of the Semi-Geostrophic equation&lt;br&gt;
+15h00 François Golse : La distance de Wasserstein dans le monde quantique.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;22/05/2023&lt;br&gt;
+14h00 Rodrigue Lelotte : The (numerics of) multimarginal optimal transport in statistical physics&lt;br&gt;
+15h15 Laurent Pfeiffer : Generalized conditional gradient method for potential mean field games.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;24/04/2023&lt;br&gt;
+14h00 Vincent Divol : Estimation d&amp;rsquo;applications de transport optimal : le cas semi-discret&lt;br&gt;
+15h15 Gabriele Todeschi : L1 optimal transport for vector valued measures and application to Full Waveform Inversion.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;20/03/2023&lt;br&gt;
+14h00 Théo Lacombe : Homogeneous Unbalanced Regularized Optimal Transport\&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;13/02/2023&lt;br&gt;
+14h00 Pierre-Cyril Aubin :  c-concavity through tropical functional analysis: analogues of reproducing kernels and optimization&lt;br&gt;
+15h15 Guillaume Carlier : Théorème de Hewitt et Savage pour des familles échangeables finies.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;23/01/2023&lt;br&gt;
+10h30 Andrea Natale : Gradient flows of interacting Voronoi cells and their continuous limits.&lt;br&gt;
+11h45 Hugo Lavenant : Optimal transport distance between completely random measures with applications in Bayesian statistics.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;12/12/2022&lt;br&gt;
+14h00 Giuseppe Buttazzo : On the representation of Blaschke-Santaló diagrams.&lt;br&gt;
+15h15 Andrew Warren : Properties of some nonlocal Wasserstein-type distances.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;21/11/2022&lt;br&gt;
+14h00 Thomas Bonis : (Non-optimal) Transport through diffusion processes applied to sampling.&lt;br&gt;
+15h15 Sara Farinelli : An application of optimal control to normalizing flows.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;03/10/2022&lt;br&gt;
+14h00 &lt;a href=&#34;https://www.ceremade.dauphine.fr/~pegon/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paul Pegon&lt;/a&gt; : Vitesse de convergence de coûts généraux en transport optimal entropique.&lt;br&gt;
+15h15 &lt;a href=&#34;https://team.inria.fr/matherials/team-members/virginie-ehrlacher-galland/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Virginie Ehrlacher&lt;/a&gt; : Boundary stabilization of cross-diffusion systems in moving domains.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;27/06/2022&lt;br&gt;
+14h00 &lt;a href=&#34;https://www.irit.fr/~Elsa.Cazelles/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Elsa Cazelles&lt;/a&gt; : Barycenters for probability distributions based on optimal weak mass transport.&lt;br&gt;
+15h00 &lt;a href=&#34;https://www.imo.universite-paris-saclay.fr/~maury/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bertrand Maury&lt;/a&gt; : Effets paradoxaux en mouvements de foules et comparaison micro-macro dans les modèles de congestion.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;16/05/2022&lt;br&gt;
+14h00 &lt;a href=&#34;https://www.imo.universite-paris-saclay.fr/~mirebeau/Main_page.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Jean-Marie Mirebeau&lt;/a&gt; : Estimations locales pour les solutions de schémas à stencil étendu.&lt;br&gt;
+15h00 &lt;a href=&#34;https://hichamjanati.github.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hicham Janati&lt;/a&gt; : Mind the reference measure of entropic OT: a study on Gaussian measures.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;04/04/2022&lt;br&gt;
+14h00 &lt;a href=&#34;http://web.math.unifi.it/users/depascal/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Luigi De Pascale&lt;/a&gt; : Optimal transport, wave functions and single electron densities.&lt;br&gt;
+15h00 &lt;a href=&#34;http://angkor.univ-mlv.fr/~vialard/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;François-Xavier Vialard&lt;/a&gt;: Two topics related to optimal transport and machine learning and PDE’s.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;21/03/2022&lt;br&gt;
+14h00 &lt;a href=&#34;https://akorba.github.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Anna Korba&lt;/a&gt; : Kernel Stein Discrepancy Descent.&lt;br&gt;
+15h00 &lt;a href=&#34;https://meyerscetbon.github.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Meyer Scetbon&lt;/a&gt; : A New Regularization Scheme for Optimal Transport Using Low-Rank Constraints.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;14/02/2022&lt;br&gt;
+14h00 &lt;a href=&#34;https://flavienleger.github.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Flavien Léger&lt;/a&gt; : An introduction to Z-mappings.&lt;br&gt;
+15h00 &lt;a href=&#34;https://remi.flamary.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rémi Flamary&lt;/a&gt; : CO-Optimal Transport : Optimal Transport across non registered space.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;03/01/2022&lt;br&gt;
+14h00 &lt;a href=&#34;http://quentin.mrgt.fr&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Quentin Mérigot&lt;/a&gt;&lt;br&gt;
+15h00 &lt;a href=&#34;https://www.normalesup.org/~mfathi/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Max Fathi&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;03/01/2022&lt;br&gt;
+14h00 &lt;a href=&#34;https://people.sissa.it/~gbonnet/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Guillaume Bonnet &lt;/a&gt; : Discrétisation monotone du second problème aux limites pour l&amp;rsquo;équation de Monge-Ampère.&lt;br&gt;
+15h00 &lt;a href=&#34;https://www.ceremade.dauphine.fr/fr/membres/detail-cv/profile/katharina-eichinger.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Katharina Eichinger&lt;/a&gt; : Barycentres régularisés dans l&amp;rsquo;espace Wasserstein.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;06/12/2021&lt;br&gt;
+14h00 &lt;a href=&#34;https://sites.google.com/site/giovanniconfort/home&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Giovanni Conforti&lt;/a&gt; : Stabilité quantitative du coût de transport entropique et des ponts de Schrödinger: une approche géométrique.&lt;br&gt;
+15h00 &lt;a href=&#34;https://alex-delalande.github.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Alex Delalande&lt;/a&gt; : Bornes non-asymptotiques pour le transport optimal entropique semi-discret.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;06/12/2021&lt;br&gt;
+14h00 &lt;a href=&#34;http://www.cmls.polytechnique.fr/perso/brenier/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Yann Brenier&lt;/a&gt; : Du problème de transport optimal de Monge à la gravitation d&amp;rsquo;Einstein via
+l&amp;rsquo;hydrodynamique d&amp;rsquo;Euler.&lt;br&gt;
+15h00 &lt;a href=&#34;https://gallouet.github.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Thomas O. Gallouët&lt;/a&gt; : Variational finite volume scheme for optimal transport problems.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;useful-links&#34;&gt;Useful links&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.imo.universite-paris-saclay.fr/-optimization-?lang=fr&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;M2 in Optimization&lt;/a&gt; at U. Paris-Saclay&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://team.inria.fr/mokaplan/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Team Mokaplan&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2024 International Congress of Basic Science</title>
+      <link>https://LucaNenna.github.io/talk/2024-international-congress-of-basic-science/</link>
+      <pubDate>Sun, 14 Jul 2024 09:30:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/2024-international-congress-of-basic-science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>4th Italian Meeting on Probability and Mathematical Statistics</title>
+      <link>https://LucaNenna.github.io/talk/4th-italian-meeting-on-probability-and-mathematical-statistics/</link>
+      <pubDate>Mon, 10 Jun 2024 09:30:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/4th-italian-meeting-on-probability-and-mathematical-statistics/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>An ordinary differential equation for entropic optimal transport and its linearly constrained variants</title>
       <link>https://LucaNenna.github.io/publication/journal-article17/</link>
       <pubDate>Tue, 02 Apr 2024 00:00:00 +0000</pubDate>
       <guid>https://LucaNenna.github.io/publication/journal-article17/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EMC2 seminar</title>
+      <link>https://LucaNenna.github.io/talk/emc2-seminar/</link>
+      <pubDate>Mon, 12 Feb 2024 09:30:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/emc2-seminar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kick-off meeting of the ANR SOCOT</title>
+      <link>https://LucaNenna.github.io/talk/kick-off-meeting-of-the-anr-socot/</link>
+      <pubDate>Mon, 29 Jan 2024 09:30:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/kick-off-meeting-of-the-anr-socot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ANEDP seminar</title>
+      <link>https://LucaNenna.github.io/talk/anedp-seminar/</link>
+      <pubDate>Thu, 25 Jan 2024 09:30:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/anedp-seminar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Numerical methods for tOptimal Transport, Mean-Field Games and Multi-Agent systems</title>
+      <link>https://LucaNenna.github.io/talk/numerical-methods-for-toptimal-transport-mean-field-games-and-multi-agent-systems/</link>
+      <pubDate>Mon, 08 Jan 2024 09:30:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/numerical-methods-for-toptimal-transport-mean-field-games-and-multi-agent-systems/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PGMO days</title>
+      <link>https://LucaNenna.github.io/talk/pgmo-days/</link>
+      <pubDate>Wed, 29 Nov 2023 09:30:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/pgmo-days/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Summer school Optimal Transport</title>
+      <link>https://LucaNenna.github.io/talk/summer-school-optimal-transport/</link>
+      <pubDate>Mon, 18 Sep 2023 09:30:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/summer-school-optimal-transport/</guid>
       <description></description>
     </item>
     
@@ -29,6 +250,22 @@
     </item>
     
     <item>
+      <title>FOCM23, Computational Optimal Transport</title>
+      <link>https://LucaNenna.github.io/talk/focm23-computational-optimal-transport/</link>
+      <pubDate>Mon, 19 Jun 2023 09:30:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/focm23-computational-optimal-transport/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Emerging topics in applications of Optimal Transport</title>
+      <link>https://LucaNenna.github.io/talk/emerging-topics-in-applications-of-optimal-transport/</link>
+      <pubDate>Mon, 05 Jun 2023 11:30:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/emerging-topics-in-applications-of-optimal-transport/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>A sparse approximation of the Lieb functional with moment constraints</title>
       <link>https://LucaNenna.github.io/publication/journal-article15/</link>
       <pubDate>Fri, 02 Jun 2023 00:00:00 +0000</pubDate>
@@ -37,10 +274,42 @@
     </item>
     
     <item>
+      <title>Optimization and Optimal Control  in Burgundy</title>
+      <link>https://LucaNenna.github.io/talk/optimization-and-optimal-control-in-burgundy/</link>
+      <pubDate>Tue, 09 May 2023 09:30:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/optimization-and-optimal-control-in-burgundy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Universal diagonal estimates for minimizers of the Levy-Lieb functional</title>
       <link>https://LucaNenna.github.io/publication/journal-article14/</link>
       <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
       <guid>https://LucaNenna.github.io/publication/journal-article14/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Journée transport optimal</title>
+      <link>https://LucaNenna.github.io/talk/journee-transport-optimal/</link>
+      <pubDate>Tue, 21 Feb 2023 09:30:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/journee-transport-optimal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Interpolation of Measures</title>
+      <link>https://LucaNenna.github.io/talk/interpolation-of-measures/</link>
+      <pubDate>Tue, 24 Jan 2023 11:30:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/interpolation-of-measures/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PGMO days</title>
+      <link>https://LucaNenna.github.io/talk/pgmo-days/</link>
+      <pubDate>Tue, 29 Nov 2022 11:30:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/pgmo-days/</guid>
       <description></description>
     </item>
     
@@ -69,6 +338,30 @@
     </item>
     
     <item>
+      <title>SAMM seminar</title>
+      <link>https://LucaNenna.github.io/talk/samm-seminar/</link>
+      <pubDate>Fri, 14 Oct 2022 11:30:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/samm-seminar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Numerical analysis and PDE Seminar</title>
+      <link>https://LucaNenna.github.io/talk/numerical-analysis-and-pde-seminar/</link>
+      <pubDate>Thu, 06 Oct 2022 14:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/numerical-analysis-and-pde-seminar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Analysis and PDE Seminar</title>
+      <link>https://LucaNenna.github.io/talk/analysis-and-pde-seminar/</link>
+      <pubDate>Fri, 21 Jan 2022 14:30:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/analysis-and-pde-seminar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Grand-Canonical Optimal Transport</title>
       <link>https://LucaNenna.github.io/publication/journal-article10/</link>
       <pubDate>Wed, 19 Jan 2022 00:00:00 +0000</pubDate>
@@ -85,10 +378,91 @@
     </item>
     
     <item>
+      <title>Department Seminar</title>
+      <link>https://LucaNenna.github.io/talk/department-seminar/</link>
+      <pubDate>Thu, 16 Dec 2021 14:30:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/department-seminar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Schrödinger Problem and Mean-field PDE Systems: Computational and Theoretical Advances</title>
+      <link>https://LucaNenna.github.io/talk/schrodinger-problem-and-mean-field-pde-systems-computational-and-theoretical-advances/</link>
+      <pubDate>Mon, 15 Nov 2021 15:45:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/schrodinger-problem-and-mean-field-pde-systems-computational-and-theoretical-advances/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CalVa Seminar</title>
+      <link>https://LucaNenna.github.io/talk/calva-seminar/</link>
+      <pubDate>Mon, 25 Oct 2021 11:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/calva-seminar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Workshop on Schrödinger problem and Optimal Transport</title>
+      <link>https://LucaNenna.github.io/talk/workshop-on-schrodinger-problem-and-optimal-transport/</link>
+      <pubDate>Mon, 06 Sep 2021 14:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/workshop-on-schrodinger-problem-and-optimal-transport/</guid>
+      <description>&lt;p&gt;You can find &lt;a href=&#34;https://www.youtube.com/watch?v=RYVK4FE2uBI&amp;amp;list=PLPyGWftg4pKe8y-GZhh8WnnbL-0FTkJV7&amp;amp;index=7&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt; the video of the talk.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Entropic Optimal Transport</title>
+      <link>https://LucaNenna.github.io/talk/entropic-optimal-transport/</link>
+      <pubDate>Mon, 21 Jun 2021 09:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/entropic-optimal-transport/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Analysis Seminar</title>
+      <link>https://LucaNenna.github.io/talk/analysis-seminar/</link>
+      <pubDate>Thu, 16 Jul 2020 11:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/analysis-seminar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GT Mathématiques Numériques</title>
+      <link>https://LucaNenna.github.io/talk/gt-mathematiques-numeriques/</link>
+      <pubDate>Thu, 27 Feb 2020 15:45:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/gt-mathematiques-numeriques/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Variational problems involving unequal dimensional optimal transport</title>
       <link>https://LucaNenna.github.io/publication/journal-article8/</link>
       <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
       <guid>https://LucaNenna.github.io/publication/journal-article8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Seminar of Applied Mathematics</title>
+      <link>https://LucaNenna.github.io/talk/seminar-of-applied-mathematics/</link>
+      <pubDate>Tue, 29 Oct 2019 14:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/seminar-of-applied-mathematics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Seminar of Calculus of Variations and PDEs</title>
+      <link>https://LucaNenna.github.io/talk/seminar-of-calculus-of-variations-and-pdes/</link>
+      <pubDate>Thu, 24 Oct 2019 12:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/seminar-of-calculus-of-variations-and-pdes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FGS&#39;19 Congress on Optimization</title>
+      <link>https://LucaNenna.github.io/talk/fgs19-congress-on-optimization/</link>
+      <pubDate>Wed, 18 Sep 2019 09:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/fgs19-congress-on-optimization/</guid>
       <description></description>
     </item>
     
@@ -101,10 +475,179 @@
     </item>
     
     <item>
+      <title>Seminar of Applied Mathematics</title>
+      <link>https://LucaNenna.github.io/talk/seminar-of-applied-mathematics/</link>
+      <pubDate>Fri, 30 Aug 2019 16:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/seminar-of-applied-mathematics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>People in Optimal Transportation and Applications</title>
+      <link>https://LucaNenna.github.io/talk/people-in-optimal-transportation-and-applications/</link>
+      <pubDate>Mon, 24 Jun 2019 09:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/people-in-optimal-transportation-and-applications/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Generalized incompressible flows, multi-marginal transport and Sinkhorn algorithm</title>
       <link>https://LucaNenna.github.io/publication/journal-article5/</link>
       <pubDate>Mon, 06 May 2019 00:00:00 +0000</pubDate>
       <guid>https://LucaNenna.github.io/publication/journal-article5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Séminaire Parisien d&#39;Optimisation</title>
+      <link>https://LucaNenna.github.io/talk/seminaire-parisien-doptimisation/</link>
+      <pubDate>Wed, 24 Apr 2019 16:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/seminaire-parisien-doptimisation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Slides</title>
+      <link>https://LucaNenna.github.io/slides/example/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/slides/example/</guid>
+      <description>&lt;h1 id=&#34;create-slides-in-markdown-with-wowchemy&#34;&gt;Create slides in Markdown with Wowchemy&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://wowchemy.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wowchemy&lt;/a&gt; | &lt;a href=&#34;https://owchemy.com/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Efficiently write slides in Markdown&lt;/li&gt;
+&lt;li&gt;3-in-1: Create, Present, and Publish your slides&lt;/li&gt;
+&lt;li&gt;Supports speaker notes&lt;/li&gt;
+&lt;li&gt;Mobile friendly slides&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;controls&#34;&gt;Controls&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Next: &lt;code&gt;Right Arrow&lt;/code&gt; or &lt;code&gt;Space&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Previous: &lt;code&gt;Left Arrow&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Start: &lt;code&gt;Home&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Finish: &lt;code&gt;End&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Overview: &lt;code&gt;Esc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Speaker notes: &lt;code&gt;S&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Fullscreen: &lt;code&gt;F&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Zoom: &lt;code&gt;Alt + Click&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/hakimel/reveal.js#pdf-export&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF Export&lt;/a&gt;: &lt;code&gt;E&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;code-highlighting&#34;&gt;Code Highlighting&lt;/h2&gt;
+&lt;p&gt;Inline code: &lt;code&gt;variable&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Code block:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;porridge = &amp;quot;blueberry&amp;quot;
+if porridge == &amp;quot;blueberry&amp;quot;:
+    print(&amp;quot;Eating...&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;
+&lt;p&gt;In-line math: $x + y = z$&lt;/p&gt;
+&lt;p&gt;Block math:&lt;/p&gt;
+&lt;p&gt;$$
+f\left( x \right) = ;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;fragments&#34;&gt;Fragments&lt;/h2&gt;
+&lt;p&gt;Make content appear incrementally&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{{% fragment %}} One {{% /fragment %}}
+{{% fragment %}} **Two** {{% /fragment %}}
+{{% fragment %}} Three {{% /fragment %}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Press &lt;code&gt;Space&lt;/code&gt; to play!&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
+One
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+&lt;strong&gt;Two&lt;/strong&gt;
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+Three
+&lt;/span&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;A fragment can accept two optional parameters:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;class&lt;/code&gt;: use a custom style (requires definition in custom CSS)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;weight&lt;/code&gt;: sets the order in which a fragment appears&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;speaker-notes&#34;&gt;Speaker Notes&lt;/h2&gt;
+&lt;p&gt;Add speaker notes to your presentation&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{% speaker_note %}}
+- Only the speaker can read these notes
+- Press `S` key to view
+{{% /speaker_note %}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Press the &lt;code&gt;S&lt;/code&gt; key to view the speaker notes!&lt;/p&gt;
+&lt;aside class=&#34;notes&#34;&gt;
+  &lt;ul&gt;
+&lt;li&gt;Only the speaker can read these notes&lt;/li&gt;
+&lt;li&gt;Press &lt;code&gt;S&lt;/code&gt; key to view&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/aside&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;black: Black background, white text, blue links (default)&lt;/li&gt;
+&lt;li&gt;white: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;league: Gray background, white text, blue links&lt;/li&gt;
+&lt;li&gt;beige: Beige background, dark text, brown links&lt;/li&gt;
+&lt;li&gt;sky: Blue background, thin dark text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;night: Black background, thick white text, orange links&lt;/li&gt;
+&lt;li&gt;serif: Cappuccino background, gray text, brown links&lt;/li&gt;
+&lt;li&gt;simple: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;solarized: Cream-colored background, dark green text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+
+&lt;section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image=&#34;/media/boards.jpg&#34;
+  &gt;
+
+&lt;h2 id=&#34;custom-slide&#34;&gt;Custom Slide&lt;/h2&gt;
+&lt;p&gt;Customize the slide style and background&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{&amp;lt; slide background-image=&amp;quot;/media/boards.jpg&amp;quot; &amp;gt;}}
+{{&amp;lt; slide background-color=&amp;quot;#0000FF&amp;quot; &amp;gt;}}
+{{&amp;lt; slide class=&amp;quot;my-style&amp;quot; &amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;custom-css-example&#34;&gt;Custom CSS Example&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s make headers navy colored.&lt;/p&gt;
+&lt;p&gt;Create &lt;code&gt;assets/css/reveal_custom.css&lt;/code&gt; with:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.reveal section h1,
+.reveal section h2,
+.reveal section h3 {
+  color: navy;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/wowchemy/wowchemy-hugo-modules/discussions&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ask&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://wowchemy.com/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Optimal Transport Methods in Density Fcuntional Theory</title>
+      <link>https://LucaNenna.github.io/talk/optimal-transport-methods-in-density-fcuntional-theory/</link>
+      <pubDate>Sun, 27 Jan 2019 17:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/optimal-transport-methods-in-density-fcuntional-theory/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MokaMeeting</title>
+      <link>https://LucaNenna.github.io/talk/mokameeting/</link>
+      <pubDate>Wed, 16 Jan 2019 11:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/mokameeting/</guid>
       <description></description>
     </item>
     
@@ -153,6 +696,14 @@
       <link>https://LucaNenna.github.io/publication/journal-article/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
       <guid>https://LucaNenna.github.io/publication/journal-article/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://LucaNenna.github.io/admin/config.yml</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/admin/config.yml</guid>
       <description></description>
     </item>
     
