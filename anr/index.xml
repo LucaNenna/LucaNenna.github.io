@@ -31,17 +31,40 @@
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.ceremade.dauphine.fr/~pegon/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paul Pegon&lt;/a&gt;, Maître de conférences at Université Paris-Dauphine.&lt;/p&gt;
 &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Adrien Cancés, PhD student.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Louis Tocquec, internship M2.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;open-positions&#34;&gt;Open positions:&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://nbviewer.org/github/LucaNenna/Stage/blob/main/Descriptif_sujet_IALieb-2.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;M2 internship&lt;/a&gt; on neural networks and Lieb functional. Co-supervision with &lt;a href=&#34;https://team.inria.fr/matherials/team-members/virginie-ehrlacher-galland/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Virginie Ehrlacher&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://LucaNenna.github.io/anr/gota/M2_entropic.pdf&#34;&gt;M2 internship&lt;/a&gt; on Entropic Optimal Transport. Co-supervision with &lt;a href=&#34;https://www.ceremade.dauphine.fr/~pegon/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paul Pegon&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Ph.D. and post-doc coming soon&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;objectives-of-the-project&#34;&gt;Objectives of the project:&lt;/h3&gt;
 &lt;p&gt;This project deals with some generalizations and applications of Optimal Transport theory with a particular focus on three main topics: multi-marginal optimal transport, multi-population models and multi-marginal entropic optimal transport.
 The transition from the classical case to the &lt;strong&gt;multi-population&lt;/strong&gt; carries some difficulties which make all these problems more delicate to treat  both from the theoretical and numerical points of view.
 As for the former the main questions concern the dimension of the support of the solution, the development of  tools for analysing PDEs involving more populations and the first-order expansion of the multi-marginal entropic regularized problem under some mild assumption on the cost function. As regards the numerical side the main objective, common to the three over mentioned topics, consists in developing suitable numerical methods to deal with the so-called &lt;strong&gt;curse of the dimensionality&lt;/strong&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;publications-and-preprints&#34;&gt;Publications and preprints:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Hiew, Joshua Zoen-Git, Luca Nenna, and Brendan Pass. &amp;ldquo;An ordinary differential equation for entropic optimal transport and its linearly constrained variants.&amp;rdquo; arXiv preprint arXiv:2403.20238 (2024).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ducasse, Romain, and Maxime Laborde. &amp;ldquo;Long-time behavior of the heterogeneous SIRS epidemiological model.&amp;rdquo; arXiv preprint arXiv:2402.00405 (2024).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ennaji, Hamza, Quentin Mérigot, Luca Nenna, and Brendan Pass. &amp;ldquo;Robust risk management via multi-marginal optimal transport.&amp;rdquo; arXiv preprint arXiv:2211.07694 to appear on JOTA (2024).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Nenna, Luca, and Paul Pegon. “Convergence Rate of Entropy-Regularized Multi-Marginal Optimal Transport Costs.” Canadian Journal of Mathematics, 2024, 1–21. &lt;a href=&#34;https://doi.org/10.4153/S0008414X24000257&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://doi.org/10.4153/S0008414X24000257&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;phd-and-hdr-thesis&#34;&gt;Ph.D. and HDR thesis:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Luca Nenna. On some generalisations of Optimal Transport problem. HDR. Paris Saclay University, 2024. ⟨tel-04554531⟩&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
