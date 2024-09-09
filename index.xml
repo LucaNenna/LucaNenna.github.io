@@ -5,7 +5,7 @@
     <link>https://LucaNenna.github.io/</link>
       <atom:link href="https://LucaNenna.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>LN&#39;s webpage</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 14 Jul 2024 09:30:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 03 Sep 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://LucaNenna.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>LN&#39;s webpage</title>
@@ -226,6 +226,22 @@ l&amp;rsquo;hydrodynamique d&amp;rsquo;Euler.&lt;br&gt;
 &lt;li&gt;&lt;a href=&#34;https://team.inria.fr/mokaplan/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Team Mokaplan&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>A numerical method for regularized transportation problems</title>
+      <link>https://LucaNenna.github.io/publication/journal-article19/</link>
+      <pubDate>Tue, 03 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/publication/journal-article19/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A variational formulation of a Multi-Population Mean Field Games with non-local interactions</title>
+      <link>https://LucaNenna.github.io/publication/journal-article18/</link>
+      <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/publication/journal-article18/</guid>
+      <description></description>
     </item>
     
     <item>
