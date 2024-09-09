@@ -5,12 +5,28 @@
     <link>https://LucaNenna.github.io/publication/</link>
       <atom:link href="https://LucaNenna.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 02 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 03 Sep 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://LucaNenna.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Publications</title>
       <link>https://LucaNenna.github.io/publication/</link>
     </image>
+    
+    <item>
+      <title>A numerical method for regularized transportation problems</title>
+      <link>https://LucaNenna.github.io/publication/journal-article19/</link>
+      <pubDate>Tue, 03 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/publication/journal-article19/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A variational formulation of a Multi-Population Mean Field Games with non-local interactions</title>
+      <link>https://LucaNenna.github.io/publication/journal-article18/</link>
+      <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/publication/journal-article18/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>An ordinary differential equation for entropic optimal transport and its linearly constrained variants</title>
