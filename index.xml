@@ -5,7 +5,7 @@
     <link>https://LucaNenna.github.io/</link>
       <atom:link href="https://LucaNenna.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>LN&#39;s webpage</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 03 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 12 Sep 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://LucaNenna.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>LN&#39;s webpage</title>
@@ -48,6 +48,12 @@ The transition from the classical case to the &lt;strong&gt;multi-population&lt;
 As for the former the main questions concern the dimension of the support of the solution, the development of  tools for analysing PDEs involving more populations and the first-order expansion of the multi-marginal entropic regularized problem under some mild assumption on the cost function. As regards the numerical side the main objective, common to the three over mentioned topics, consists in developing suitable numerical methods to deal with the so-called &lt;strong&gt;curse of the dimensionality&lt;/strong&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;publications-and-preprints&#34;&gt;Publications and preprints:&lt;/h3&gt;
 &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Di Marino, Simone and Lewin, Mathieu and Nenna, Luca. &amp;ldquo;The ground state energy is not always convex in the number of electrons.&amp;rdquo; &lt;a href=&#34;http://cvgmt.sns.it/paper/6783/,&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://cvgmt.sns.it/paper/6783/,&lt;/a&gt; 2024.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;De Pascale, Luigi and Nenna, Luca. &amp;ldquo;A variational formulation of a Multi-Population Mean FieldGames with non-local interactions.&amp;rdquo; arXiv:2408.03118, 2024.&lt;/p&gt;
+&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Hiew, Joshua Zoen-Git, Luca Nenna, and Brendan Pass. &amp;ldquo;An ordinary differential equation for entropic optimal transport and its linearly constrained variants.&amp;rdquo; arXiv preprint arXiv:2403.20238 (2024).&lt;/p&gt;
 &lt;/li&gt;
@@ -226,6 +232,14 @@ l&amp;rsquo;hydrodynamique d&amp;rsquo;Euler.&lt;br&gt;
 &lt;li&gt;&lt;a href=&#34;https://team.inria.fr/mokaplan/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Team Mokaplan&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>The ground state energy is not always convex in the number of electrons</title>
+      <link>https://LucaNenna.github.io/publication/journal-article20/</link>
+      <pubDate>Thu, 12 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/publication/journal-article20/</guid>
+      <description></description>
     </item>
     
     <item>
