@@ -5,7 +5,7 @@
     <link>https://LucaNenna.github.io/</link>
       <atom:link href="https://LucaNenna.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>LN&#39;s webpage</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 04 Feb 2025 09:30:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 06 Mar 2025 09:30:00 +0000</lastBuildDate>
     <image>
       <url>https://LucaNenna.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>LN&#39;s webpage</title>
@@ -235,10 +235,50 @@ l&amp;rsquo;hydrodynamique d&amp;rsquo;Euler.&lt;br&gt;
     </item>
     
     <item>
+      <title>Séminaire EDP </title>
+      <link>https://LucaNenna.github.io/talk/seminaire-edp/</link>
+      <pubDate>Thu, 06 Mar 2025 09:30:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/talk/seminaire-edp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Séminaire MMCS </title>
       <link>https://LucaNenna.github.io/talk/seminaire-mmcs/</link>
       <pubDate>Tue, 04 Feb 2025 09:30:00 +0000</pubDate>
       <guid>https://LucaNenna.github.io/talk/seminaire-mmcs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Large deviations for sticky-reflecting Brownian motion with boundary diffusion</title>
+      <link>https://LucaNenna.github.io/publication/journal-article21/</link>
+      <pubDate>Fri, 31 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/publication/journal-article21/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Grand-Canonical Optimal Transport</title>
+      <link>https://LucaNenna.github.io/publication/journal-article10/</link>
+      <pubDate>Sun, 19 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/publication/journal-article10/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An ODE characterisation of multi-marginal optimal transport</title>
+      <link>https://LucaNenna.github.io/publication/journal-article13/</link>
+      <pubDate>Thu, 16 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/publication/journal-article13/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Robust risk management via multi-marginal optimal transport</title>
+      <link>https://LucaNenna.github.io/publication/journal-article12/</link>
+      <pubDate>Sat, 16 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/publication/journal-article12/</guid>
       <description></description>
     </item>
     
@@ -331,6 +371,14 @@ l&amp;rsquo;hydrodynamique d&amp;rsquo;Euler.&lt;br&gt;
     </item>
     
     <item>
+      <title>A note on Cournot-Nash equilibria and Optimal Transport between unequal dimensions</title>
+      <link>https://LucaNenna.github.io/publication/journal-article11/</link>
+      <pubDate>Thu, 19 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/publication/journal-article11/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Summer school Optimal Transport</title>
       <link>https://LucaNenna.github.io/talk/summer-school-optimal-transport/</link>
       <pubDate>Mon, 18 Sep 2023 09:30:00 +0000</pubDate>
@@ -411,30 +459,6 @@ l&amp;rsquo;hydrodynamique d&amp;rsquo;Euler.&lt;br&gt;
     </item>
     
     <item>
-      <title>An ODE characterisation of multi-marginal optimal transport</title>
-      <link>https://LucaNenna.github.io/publication/journal-article13/</link>
-      <pubDate>Wed, 16 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>https://LucaNenna.github.io/publication/journal-article13/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Robust risk management via multi-marginal optimal transport</title>
-      <link>https://LucaNenna.github.io/publication/journal-article12/</link>
-      <pubDate>Wed, 16 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>https://LucaNenna.github.io/publication/journal-article12/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>A note on Cournot-Nash equilibria and Optimal Transport between unequal dimensions</title>
-      <link>https://LucaNenna.github.io/publication/journal-article11/</link>
-      <pubDate>Wed, 19 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>https://LucaNenna.github.io/publication/journal-article11/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>SAMM seminar</title>
       <link>https://LucaNenna.github.io/talk/samm-seminar/</link>
       <pubDate>Fri, 14 Oct 2022 11:30:00 +0000</pubDate>
@@ -455,14 +479,6 @@ l&amp;rsquo;hydrodynamique d&amp;rsquo;Euler.&lt;br&gt;
       <link>https://LucaNenna.github.io/talk/analysis-and-pde-seminar/</link>
       <pubDate>Fri, 21 Jan 2022 14:30:00 +0000</pubDate>
       <guid>https://LucaNenna.github.io/talk/analysis-and-pde-seminar/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Grand-Canonical Optimal Transport</title>
-      <link>https://LucaNenna.github.io/publication/journal-article10/</link>
-      <pubDate>Wed, 19 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://LucaNenna.github.io/publication/journal-article10/</guid>
       <description></description>
     </item>
     
