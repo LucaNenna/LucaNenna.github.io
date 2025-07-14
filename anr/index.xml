@@ -64,6 +64,8 @@ The transition from the classical case to the &lt;strong&gt;multi-population&lt;
 As for the former the main questions concern the dimension of the support of the solution, the development of  tools for analysing PDEs involving more populations and the first-order expansion of the multi-marginal entropic regularized problem under some mild assumption on the cost function. As regards the numerical side the main objective, common to the three over mentioned topics, consists in developing suitable numerical methods to deal with the so-called &lt;strong&gt;curse of the dimensionality&lt;/strong&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;publications-and-preprints&#34;&gt;Publications and preprints:&lt;/h3&gt;
 &lt;ol&gt;
+&lt;li&gt; Luca Nenna, Paul Pegon, Louis Tocquec. &#34;Convergence rates for regularized unbalanced optimal transport: the discrete case.&#34; arXiv preprint https://arxiv.org/abs/2507.07917, 2025.
+&lt;/li&gt;
 &lt;li&gt; Luca Nenna, Daniyar Omarov, Brendan Pass. &#34;Characterizing and computing solutions to regularized semi-discrete optimal transport via an ordinary differential equation.&#34; arXiv preprint arXiv:2504.03030, 2025.&lt;/li&gt;
 &lt;li&gt; Jean-Baptiste Casteras, Leonard Monsaingeon, Luca Nenna. &#34;Large deviations for sticky-reflecting Brownian motion with boundary diffusion.&#34; ⟨hal-04895784⟩, 2025. &lt;/li&gt;
 &lt;li&gt; Di Marino, Simone and Lewin, Mathieu and Nenna, Luca. &#34;Grand-canonical optimal transport.&#34; Archive for Rational Mechanics and Analysis 249 (1), 12, 2025.&lt;/li&gt;
