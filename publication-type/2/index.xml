@@ -5,7 +5,7 @@
     <link>https://LucaNenna.github.io/publication-type/2/</link>
       <atom:link href="https://LucaNenna.github.io/publication-type/2/index.xml" rel="self" type="application/rss+xml" />
     <description>2</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 03 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 02 Feb 2026 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://LucaNenna.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>2</title>
@@ -13,10 +13,34 @@
     </image>
     
     <item>
+      <title>A sparse approximation of the Lieb functional with moment constraints</title>
+      <link>https://LucaNenna.github.io/publication/journal-article15/</link>
+      <pubDate>Mon, 02 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/publication/journal-article15/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Convergence rates for regularized unbalanced optimal transport: the discrete case</title>
+      <link>https://LucaNenna.github.io/publication/journal-article23/</link>
+      <pubDate>Thu, 03 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/publication/journal-article23/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Characterizing and computing solutions to regularized semi-discrete optimal transport via an ordinary differential equation</title>
       <link>https://LucaNenna.github.io/publication/journal-article22/</link>
       <pubDate>Thu, 03 Apr 2025 00:00:00 +0000</pubDate>
       <guid>https://LucaNenna.github.io/publication/journal-article22/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An ordinary differential equation for entropic optimal transport and its linearly constrained variants</title>
+      <link>https://LucaNenna.github.io/publication/journal-article17/</link>
+      <pubDate>Wed, 02 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://LucaNenna.github.io/publication/journal-article17/</guid>
       <description></description>
     </item>
     
@@ -69,14 +93,6 @@
     </item>
     
     <item>
-      <title>An ordinary differential equation for entropic optimal transport and its linearly constrained variants</title>
-      <link>https://LucaNenna.github.io/publication/journal-article17/</link>
-      <pubDate>Tue, 02 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://LucaNenna.github.io/publication/journal-article17/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>A note on Cournot-Nash equilibria and Optimal Transport between unequal dimensions</title>
       <link>https://LucaNenna.github.io/publication/journal-article11/</link>
       <pubDate>Thu, 19 Oct 2023 00:00:00 +0000</pubDate>
@@ -89,14 +105,6 @@
       <link>https://LucaNenna.github.io/publication/journal-article16/</link>
       <pubDate>Thu, 06 Jul 2023 00:00:00 +0000</pubDate>
       <guid>https://LucaNenna.github.io/publication/journal-article16/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>A sparse approximation of the Lieb functional with moment constraints</title>
-      <link>https://LucaNenna.github.io/publication/journal-article15/</link>
-      <pubDate>Fri, 02 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://LucaNenna.github.io/publication/journal-article15/</guid>
       <description></description>
     </item>
     
