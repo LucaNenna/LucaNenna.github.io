@@ -24,6 +24,17 @@ ADD YOURSELF (copy these in next to the HTML files)
   anr/gota/GOTA.jpg           The GOTA banner image from your backup ZIP.
                               Keep this exact folder name/path.
 
+  anr/gota/ANR-logo.png       The ANR logo (PNG, JPG or SVG), shown at the top
+                              of the GOTA page. Your backup has a PDF version;
+                              save/export it as ANR-logo.png here.
+
+  logos/paris-saclay.png      Homepage logo strip. Put these 4 institutional
+  logos/lmo.png               logos (PNG or SVG, transparent background ideally)
+  logos/iuf.png               in a folder called "logos". They are shown in
+  logos/inria.png             grayscale and turn colour on hover. Download from
+                              each institution's website, or your press kit.
+                              (If a file is missing, that one logo just hides.)
+
 HOW TO UPDATE PUBLICATIONS LATER
 --------------------------------
 Open publications.html on GitHub (pencil icon), find the PUBS list, and paste a

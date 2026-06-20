@@ -9,6 +9,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']]},svg:{fontCache:'global'}};</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg.min.js" async></script>
 <style>
   :root{
     --ink:#1a1d24;
@@ -22,15 +24,24 @@
     --accent:#9a6a3c;   /* restrained ochre, used sparingly */
   }
   *{box-sizing:border-box;margin:0;padding:0;}
-  html{scroll-behavior:smooth;}
+  html{scroll-behavior:smooth;background:var(--paper);}
   body{
     font-family:'Inter',system-ui,sans-serif;
     color:var(--ink);
-    background:var(--paper);
+    background:transparent;
     line-height:1.6;
     font-size:16px;
     -webkit-font-smoothing:antialiased;
   }
+  /* faint formulae watermark */
+  .math-bg{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none;color:var(--blue);opacity:.05;}
+  .math-bg span{position:absolute;white-space:nowrap;font-size:1.3rem;}
+  /* institutional logos */
+  .logobar{border-bottom:1px solid var(--line);background:#fff;}
+  .logobar .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:30px 44px;padding:20px 24px;}
+  .logobar img{height:46px;width:auto;max-width:170px;object-fit:contain;filter:grayscale(100%);opacity:.7;transition:filter .2s,opacity .2s;}
+  .logobar a:hover img{filter:none;opacity:1;}
+  @media (max-width:560px){.logobar img{height:34px;}.logobar .wrap{gap:20px 26px;}}
   .wrap{max-width:820px;margin:0 auto;padding:0 24px;}
   a{color:var(--blue);text-decoration:none;}
   a:hover{text-decoration:underline;}
@@ -148,6 +159,21 @@
 </head>
 <body>
 
+<div class="math-bg" aria-hidden="true">
+  <span style="top:7%;left:3%;font-size:1.5rem;transform:rotate(-8deg)">$\displaystyle \min_{\gamma\in\Pi(\mu,\nu)}\int_{X\times Y} c(x,y)\,d\gamma$</span>
+  <span style="top:15%;left:64%;transform:rotate(6deg)">$K_\varepsilon = e^{-c/\varepsilon}$</span>
+  <span style="top:27%;left:8%;transform:rotate(4deg)">$\gamma=\mathrm{diag}(a)\,K\,\mathrm{diag}(b)$</span>
+  <span style="top:34%;left:48%;font-size:1.5rem;transform:rotate(-5deg)">$\displaystyle W_2^2(\rho_0,\rho_1)=\inf_{(\rho,v)}\int_0^1\!\!\int |v_t|^2\,d\rho_t\,dt$</span>
+  <span style="top:45%;left:5%;transform:rotate(7deg)">$\displaystyle \sup_{\varphi\oplus\psi\le c}\int\varphi\,d\mu+\int\psi\,d\nu$</span>
+  <span style="top:53%;left:60%;transform:rotate(-7deg)">$\displaystyle \min_\pi\, H(\pi\,|\,R)$</span>
+  <span style="top:62%;left:11%;font-size:1.55rem;transform:rotate(5deg)">$\displaystyle \min_{\gamma\in\Pi(\mu_1,\dots,\mu_N)}\int_{X_1\times\cdots\times X_N}\! c(x_1,\dots,x_N)\,d\gamma$</span>
+  <span style="top:23%;left:39%;transform:rotate(-6deg)">$(\pi_k)_{\#}\gamma=\mu_k,\ \ k=1,\dots,N$</span>
+  <span style="top:71%;left:55%;transform:rotate(8deg)">$F_L[\rho]=\min_{\Gamma\mapsto\rho}\mathrm{Tr}(H\Gamma)$</span>
+  <span style="top:80%;left:7%;transform:rotate(-6deg)">$\nabla\varphi_{\#}\mu=\nu$</span>
+  <span style="top:86%;left:50%;font-size:1.5rem;transform:rotate(4deg)">$\displaystyle \mathrm{OT}_\varepsilon=\langle c,\gamma\rangle+\varepsilon\,\mathrm{KL}(\gamma\,|\,\mu\otimes\nu)$</span>
+  <span style="top:91%;left:24%;transform:rotate(-4deg)">$\dfrac{d\gamma_\varepsilon}{d\varepsilon}=F(\gamma_\varepsilon)$</span>
+</div>
+
 <div class="topbar">
   <div class="wrap">
     <a href="#about" class="brand">Luca Nenna</a>
@@ -203,6 +229,15 @@
   </div>
 </header>
 
+<div class="logobar">
+  <div class="wrap">
+    <a href="https://www.universite-paris-saclay.fr/en" target="_blank" rel="noopener"><img src="logos/paris-saclay.png" alt="Université Paris-Saclay" onerror="this.style.display='none'"></a>
+    <a href="https://www.imo.universite-paris-saclay.fr/en/" target="_blank" rel="noopener"><img src="logos/lmo.png" alt="Laboratoire de mathématiques d'Orsay" onerror="this.style.display='none'"></a>
+    <a href="https://www.iufrance.fr/les-membres-de-liuf/membre/2843-luca-nenna.html" target="_blank" rel="noopener"><img src="logos/iuf.png" alt="Institut Universitaire de France" onerror="this.style.display='none'"></a>
+    <a href="https://www.inria.fr/en" target="_blank" rel="noopener"><img src="logos/inria.png" alt="Inria" onerror="this.style.display='none'"></a>
+  </div>
+</div>
+
 <div class="wrap">
 
   <section class="lead" id="about" style="border-bottom:1px solid var(--line);">
@@ -229,6 +264,13 @@
       <li><span class="when">2026</span><span>Co-organizing a workshop at the <strong>Fondation des Treilles</strong> with M.&nbsp;Laborde and P.&nbsp;Pegon.</span></li>
       <li><span class="when">2025</span><span>New <strong>Inria PiQ</strong> project <em>PiQuantO — Problems in Quantum Optimal Transport</em>, with R.&nbsp;Lelotte.</span></li>
     </ul>
+  </section>
+
+  <section id="agenda">
+    <h2>Agenda</h2>
+    <div class="row"><span>Semester on Optimal Transport — Isaac Newton Institute, Cambridge</span><span class="meta">Mar 2027</span></div>
+    <div class="row"><span>Organising a workshop on Optimal Transport — Fondation des Treilles</span><span class="meta">Sep 2026</span></div>
+    <div class="row"><span>Research visit — Brendan Pass, University of Alberta, Edmonton</span><span class="meta">Jun 2026</span></div>
   </section>
 
   <section id="talks">
