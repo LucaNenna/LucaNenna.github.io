@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Publications · Luca Nenna</title>
+<meta name="description" content="Publications of Luca Nenna — optimal transport, mathematical physics, numerical optimization.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1a1d24;--muted:#5b6573;--faint:#8a94a3;--line:#e3e7ed;
+    --paper:#fbfaf7;--blue:#1f4e79;--blue-soft:#eef3f8;--accent:#9a6a3c;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:820px;margin:0 auto;padding:0 24px;}
+  a{color:var(--blue);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+
+  .topbar{border-bottom:1px solid var(--line);background:#fff;}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:56px;}
+  .back{font-family:'Spectral',serif;font-weight:600;color:var(--ink);font-size:1rem;}
+  .back:hover{text-decoration:none;color:var(--blue);}
+  .topbar nav a{color:var(--muted);font-size:.9rem;margin-left:16px;}
+
+  header.head{padding:44px 0 8px;}
+  header.head h1{font-family:'Spectral',serif;font-weight:600;font-size:2.1rem;letter-spacing:-0.02em;}
+  header.head p{color:var(--muted);margin-top:8px;}
+  .controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:22px 0 4px;}
+  .controls input{flex:1;min-width:200px;font-family:inherit;font-size:.92rem;padding:9px 13px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+  .controls input:focus{outline:none;border-color:var(--blue);}
+  .controls .filters{display:flex;gap:6px;flex-wrap:wrap;}
+  .chip{font-size:.82rem;font-weight:500;padding:6px 12px;border-radius:20px;border:1px solid var(--line);background:#fff;color:var(--muted);cursor:pointer;}
+  .chip.on{background:var(--blue);color:#fff;border-color:var(--blue);}
+  .count{font-size:.85rem;color:var(--faint);margin:14px 0 0;}
+
+  .yeargroup{padding:26px 0 6px;}
+  .yeargroup h2{font-family:'Spectral',serif;font-weight:600;font-size:1.25rem;color:var(--blue);
+    padding-bottom:8px;border-bottom:1px solid var(--line);margin-bottom:6px;}
+  .pub{padding:15px 0;border-bottom:1px solid var(--line);}
+  .pub:last-child{border-bottom:none;}
+  .pub .title{font-family:'Spectral',serif;font-size:1.05rem;font-weight:500;line-height:1.35;}
+  .pub .authors{font-size:.9rem;color:var(--muted);margin-top:3px;}
+  .pub .authors b{color:var(--ink);font-weight:600;}
+  .pub .venue{font-size:.86rem;margin-top:5px;display:flex;gap:8px;align-items:center;flex-wrap:wrap;}
+  .venue .journal{color:var(--blue);font-weight:600;}
+  .badge{font-size:.72rem;font-weight:600;padding:2px 8px;border-radius:4px;letter-spacing:.02em;}
+  .badge.award{background:#f6efe4;color:var(--accent);}
+  .badge.pub{background:#e8f0e8;color:#3a6b46;}
+  .badge.pre{background:#eef1f5;color:var(--muted);}
+  .badge.thesis{background:#efeaf4;color:#5b4a86;}
+  .pub .pdf{font-size:.82rem;font-weight:600;}
+
+  footer{border-top:1px solid var(--line);padding:26px 0 46px;color:var(--muted);font-size:.88rem;margin-top:30px;}
+  footer a{color:var(--muted);}
+  .empty{padding:40px 0;color:var(--faint);}
+
+  @media (max-width:560px){header.head h1{font-size:1.7rem;}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <a href="index.html" class="back">← Luca Nenna</a>
+    <nav>
+      <a href="index.html#distinctions">Funding</a>
+      <a href="talks.html">Talks</a>
+      <a href="https://scholar.google.com/citations?user=1_r-io8AAAAJ&hl=en" target="_blank" rel="noopener">Scholar</a>
+    </nav>
+  </div>
+</div>
+
+<header class="head">
+  <div class="wrap">
+    <h1>Publications</h1>
+    <p>Journal articles, proceedings, preprints and thesis. Newest first.</p>
+    <div class="controls">
+      <input id="q" type="search" placeholder="Search title or author…" aria-label="Search">
+      <div class="filters">
+        <span class="chip on" data-f="all">All</span>
+        <span class="chip" data-f="pub">Published</span>
+        <span class="chip" data-f="pre">Preprints</span>
+      </div>
+    </div>
+    <p class="count" id="count"></p>
+  </div>
+</header>
+
+<main class="wrap" id="list"></main>
+
+<footer>
+  <div class="wrap">
+    Luca Nenna · <a href="index.html">Home</a> ·
+    <a href="https://scholar.google.com/citations?user=1_r-io8AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a> ·
+    <a href="https://www.researchgate.net/profile/Luca_Nenna" target="_blank" rel="noopener">ResearchGate</a>
+  </div>
+</footer>
+
+<script>
+/* =====================================================================
+   PUBLICATION LIST  —  to add a paper, copy one { … } block below,
+   paste it at the TOP, and edit the fields. "kind" is one of:
+   "pub" (published) · "pre" (preprint) · "award" · "thesis".
+   Entries are sorted automatically by "year" (newest first).
+   ===================================================================== */
+const PUBS = [
+  {year:2026, authors:"V. Ehrlacher, R. Lelotte, L. Nenna", title:"A land of monotone plenty, bis repetita: from classical to weak optimal transport", venue:"Preprint", kind:"pre", pdf:"https://cvgmt.sns.it/media/doc/paper/7811/Monotonicity_EhrLelNen.pdf"},
+  {year:2026, authors:"M. Garatti, L. Nenna, S. Rota-Nodari, L. Tamanini", title:"A PDE approach to the Benamou–Brenier formula for the Schrödinger problem", venue:"Preprint", kind:"pre", pdf:"https://cvgmt.sns.it/media/doc/paper/7691/BB_PDEapproach.pdf"},
+  {year:2026, authors:"E. Bonnet-Weill, V. Ehrlacher, L. Nenna", title:"A reduced-order model for parametrized optimal transport problems", venue:"Preprint", kind:"pre", pdf:"https://inria.hal.science/hal-05587825"},
+  {year:2026, authors:"A. Cancès, L. Nenna, D. Omarov, B. Pass", title:"Ordinary differential equations for regularized variational problems involving semi-discrete optimal transport", venue:"Preprint", kind:"pre", pdf:"https://cvgmt.sns.it/paper/7635/"},
+  {year:2026, authors:"A. Cancès, Q. Mérigot, L. Nenna", title:"A particle method for a nonlinear multi-marginal optimal transport problem", venue:"Preprint", kind:"pre", pdf:"https://arxiv.org/abs/2603.25584"},
+  {year:2026, authors:"V. Ehrlacher, L. Nenna", title:"A sparse approximation of the Lieb functional with moment constraints", venue:"SIAM Journal on Mathematical Analysis", kind:"pub", pdf:"https://arxiv.org/abs/2306.00806"},
+
+  {year:2025, authors:"L. Nenna, P. Pegon, L. Tocquec", title:"Convergence rates for regularized unbalanced optimal transport: the discrete case", venue:"Preprint", kind:"pre", pdf:"https://arxiv.org/abs/2507.07917"},
+  {year:2025, authors:"L. Nenna, D. Omarov, B. Pass", title:"Characterizing and computing solutions to regularized semi-discrete optimal transport via an ODE", venue:"Preprint", kind:"pre", pdf:"https://arxiv.org/abs/2504.03030"},
+  {year:2025, authors:"J. Z. G. Hiew, L. Nenna, B. Pass", title:"An ordinary differential equation for entropic optimal transport and its linearly constrained variants", venue:"Numerische Mathematik", kind:"pub", pdf:"https://arxiv.org/abs/2403.20238"},
+  {year:2025, authors:"J.-B. Casteras, L. Monsaingeon, L. Nenna", title:"Large deviations for sticky-reflecting Brownian motion with boundary diffusion", venue:"Preprint", kind:"pre", pdf:"https://inria.hal.science/hal-04895784"},
+  {year:2025, authors:"S. Di Marino, M. Lewin, L. Nenna", title:"Grand-Canonical Optimal Transport", venue:"Archive for Rational Mechanics and Analysis", kind:"pub", pdf:"https://arxiv.org/abs/2201.06859"},
+  {year:2025, authors:"L. Nenna, B. Pass", title:"An ODE characterisation of multi-marginal optimal transport for pairwise costs", venue:"IMA Journal of Numerical Analysis", kind:"pub", pdf:"https://arxiv.org/abs/2212.12492"},
+
+  {year:2024, authors:"H. Ennaji, Q. Mérigot, L. Nenna, B. Pass", title:"Robust risk management via multi-marginal optimal transport", venue:"Journal of Optimization Theory and Applications", kind:"pub", pdf:"https://hal.science/hal-03852245/file/main.pdf"},
+  {year:2024, authors:"S. Di Marino, M. Lewin, L. Nenna", title:"The ground state energy is not always convex in the number of electrons", venue:"The Journal of Physical Chemistry A", kind:"pub", pdf:"https://cvgmt.sns.it/media/doc/paper/6783/convexity-in-N_v03.pdf"},
+  {year:2024, authors:"J.-D. Benamou, G. Carlier, M. Cuturi, L. Nenna, G. Peyré", title:"A numerical method for regularized transportation problems", venue:"Frontiers of Science Award paper", kind:"award", pdf:"https://cvgmt.sns.it/media/doc/paper/6774/A_numerical_method_for_regularized_transportation_problems-3.pdf"},
+  {year:2024, authors:"L. De Pascale, L. Nenna", title:"A variational formulation of a multi-population Mean Field Games with non-local interactions", venue:"Preprint", kind:"pre", pdf:"https://arxiv.org/abs/2408.03118"},
+
+  {year:2023, authors:"L. Nenna, B. Pass", title:"A note on Cournot–Nash equilibria and optimal transport between unequal dimensions", venue:"Optimal Transport Statistics for Economics and Related Topics (Springer)", kind:"pub", pdf:"https://arxiv.org/abs/2209.14888"},
+  {year:2023, authors:"L. Nenna, P. Pegon", title:"Convergence rate of entropy-regularized multi-marginal optimal transport costs", venue:"Canadian Journal of Mathematics", kind:"pub", pdf:"https://arxiv.org/abs/2307.03023"},
+  {year:2023, authors:"S. Di Marino, A. Gerolin, L. Nenna", title:"Universal diagonal estimates for minimizers of the Levy–Lieb functional", venue:"Letters in Mathematical Physics", kind:"pub", pdf:"https://arxiv.org/abs/2303.00496"},
+
+  {year:2022, authors:"L. Nenna, B. Pass", title:"Transport type metrics on the space of probability measures involving singular base measures", venue:"Applied Mathematics & Optimization", kind:"pub", pdf:"https://cvgmt.sns.it/media/doc/paper/5409/metrics.pdf"},
+
+  {year:2020, authors:"L. Nenna, B. Pass", title:"Variational problems involving unequal dimensional optimal transport", venue:"Journal de Mathématiques Pures et Appliquées", kind:"pub", pdf:"https://arxiv.org/abs/1904.00939"},
+
+  {year:2019, authors:"J.-D. Benamou, G. Carlier, S. Di Marino, L. Nenna", title:"An entropy minimization approach to second-order variational mean-field games", venue:"Mathematical Models and Methods in Applied Sciences", kind:"pub", pdf:"https://arxiv.org/abs/1807.09078"},
+  {year:2019, authors:"J.-D. Benamou, G. Carlier, L. Nenna", title:"Generalized incompressible flows, multi-marginal transport and Sinkhorn algorithm", venue:"Numerische Mathematik", kind:"pub", pdf:"https://arxiv.org/abs/1710.08234"},
+
+  {year:2017, authors:"S. Di Marino, A. Gerolin, L. Nenna", title:"Optimal transportation theory with repulsive costs", venue:"Topological Optimization and Optimal Transport (De Gruyter)", kind:"pub", pdf:"https://arxiv.org/abs/1506.04565"},
+  {year:2017, authors:"M. Seidl, S. Di Marino, A. Gerolin, L. Nenna, K. J. H. Giesbertz, P. Gori-Giorgi", title:"The strictly-correlated electron functional for spherically symmetric systems revisited", venue:"Physical Review A", kind:"pub", pdf:"https://arxiv.org/abs/1702.05022"},
+
+  {year:2016, authors:"L. Nenna", title:"Numerical methods for multi-marginal optimal transportation", venue:"Ph.D. Thesis, Université Paris-Dauphine", kind:"thesis", pdf:"https://tel.archives-ouvertes.fr/tel-01471589/document"},
+  {year:2016, authors:"A. Blanchet, G. Carlier, L. Nenna", title:"Computation of Cournot–Nash equilibria by entropic regularization", venue:"Vietnam Journal of Mathematics", kind:"pub", pdf:"https://arxiv.org/abs/1609.02814"},
+  {year:2016, authors:"J.-D. Benamou, G. Carlier, L. Nenna", title:"A numerical method to solve multi-marginal optimal transport problems with Coulomb cost", venue:"Splitting Methods in Communication, Imaging, Science, and Engineering (Springer)", kind:"pub", pdf:"https://www.math.ucla.edu/~wotaoyin/splittingbook/ch17-benamou-carlier.pdf"},
+
+  {year:2015, authors:"J.-D. Benamou, G. Carlier, M. Cuturi, L. Nenna, G. Peyré", title:"Iterative Bregman projections for regularized transportation problems", venue:"SIAM Journal on Scientific Computing", kind:"award", pdf:"https://arxiv.org/abs/1412.5154"},
+];
+
+const BADGE = {pub:"Published", pre:"Preprint", award:"Award paper", thesis:"Thesis"};
+const listEl = document.getElementById('list');
+const countEl = document.getElementById('count');
+const qEl = document.getElementById('q');
+let filter = 'all';
+
+function boldNenna(s){ return s.replace(/(L\.\s*Nenna)/g, '<b>$1</b>'); }
+
+function render(){
+  const q = qEl.value.trim().toLowerCase();
+  let items = PUBS.slice().sort((a,b)=>b.year-a.year);
+  items = items.filter(p=>{
+    const okF = filter==='all' ? true : (filter==='pub' ? (p.kind==='pub'||p.kind==='award') : p.kind==='pre');
+    const okQ = !q || (p.title+' '+p.authors).toLowerCase().includes(q);
+    return okF && okQ;
+  });
+  countEl.textContent = items.length + (items.length===1?' entry':' entries');
+  if(!items.length){ listEl.innerHTML = '<p class="empty">No publications match your search.</p>'; return; }
+  let html=''; let lastYear=null;
+  for(const p of items){
+    if(p.year!==lastYear){ if(lastYear!==null) html+='</div>'; html+='<div class="yeargroup"><h2>'+p.year+'</h2>'; lastYear=p.year; }
+    const badgeClass = p.kind;
+    html += '<div class="pub">'
+      + '<div class="title">'+p.title+'</div>'
+      + '<div class="authors">'+boldNenna(p.authors)+'</div>'
+      + '<div class="venue">'
+      + (p.kind!=='pre' ? '<span class="journal">'+p.venue+'</span>' : '<span style="color:var(--faint)">Preprint</span>')
+      + ' <span class="badge '+badgeClass+'">'+BADGE[p.kind]+'</span>'
+      + (p.pdf ? ' · <a class="pdf" href="'+p.pdf+'" target="_blank" rel="noopener">PDF</a>' : '')
+      + '</div></div>';
+  }
+  html+='</div>';
+  listEl.innerHTML = html;
+}
+
+qEl.addEventListener('input', render);
+document.querySelectorAll('.chip').forEach(c=>c.addEventListener('click',()=>{
+  document.querySelectorAll('.chip').forEach(x=>x.classList.remove('on'));
+  c.classList.add('on'); filter=c.dataset.f; render();
+}));
+render();
+</script>
+</body>
+</html>

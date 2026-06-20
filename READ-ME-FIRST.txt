@@ -1,0 +1,41 @@
+LUCA NENNA — WEBSITE FILES
+==========================
+
+This ZIP contains the new website. Upload everything here to the ROOT of your
+GitHub repo (lucanenna.github.io), plus the three items listed under "ADD YOURSELF".
+
+INCLUDED IN THIS ZIP
+--------------------
+  index.html                  Homepage
+  publications.html           Full publication list (edit the PUBS list to add papers)
+  talks.html                  Talks & seminars (edit the TALKS list to add talks)
+  calculus-of-variations.html Course page
+  gota.html                   ANR GOTA project page
+  .nojekyll                   (empty) tells GitHub to serve the HTML as-is
+
+ADD YOURSELF (copy these in next to the HTML files)
+---------------------------------------------------
+  photo.jpg                   Your portrait, named exactly photo.jpg
+                              (download from your old site or use any headshot)
+
+  teaching/anum/              Folder of course PDFs (Chapter 1-4, exams) from your
+                              backup ZIP. Keep this exact folder name/path.
+
+  anr/gota/GOTA.jpg           The GOTA banner image from your backup ZIP.
+                              Keep this exact folder name/path.
+
+HOW TO UPDATE PUBLICATIONS LATER
+--------------------------------
+Open publications.html on GitHub (pencil icon), find the PUBS list, and paste a
+new line at the top, e.g.:
+
+  {year:2026, authors:"A. Author, L. Nenna", title:"My new paper",
+   venue:"Preprint", kind:"pre", pdf:"https://arxiv.org/abs/XXXX.XXXXX"},
+
+kind = "pre" (preprint), "pub" (published), "award", or "thesis".
+Talks work the same way in talks.html (the TALKS list).
+
+PUBLISHING
+----------
+GitHub repo -> Settings -> Pages -> Source = "Deploy from a branch",
+branch "main", folder "/ (root)" -> Save. Wait ~2 min, then open the site.

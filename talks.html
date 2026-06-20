@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Talks · Luca Nenna</title>
+<meta name="description" content="Invited talks and seminars by Luca Nenna.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1a1d24;--muted:#5b6573;--faint:#8a94a3;--line:#e3e7ed;
+    --paper:#fbfaf7;--blue:#1f4e79;--blue-soft:#eef3f8;--accent:#9a6a3c;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:820px;margin:0 auto;padding:0 24px;}
+  a{color:var(--blue);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+
+  .topbar{border-bottom:1px solid var(--line);background:#fff;}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:56px;}
+  .back{font-family:'Spectral',serif;font-weight:600;color:var(--ink);font-size:1rem;}
+  .back:hover{text-decoration:none;color:var(--blue);}
+  .topbar nav a{color:var(--muted);font-size:.9rem;margin-left:16px;}
+
+  header.head{padding:44px 0 8px;}
+  header.head h1{font-family:'Spectral',serif;font-weight:600;font-size:2.1rem;letter-spacing:-0.02em;}
+  header.head p{color:var(--muted);margin-top:8px;}
+
+  .yeargroup{padding:24px 0 6px;}
+  .yeargroup h2{font-family:'Spectral',serif;font-weight:600;font-size:1.25rem;color:var(--blue);
+    padding-bottom:8px;border-bottom:1px solid var(--line);margin-bottom:6px;}
+  .talk{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid var(--line);font-size:.94rem;}
+  .talk:last-child{border-bottom:none;}
+  .talk .what{color:var(--ink);}
+  .talk .what .place{color:var(--muted);}
+  .talk .plenary{color:var(--accent);font-weight:600;font-size:.78rem;margin-left:6px;}
+  .talk .when{color:var(--faint);font-size:.85rem;white-space:nowrap;text-align:right;}
+
+  footer{border-top:1px solid var(--line);padding:26px 0 46px;color:var(--muted);font-size:.88rem;margin-top:30px;}
+  footer a{color:var(--muted);}
+
+  @media (max-width:560px){
+    header.head h1{font-size:1.7rem;}
+    .talk{flex-direction:column;gap:2px;}
+    .talk .when{text-align:left;}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <a href="index.html" class="back">← Luca Nenna</a>
+    <nav>
+      <a href="publications.html">Publications</a>
+      <a href="index.html#group">Group</a>
+      <a href="index.html#teaching">Teaching</a>
+    </nav>
+  </div>
+</div>
+
+<header class="head">
+  <div class="wrap">
+    <h1>Talks &amp; seminars</h1>
+    <p>Invited talks, seminars and conference presentations. Newest first.</p>
+  </div>
+</header>
+
+<main class="wrap" id="list"></main>
+
+<footer>
+  <div class="wrap">
+    Luca Nenna · <a href="index.html">Home</a> ·
+    <a href="https://scholar.google.com/citations?user=1_r-io8AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+  </div>
+</footer>
+
+<script>
+/* =====================================================================
+   TALKS  —  to add a talk, copy one { … } line, paste at the TOP and
+   edit. Sorted automatically by "year" (newest first). Add tag:"plenary"
+   to flag a plenary/keynote.
+   ===================================================================== */
+const TALKS = [
+  {year:2026, when:"Oct 2026", what:"GdT Optimization and Control", place:"INSA, Rouen"},
+  {year:2026, when:"Apr 2026", what:"Analysis Seminar", place:"Nova University, Lisbon"},
+  {year:2026, when:"Mar 2026", what:"SMAI–MODE", place:"Nice"},
+  {year:2026, when:"Mar 2026", what:"Calculus of Variations seminar", place:"Paris"},
+  {year:2026, when:"Mar 2026", what:"Analysis Seminar", place:"Marseille"},
+  {year:2026, when:"Jan 2026", what:"Seminar", place:"ENSTA, Palaiseau"},
+
+  {year:2025, when:"Dec 2025", what:"TSE Seminar", place:"Toulouse"},
+  {year:2025, when:"Jul 2025", what:"International Congress of Basic Science", place:"Beijing", tag:"plenary"},
+  {year:2025, when:"Mar 2025", what:"Analysis seminar, LMB", place:"Besançon"},
+  {year:2025, when:"Feb 2025", what:"MACS seminar, ICJ", place:"Lyon"},
+
+  {year:2024, when:"Aug 2024", what:"Kantorovich + PDE + Math-Phys + Prob seminars", place:"UBC, Vancouver"},
+  {year:2024, when:"Aug 2024", what:"Kantorovich Initiative meeting", place:"UBC, Vancouver"},
+  {year:2024, when:"Jul 2024", what:"International Congress of Basic Science", place:"Beijing"},
+  {year:2024, when:"Jun 2024", what:"4th Italian Meeting on Probability and Mathematical Statistics", place:"Rome"},
+  {year:2024, when:"Feb 2024", what:"EMC2 seminar", place:"Sorbonne Université, Paris"},
+  {year:2024, when:"Jan 2024", what:"Kick-off meeting ANR SOCOT", place:"Paris"},
+  {year:2024, when:"Jan 2024", what:"ANEDP seminar", place:"Université de Nice"},
+  {year:2024, when:"Jan 2024", what:"Numerical methods for OT, MFG and multi-agent dynamics", place:"USM, Valparaíso, Chile"},
+
+  {year:2023, when:"Nov 2023", what:"PGMO Days", place:"EDF Lab, Palaiseau"},
+  {year:2023, when:"Oct 2023", what:"Numerical Analysis seminar", place:"Université de Lille"},
+  {year:2023, when:"Sep 2023", what:"Summer school on Optimal Transport", place:"TU Dortmund"},
+  {year:2023, when:"Jun 2023", what:"Computational Optimal Transport, FOCM23", place:"Paris"},
+  {year:2023, when:"Jun 2023", what:"Emerging topics in applied optimal transport", place:"ETH Zürich"},
+  {year:2023, when:"May 2023", what:"Optimization and control in Burgundy", place:"Université de Bourgogne"},
+  {year:2023, when:"Apr 2023", what:"GFM seminar", place:"University of Lisbon"},
+  {year:2023, when:"Feb 2023", what:"Journée transport optimal", place:"Université d'Évry"},
+  {year:2023, when:"Jan 2023", what:"Interpolations of Measures", place:"Lagrange Center, Paris"},
+
+  {year:2022, when:"Nov 2022", what:"PGMO Days", place:"EDF Lab, Palaiseau"},
+  {year:2022, when:"Oct 2022", what:"SAMM seminar", place:"U. Paris 1 Panthéon-Sorbonne"},
+  {year:2022, when:"Oct 2022", what:"Numerical Analysis and PDE seminar", place:"Orsay"},
+  {year:2022, when:"Jan 2022", what:"Analysis Seminar", place:"Durham"},
+
+  {year:2021, when:"Dec 2021", what:"Lab Seminar", place:"Mulhouse (UHA)"},
+  {year:2021, when:"Nov 2021", what:"Schrödinger Problem and Mean-field PDE Systems", place:"CIRM, Marseille"},
+  {year:2021, when:"Oct 2021", what:"Seminar CalVa", place:"Université de Paris"},
+  {year:2021, when:"Sep 2021", what:"Schrödinger's problem and Optimal Transport", place:"Lisbon"},
+  {year:2021, when:"Jun 2021", what:"Entropic Optimal Transport", place:"Banff (BIRS)"},
+
+  {year:2020, when:"Dec 2020", what:"Seminar, School of Applied Mathematics, FGV", place:"Rio de Janeiro"},
+  {year:2020, when:"Jul 2020", what:"Analysis Seminar, TUM", place:"Munich"},
+
+  {year:2019, when:"Sep 2019", what:"FGS'19", place:"Nice"},
+  {year:2019, when:"Jun 2019", what:"People in Optimal Transportation and Applications", place:"Cortona"},
+  {year:2019, when:"Apr 2019", what:"SPO seminar, IHP", place:"Paris"},
+  {year:2019, when:"Feb 2019", what:"Optimal Transport tools in Density Functional Theory", place:"BIRS, Banff"},
+];
+
+const listEl = document.getElementById('list');
+let html=''; let last=null;
+TALKS.slice().sort((a,b)=>b.year-a.year).forEach(t=>{
+  if(t.year!==last){ if(last!==null) html+='</div>'; html+='<div class="yeargroup"><h2>'+t.year+'</h2>'; last=t.year; }
+  html += '<div class="talk"><div class="what">'+t.what+', <span class="place">'+t.place+'</span>'
+    + (t.tag==='plenary'?'<span class="plenary">· plenary</span>':'')
+    + '</div><div class="when">'+t.when+'</div></div>';
+});
+html+='</div>';
+listEl.innerHTML = html;
+</script>
+</body>
+</html>
