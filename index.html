@@ -126,6 +126,15 @@
   .row .meta{color:var(--muted);font-size:.84rem;white-space:nowrap;text-align:right;}
   .plenary{color:var(--accent);font-weight:600;font-size:.78rem;}
 
+  .topbar{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:50;}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:54px;gap:12px;}
+  .topbar .brand{font-family:'Spectral',serif;font-weight:600;color:var(--ink);font-size:1rem;}
+  .topbar .brand:hover{text-decoration:none;color:var(--blue);}
+  .topbar nav{display:flex;flex-wrap:wrap;gap:4px 16px;justify-content:flex-end;}
+  .topbar nav a{color:var(--muted);font-size:.9rem;}
+  .topbar nav a:hover{color:var(--blue);}
+  .topbar nav a.cv{color:var(--blue);font-weight:600;}
+
   footer{border-top:1px solid var(--line);padding:28px 0 48px;color:var(--muted);font-size:.9rem;}
   footer a{color:var(--muted);}
 
@@ -138,6 +147,19 @@
 </style>
 </head>
 <body>
+
+<div class="topbar">
+  <div class="wrap">
+    <a href="#about" class="brand">Luca Nenna</a>
+    <nav>
+      <a href="publications.html">Publications</a>
+      <a href="talks.html">Talks</a>
+      <a href="calculus-of-variations.html">Course</a>
+      <a href="gota.html">GOTA</a>
+      <a href="uploads/cv.pdf" class="cv" target="_blank" rel="noopener">CV ↓</a>
+    </nav>
+  </div>
+</div>
 
 <header class="hero">
   <!-- signature: a faint optimal-transport coupling between two distributions -->
@@ -172,6 +194,7 @@
         <span class="iuf">Junior member, Institut Universitaire de France</span>
       </div>
       <div class="links">
+        <a href="uploads/cv.pdf" target="_blank" rel="noopener">↓ CV (PDF)</a>
         <a href="https://scholar.google.com/citations?user=1_r-io8AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
         <a href="https://www.researchgate.net/profile/Luca_Nenna" target="_blank" rel="noopener">ResearchGate</a>
         <a href="mailto:luca.nenna@universite-paris-saclay.fr">luca.nenna@universite-paris-saclay.fr</a>
@@ -189,7 +212,8 @@
     estimation of risk.</p>
     <p>I am the Principal Investigator of the ANR project <strong><a href="gota.html">GOTA</a></strong>, co-PI of the associate
     team <strong>KarMa</strong> (ParMa–Kantorovich Initiative, PIMS), and a member of the Inria–Saclay
-    team ParMa.</p>
+    team ParMa. I currently supervise <strong>four PhD students and one postdoctoral researcher</strong>,
+    and co-organize the monthly Optimal Transport / PDE / Machine Learning seminar at Orsay.</p>
     <div class="tags">
       <span class="tag">Optimal Transport</span>
       <span class="tag">Mathematical Physics</span>
@@ -205,6 +229,15 @@
       <li><span class="when">2026</span><span>Co-organizing a workshop at the <strong>Fondation des Treilles</strong> with M.&nbsp;Laborde and P.&nbsp;Pegon.</span></li>
       <li><span class="when">2025</span><span>New <strong>Inria PiQ</strong> project <em>PiQuantO — Problems in Quantum Optimal Transport</em>, with R.&nbsp;Lelotte.</span></li>
     </ul>
+  </section>
+
+  <section id="talks">
+    <h2>Recent &amp; upcoming talks</h2>
+    <div class="row"><span>GdT Contrôle et Optimisation, INSA Rouen</span><span class="meta">Oct 2026</span></div>
+    <div class="row"><span>Analysis Seminar, Nova University, Lisbon</span><span class="meta">Apr 2026</span></div>
+    <div class="row"><span>SMAI–MODE, Université Côte d'Azur</span><span class="meta">Mar 2026</span></div>
+    <div class="row"><span>International Congress of Basic Science, Beijing <span class="plenary">· plenary</span></span><span class="meta">Jul 2025</span></div>
+    <p style="margin-top:14px;font-size:.9rem;"><a href="talks.html">All talks &amp; seminars →</a></p>
   </section>
 
   <section id="distinctions">
@@ -286,15 +319,6 @@
       <li>Élise Bonnet-Weill <span class="sub">— PhD (w/ V. Ehrlacher)</span></li>
       <li>Mattia Garatti <span class="sub">— PhD (w/ S. Rota-Nodari)</span></li>
     </ul>
-  </section>
-
-  <section id="talks">
-    <h2>Recent &amp; upcoming talks</h2>
-    <div class="row"><span>GdT Contrôle et Optimisation, INSA Rouen</span><span class="meta">Oct 2026</span></div>
-    <div class="row"><span>Analysis Seminar, Nova University, Lisbon</span><span class="meta">Apr 2026</span></div>
-    <div class="row"><span>SMAI–MODE, Université Côte d'Azur</span><span class="meta">Mar 2026</span></div>
-    <div class="row"><span>International Congress of Basic Science, Beijing <span class="plenary">· plenary</span></span><span class="meta">Jul 2025</span></div>
-    <p style="margin-top:14px;font-size:.9rem;"><a href="talks.html">All talks &amp; seminars →</a></p>
   </section>
 
   <section id="teaching">

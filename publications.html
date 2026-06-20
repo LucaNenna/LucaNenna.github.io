@@ -54,6 +54,8 @@
   .badge.thesis{background:#efeaf4;color:#5b4a86;}
   .pub .pdf{font-size:.82rem;font-weight:600;}
 
+  .theses{padding-top:6px;margin-top:18px;}
+  .theses h2{font-family:'Spectral',serif;font-weight:600;font-size:1.25rem;color:var(--blue);padding-bottom:8px;border-bottom:1px solid var(--line);margin-bottom:6px;}
   footer{border-top:1px solid var(--line);padding:26px 0 46px;color:var(--muted);font-size:.88rem;margin-top:30px;}
   footer a{color:var(--muted);}
   .empty{padding:40px 0;color:var(--faint);}
@@ -91,6 +93,22 @@
 </header>
 
 <main class="wrap" id="list"></main>
+
+<section class="wrap theses">
+  <h2>Theses</h2>
+  <div class="pub">
+    <div class="title">On some generalisations of the optimal transport problem</div>
+    <div class="authors"><b>L. Nenna</b></div>
+    <div class="venue"><span class="journal">HDR — Habilitation à diriger des recherches, Université Paris-Saclay</span>, 2024
+      <span class="badge thesis">HDR</span> · <a class="pdf" href="https://hal.science/tel-04554531v1" target="_blank" rel="noopener">PDF</a></div>
+  </div>
+  <div class="pub">
+    <div class="title">Numerical methods for multi-marginal optimal transportation</div>
+    <div class="authors"><b>L. Nenna</b></div>
+    <div class="venue"><span class="journal">Ph.D. Thesis, Université Paris-Dauphine</span>, 2016
+      <span class="badge thesis">PhD</span> · <a class="pdf" href="https://tel.archives-ouvertes.fr/tel-01471589/document" target="_blank" rel="noopener">PDF</a></div>
+  </div>
+</section>
 
 <footer>
   <div class="wrap">
@@ -141,7 +159,6 @@ const PUBS = [
   {year:2017, authors:"S. Di Marino, A. Gerolin, L. Nenna", title:"Optimal transportation theory with repulsive costs", venue:"Topological Optimization and Optimal Transport (De Gruyter)", kind:"pub", pdf:"https://arxiv.org/abs/1506.04565"},
   {year:2017, authors:"M. Seidl, S. Di Marino, A. Gerolin, L. Nenna, K. J. H. Giesbertz, P. Gori-Giorgi", title:"The strictly-correlated electron functional for spherically symmetric systems revisited", venue:"Physical Review A", kind:"pub", pdf:"https://arxiv.org/abs/1702.05022"},
 
-  {year:2016, authors:"L. Nenna", title:"Numerical methods for multi-marginal optimal transportation", venue:"Ph.D. Thesis, Université Paris-Dauphine", kind:"thesis", pdf:"https://tel.archives-ouvertes.fr/tel-01471589/document"},
   {year:2016, authors:"A. Blanchet, G. Carlier, L. Nenna", title:"Computation of Cournot–Nash equilibria by entropic regularization", venue:"Vietnam Journal of Mathematics", kind:"pub", pdf:"https://arxiv.org/abs/1609.02814"},
   {year:2016, authors:"J.-D. Benamou, G. Carlier, L. Nenna", title:"A numerical method to solve multi-marginal optimal transport problems with Coulomb cost", venue:"Splitting Methods in Communication, Imaging, Science, and Engineering (Springer)", kind:"pub", pdf:"https://www.math.ucla.edu/~wotaoyin/splittingbook/ch17-benamou-carlier.pdf"},
 
