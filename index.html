@@ -126,10 +126,13 @@
   .df li:last-child{border-bottom:none;}
   .df li .t{font-weight:600;color:var(--ink);}
   .df li .sub{display:block;color:var(--muted);font-size:.85rem;margin-top:1px;}
+  .df li.feat{background:#f8f3ea;border-left:3px solid var(--accent);border-radius:0 6px 6px 0;padding-left:10px;margin-left:-2px;}
+  .df li.feat .t{color:var(--accent);}
 
   /* ---------- PUBLICATIONS ---------- */
   .pub{padding:16px 0;border-bottom:1px solid var(--line);}
   .pub:last-child{border-bottom:none;}
+  .pub .topic{display:inline-block;font-size:.66rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--accent);background:#f6efe4;padding:2px 8px;border-radius:4px;margin:0 5px 7px 0;}
   .pub .title{font-family:'Spectral',serif;font-size:1.06rem;font-weight:500;line-height:1.35;}
   .pub .authors{font-size:.9rem;color:var(--muted);margin-top:3px;}
   .pub .venue{font-size:.86rem;margin-top:5px;display:flex;gap:8px;align-items:center;flex-wrap:wrap;}
@@ -279,9 +282,9 @@
     <a href="https://who.rocq.inria.fr/Jean-David.Benamou/" target="_blank" rel="noopener">Jean-David Benamou</a> and
     <a href="https://www.ceremade.dauphine.fr/~carlier/" target="_blank" rel="noopener">Guillaume Carlier</a>.</p>
     <p>I work at the intersection of <strong>optimal transport</strong>, mathematical physics,
-    mathematical economics and numerical optimization — from the rigorous asymptotic analysis of
-    entropic regularization to variational models arising in quantum chemistry and in the
-    estimation of risk.</p>
+    mathematical economics and numerical optimization. In particular, my research develops
+    <strong>generalized optimal transport</strong> models and methods, with applications to quantum
+    mechanics, risk estimation, and numerical optimization (and sometimes PDEs).</p>
     <p>I am the Principal Investigator of the ANR project <strong><a href="gota.html">GOTA</a></strong>, co-PI of the associate
     team <strong>KarMa</strong> (ParMa–Kantorovich Initiative, PIMS), and a member of the Inria–Saclay
     team ParMa. I co-organize the monthly Optimal Transport / PDE / Machine Learning seminar at Orsay.</p>
@@ -296,9 +299,9 @@
   <section id="news">
     <h2>News</h2>
     <ul class="news">
+      <li><span class="when">2026</span><span>Awarded an <strong>Inria PiQ</strong> project, <em><a href="piquanto.html">PiQuantO — Problems in Quantum Optimal Transport</a></em>, with <a href="https://rodriguel.github.io" target="_blank" rel="noopener">R.&nbsp;Lelotte</a>.</span></li>
       <li><span class="when">2027</span><span>Co-organizing a workshop on <strong>Numerical Optimal Transport at the Newton Institute</strong> (Cambridge), within the semester programme on Optimal Transport.</span></li>
       <li><span class="when">2026</span><span>Co-organizing a workshop at the <strong>Fondation des Treilles</strong> with M.&nbsp;Laborde and P.&nbsp;Pegon.</span></li>
-      <li><span class="when">2026</span><span>Awarded an <strong>Inria PiQ</strong> project, <em><a href="piquanto.html">PiQuantO — Problems in Quantum Optimal Transport</a></em>, with <a href="https://rodriguel.github.io" target="_blank" rel="noopener">R.&nbsp;Lelotte</a>.</span></li>
     </ul>
   </section>
 
@@ -361,6 +364,7 @@
     <h2>Selected publications</h2>
 
     <div class="pub">
+      <div class="topic">Quantum / DFT</div><div class="topic">MMOT</div>
       <div class="title">A sparse approximation of the Lieb functional with moment constraints</div>
       <div class="authors">V. Ehrlacher, L. Nenna</div>
       <div class="venue"><span class="journal">SIAM Journal on Mathematical Analysis</span>, 2026
@@ -368,6 +372,7 @@
     </div>
 
     <div class="pub">
+      <div class="topic">MMOT</div><div class="topic">Computational OT</div>
       <div class="title">An ODE characterisation of multi-marginal optimal transport for pairwise costs</div>
       <div class="authors">L. Nenna, B. Pass</div>
       <div class="venue"><span class="journal">IMA Journal of Numerical Analysis</span>, 2025
@@ -375,6 +380,7 @@
     </div>
 
     <div class="pub">
+      <div class="topic">Computational OT</div><div class="topic">Entropic OT</div>
       <div class="title">Iterative Bregman projections for regularized transportation problems</div>
       <div class="authors">J.-D. Benamou, G. Carlier, M. Cuturi, L. Nenna, G. Peyré</div>
       <div class="venue"><span class="journal">SIAM Journal on Scientific Computing</span>, 2015
@@ -382,6 +388,7 @@
     </div>
 
     <div class="pub">
+      <div class="topic">Quantum / DFT</div><div class="topic">MMOT</div>
       <div class="title">Grand-Canonical Optimal Transport</div>
       <div class="authors">S. Di Marino, M. Lewin, L. Nenna</div>
       <div class="venue"><span class="journal">Archive for Rational Mechanics and Analysis</span>, 2025
@@ -433,7 +440,7 @@
       <div>
         <h3>Committees &amp; administration</h3>
         <ul>
-          <li><span class="t">Frontiers of Science Awards</span><span class="sub">Scientific computing section · 2025 &amp; 2026</span></li>
+          <li class="feat"><span class="t">Frontiers of Science Awards — committee</span><span class="sub">Scientific computing section · 2025 &amp; 2026</span></li>
           <li><span class="t">MCF hiring committee</span><span class="sub">LMO, Université Paris-Saclay</span></li>
           <li><span class="t">PhD juries</span><span class="sub">R. Coyaud (2020) · X. Bacon (2022)</span></li>
           <li><span class="t">SMAI-MODE board</span><span class="sub">Elected member · 2021–2024</span></li>

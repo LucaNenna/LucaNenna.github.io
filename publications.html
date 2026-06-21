@@ -51,6 +51,9 @@
   .controls .filters{display:flex;gap:6px;flex-wrap:wrap;}
   .chip{font-size:.82rem;font-weight:500;padding:6px 12px;border-radius:20px;border:1px solid var(--line);background:#fff;color:var(--muted);cursor:pointer;}
   .chip.on{background:var(--blue);color:#fff;border-color:var(--blue);}
+  .glabel{font-size:.82rem;color:var(--faint);align-self:center;margin-right:2px;}
+  .gchip{font-size:.82rem;font-weight:500;padding:6px 12px;border-radius:20px;border:1px solid var(--line);background:#fff;color:var(--muted);cursor:pointer;}
+  .gchip.gon{background:var(--accent);color:#fff;border-color:var(--accent);}
   .count{font-size:.85rem;color:var(--faint);margin:14px 0 0;}
 
   .yeargroup{padding:26px 0 6px;}
@@ -58,6 +61,9 @@
     padding-bottom:8px;border-bottom:1px solid var(--line);margin-bottom:6px;}
   .pub{padding:15px 0;border-bottom:1px solid var(--line);}
   .pub:last-child{border-bottom:none;}
+  .pub .topics{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:7px;}
+  .pub .topic{display:inline-block;font-size:.66rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--accent);background:#f6efe4;padding:2px 8px;border-radius:4px;cursor:pointer;}
+  .pub .topic:hover{background:var(--accent);color:#fff;}
   .pub .title{font-family:'Spectral',serif;font-size:1.05rem;font-weight:500;line-height:1.35;}
   .pub .authors{font-size:.9rem;color:var(--muted);margin-top:3px;}
   .pub .authors b{color:var(--ink);font-weight:600;}
@@ -103,6 +109,11 @@
         <span class="chip" data-f="pub">Published</span>
         <span class="chip" data-f="pre">Preprints</span>
       </div>
+      <div class="filters">
+        <span class="glabel">Group by</span>
+        <span class="gchip gon" data-g="year">Year</span>
+        <span class="gchip" data-g="topic">Tag</span>
+      </div>
     </div>
     <p class="count" id="count"></p>
   </div>
@@ -113,12 +124,14 @@
 <section class="wrap theses">
   <h2>Theses</h2>
   <div class="pub">
+    <div class="topics"><span class="topic">OT theory</span></div>
     <div class="title">On some generalisations of the optimal transport problem</div>
     <div class="authors"><b>L. Nenna</b></div>
     <div class="venue"><span class="journal">HDR — Habilitation à diriger des recherches, Université Paris-Saclay</span>, 2024
       <span class="badge thesis">HDR</span> · <a class="pdf" href="https://hal.science/tel-04554531v1" target="_blank" rel="noopener">PDF</a></div>
   </div>
   <div class="pub">
+    <div class="topics"><span class="topic">Computational OT</span><span class="topic">MMOT</span></div>
     <div class="title">Numerical methods for multi-marginal optimal transportation</div>
     <div class="authors"><b>L. Nenna</b></div>
     <div class="venue"><span class="journal">Ph.D. Thesis, Université Paris-Dauphine</span>, 2016
@@ -142,43 +155,43 @@
    Entries are sorted automatically by "year" (newest first).
    ===================================================================== */
 const PUBS = [
-  {year:2026, authors:"V. Ehrlacher, R. Lelotte, L. Nenna", title:"A land of monotone plenty, bis repetita: from classical to weak optimal transport", venue:"Preprint", kind:"pre", pdf:"https://cvgmt.sns.it/media/doc/paper/7811/Monotonicity_EhrLelNen.pdf"},
-  {year:2026, authors:"M. Garatti, L. Nenna, S. Rota-Nodari, L. Tamanini", title:"A PDE approach to the Benamou–Brenier formula for the Schrödinger problem", venue:"Preprint", kind:"pre", pdf:"https://cvgmt.sns.it/media/doc/paper/7691/BB_PDEapproach.pdf"},
-  {year:2026, authors:"E. Bonnet-Weill, V. Ehrlacher, L. Nenna", title:"A reduced-order model for parametrized optimal transport problems", venue:"Preprint", kind:"pre", pdf:"https://inria.hal.science/hal-05587825"},
-  {year:2026, authors:"A. Cancès, L. Nenna, D. Omarov, B. Pass", title:"Ordinary differential equations for regularized variational problems involving semi-discrete optimal transport", venue:"Preprint", kind:"pre", pdf:"https://cvgmt.sns.it/paper/7635/"},
-  {year:2026, authors:"A. Cancès, Q. Mérigot, L. Nenna", title:"A particle method for a nonlinear multi-marginal optimal transport problem", venue:"Preprint", kind:"pre", pdf:"https://arxiv.org/abs/2603.25584"},
-  {year:2026, authors:"V. Ehrlacher, L. Nenna", title:"A sparse approximation of the Lieb functional with moment constraints", venue:"SIAM Journal on Mathematical Analysis", kind:"pub", pdf:"https://arxiv.org/abs/2306.00806"},
+  {year:2026, authors:"V. Ehrlacher, R. Lelotte, L. Nenna", title:"A land of monotone plenty, bis repetita: from classical to weak optimal transport", venue:"Preprint", kind:"pre", topic:"OT theory", pdf:"https://cvgmt.sns.it/media/doc/paper/7811/Monotonicity_EhrLelNen.pdf"},
+  {year:2026, authors:"M. Garatti, L. Nenna, S. Rota-Nodari, L. Tamanini", title:"A PDE approach to the Benamou–Brenier formula for the Schrödinger problem", venue:"Preprint", kind:"pre", topic:"Entropic OT|Probabilistic OT", pdf:"https://cvgmt.sns.it/media/doc/paper/7691/BB_PDEapproach.pdf"},
+  {year:2026, authors:"E. Bonnet-Weill, V. Ehrlacher, L. Nenna", title:"A reduced-order model for parametrized optimal transport problems", venue:"Preprint", kind:"pre", topic:"Computational OT", pdf:"https://inria.hal.science/hal-05587825"},
+  {year:2026, authors:"A. Cancès, L. Nenna, D. Omarov, B. Pass", title:"Ordinary differential equations for regularized variational problems involving semi-discrete optimal transport", venue:"Preprint", kind:"pre", topic:"Computational OT|Entropic OT", pdf:"https://cvgmt.sns.it/paper/7635/"},
+  {year:2026, authors:"A. Cancès, Q. Mérigot, L. Nenna", title:"A particle method for a nonlinear multi-marginal optimal transport problem", venue:"Preprint", kind:"pre", topic:"Computational OT|MMOT", pdf:"https://arxiv.org/abs/2603.25584"},
+  {year:2026, authors:"V. Ehrlacher, L. Nenna", title:"A sparse approximation of the Lieb functional with moment constraints", venue:"SIAM Journal on Mathematical Analysis", kind:"pub", topic:"Quantum / DFT|MMOT", pdf:"https://arxiv.org/abs/2306.00806"},
 
-  {year:2025, authors:"L. Nenna, P. Pegon, L. Tocquec", title:"Convergence rates for regularized unbalanced optimal transport: the discrete case", venue:"Preprint", kind:"pre", pdf:"https://arxiv.org/abs/2507.07917"},
-  {year:2025, authors:"L. Nenna, D. Omarov, B. Pass", title:"Characterizing and computing solutions to regularized semi-discrete optimal transport via an ODE", venue:"Preprint", kind:"pre", pdf:"https://arxiv.org/abs/2504.03030"},
-  {year:2025, authors:"J. Z. G. Hiew, L. Nenna, B. Pass", title:"An ordinary differential equation for entropic optimal transport and its linearly constrained variants", venue:"Numerische Mathematik", kind:"pub", pdf:"https://arxiv.org/abs/2403.20238"},
-  {year:2025, authors:"J.-B. Casteras, L. Monsaingeon, L. Nenna", title:"Large deviations for sticky-reflecting Brownian motion with boundary diffusion", venue:"Preprint", kind:"pre", pdf:"https://inria.hal.science/hal-04895784"},
-  {year:2025, authors:"S. Di Marino, M. Lewin, L. Nenna", title:"Grand-Canonical Optimal Transport", venue:"Archive for Rational Mechanics and Analysis", kind:"pub", pdf:"https://arxiv.org/abs/2201.06859"},
-  {year:2025, authors:"L. Nenna, B. Pass", title:"An ODE characterisation of multi-marginal optimal transport for pairwise costs", venue:"IMA Journal of Numerical Analysis", kind:"pub", pdf:"https://arxiv.org/abs/2212.12492"},
+  {year:2025, authors:"L. Nenna, P. Pegon, L. Tocquec", title:"Convergence rates for regularized unbalanced optimal transport: the discrete case", venue:"Preprint", kind:"pre", topic:"Entropic OT", pdf:"https://arxiv.org/abs/2507.07917"},
+  {year:2025, authors:"L. Nenna, D. Omarov, B. Pass", title:"Characterizing and computing solutions to regularized semi-discrete optimal transport via an ODE", venue:"Preprint", kind:"pre", topic:"Computational OT|Entropic OT", pdf:"https://arxiv.org/abs/2504.03030"},
+  {year:2025, authors:"J. Z. G. Hiew, L. Nenna, B. Pass", title:"An ordinary differential equation for entropic optimal transport and its linearly constrained variants", venue:"Numerische Mathematik", kind:"pub", topic:"Entropic OT|Computational OT", pdf:"https://arxiv.org/abs/2403.20238"},
+  {year:2025, authors:"J.-B. Casteras, L. Monsaingeon, L. Nenna", title:"Large deviations for sticky-reflecting Brownian motion with boundary diffusion", venue:"Preprint", kind:"pre", topic:"Probabilistic OT", pdf:"https://inria.hal.science/hal-04895784"},
+  {year:2025, authors:"S. Di Marino, M. Lewin, L. Nenna", title:"Grand-Canonical Optimal Transport", venue:"Archive for Rational Mechanics and Analysis", kind:"pub", topic:"Quantum / DFT|MMOT", pdf:"https://arxiv.org/abs/2201.06859"},
+  {year:2025, authors:"L. Nenna, B. Pass", title:"An ODE characterisation of multi-marginal optimal transport for pairwise costs", venue:"IMA Journal of Numerical Analysis", kind:"pub", topic:"MMOT|Computational OT", pdf:"https://arxiv.org/abs/2212.12492"},
 
-  {year:2024, authors:"H. Ennaji, Q. Mérigot, L. Nenna, B. Pass", title:"Robust risk management via multi-marginal optimal transport", venue:"Journal of Optimization Theory and Applications", kind:"pub", pdf:"https://hal.science/hal-03852245/file/main.pdf"},
-  {year:2024, authors:"S. Di Marino, M. Lewin, L. Nenna", title:"The ground state energy is not always convex in the number of electrons", venue:"The Journal of Physical Chemistry A", kind:"pub", pdf:"https://cvgmt.sns.it/media/doc/paper/6783/convexity-in-N_v03.pdf"},
-  {year:2024, authors:"J.-D. Benamou, G. Carlier, M. Cuturi, L. Nenna, G. Peyré", title:"A numerical method for regularized transportation problems", venue:"Frontiers of Science Award paper", kind:"award", pdf:"https://cvgmt.sns.it/media/doc/paper/6774/A_numerical_method_for_regularized_transportation_problems-3.pdf"},
-  {year:2024, authors:"L. De Pascale, L. Nenna", title:"A variational formulation of a multi-population Mean Field Games with non-local interactions", venue:"Preprint", kind:"pre", pdf:"https://arxiv.org/abs/2408.03118"},
+  {year:2024, authors:"H. Ennaji, Q. Mérigot, L. Nenna, B. Pass", title:"Robust risk management via multi-marginal optimal transport", venue:"Journal of Optimization Theory and Applications", kind:"pub", topic:"Math. economics|MMOT", pdf:"https://hal.science/hal-03852245/file/main.pdf"},
+  {year:2024, authors:"S. Di Marino, M. Lewin, L. Nenna", title:"The ground state energy is not always convex in the number of electrons", venue:"The Journal of Physical Chemistry A", kind:"pub", topic:"Quantum / DFT", pdf:"https://cvgmt.sns.it/media/doc/paper/6783/convexity-in-N_v03.pdf"},
+  {year:2024, authors:"J.-D. Benamou, G. Carlier, M. Cuturi, L. Nenna, G. Peyré", title:"A numerical method for regularized transportation problems", venue:"Frontiers of Science Award paper", kind:"award", topic:"Computational OT|Entropic OT", pdf:"https://cvgmt.sns.it/media/doc/paper/6774/A_numerical_method_for_regularized_transportation_problems-3.pdf"},
+  {year:2024, authors:"L. De Pascale, L. Nenna", title:"A variational formulation of a multi-population Mean Field Games with non-local interactions", venue:"Preprint", kind:"pre", topic:"Mean field games", pdf:"https://arxiv.org/abs/2408.03118"},
 
-  {year:2023, authors:"L. Nenna, B. Pass", title:"A note on Cournot–Nash equilibria and optimal transport between unequal dimensions", venue:"Optimal Transport Statistics for Economics and Related Topics (Springer)", kind:"pub", pdf:"https://arxiv.org/abs/2209.14888"},
-  {year:2023, authors:"L. Nenna, P. Pegon", title:"Convergence rate of entropy-regularized multi-marginal optimal transport costs", venue:"Canadian Journal of Mathematics", kind:"pub", pdf:"https://arxiv.org/abs/2307.03023"},
-  {year:2023, authors:"S. Di Marino, A. Gerolin, L. Nenna", title:"Universal diagonal estimates for minimizers of the Levy–Lieb functional", venue:"Letters in Mathematical Physics", kind:"pub", pdf:"https://arxiv.org/abs/2303.00496"},
+  {year:2023, authors:"L. Nenna, B. Pass", title:"A note on Cournot–Nash equilibria and optimal transport between unequal dimensions", venue:"Optimal Transport Statistics for Economics and Related Topics (Springer)", kind:"pub", topic:"Math. economics|OT theory", pdf:"https://arxiv.org/abs/2209.14888"},
+  {year:2023, authors:"L. Nenna, P. Pegon", title:"Convergence rate of entropy-regularized multi-marginal optimal transport costs", venue:"Canadian Journal of Mathematics", kind:"pub", topic:"Entropic OT|MMOT", pdf:"https://arxiv.org/abs/2307.03023"},
+  {year:2023, authors:"S. Di Marino, A. Gerolin, L. Nenna", title:"Universal diagonal estimates for minimizers of the Levy–Lieb functional", venue:"Letters in Mathematical Physics", kind:"pub", topic:"Quantum / DFT", pdf:"https://arxiv.org/abs/2303.00496"},
 
-  {year:2022, authors:"L. Nenna, B. Pass", title:"Transport type metrics on the space of probability measures involving singular base measures", venue:"Applied Mathematics & Optimization", kind:"pub", pdf:"https://cvgmt.sns.it/media/doc/paper/5409/metrics.pdf"},
+  {year:2022, authors:"L. Nenna, B. Pass", title:"Transport type metrics on the space of probability measures involving singular base measures", venue:"Applied Mathematics & Optimization", kind:"pub", topic:"OT theory", pdf:"https://cvgmt.sns.it/media/doc/paper/5409/metrics.pdf"},
 
-  {year:2020, authors:"L. Nenna, B. Pass", title:"Variational problems involving unequal dimensional optimal transport", venue:"Journal de Mathématiques Pures et Appliquées", kind:"pub", pdf:"https://arxiv.org/abs/1904.00939"},
+  {year:2020, authors:"L. Nenna, B. Pass", title:"Variational problems involving unequal dimensional optimal transport", venue:"Journal de Mathématiques Pures et Appliquées", kind:"pub", topic:"OT theory", pdf:"https://arxiv.org/abs/1904.00939"},
 
-  {year:2019, authors:"J.-D. Benamou, G. Carlier, S. Di Marino, L. Nenna", title:"An entropy minimization approach to second-order variational mean-field games", venue:"Mathematical Models and Methods in Applied Sciences", kind:"pub", pdf:"https://arxiv.org/abs/1807.09078"},
-  {year:2019, authors:"J.-D. Benamou, G. Carlier, L. Nenna", title:"Generalized incompressible flows, multi-marginal transport and Sinkhorn algorithm", venue:"Numerische Mathematik", kind:"pub", pdf:"https://arxiv.org/abs/1710.08234"},
+  {year:2019, authors:"J.-D. Benamou, G. Carlier, S. Di Marino, L. Nenna", title:"An entropy minimization approach to second-order variational mean-field games", venue:"Mathematical Models and Methods in Applied Sciences", kind:"pub", topic:"Mean field games|Entropic OT", pdf:"https://arxiv.org/abs/1807.09078"},
+  {year:2019, authors:"J.-D. Benamou, G. Carlier, L. Nenna", title:"Generalized incompressible flows, multi-marginal transport and Sinkhorn algorithm", venue:"Numerische Mathematik", kind:"pub", topic:"Computational OT|MMOT", pdf:"https://arxiv.org/abs/1710.08234"},
 
-  {year:2017, authors:"S. Di Marino, A. Gerolin, L. Nenna", title:"Optimal transportation theory with repulsive costs", venue:"Topological Optimization and Optimal Transport (De Gruyter)", kind:"pub", pdf:"https://arxiv.org/abs/1506.04565"},
-  {year:2017, authors:"M. Seidl, S. Di Marino, A. Gerolin, L. Nenna, K. J. H. Giesbertz, P. Gori-Giorgi", title:"The strictly-correlated electron functional for spherically symmetric systems revisited", venue:"Physical Review A", kind:"pub", pdf:"https://arxiv.org/abs/1702.05022"},
+  {year:2017, authors:"S. Di Marino, A. Gerolin, L. Nenna", title:"Optimal transportation theory with repulsive costs", venue:"Topological Optimization and Optimal Transport (De Gruyter)", kind:"pub", topic:"Quantum / DFT|MMOT", pdf:"https://arxiv.org/abs/1506.04565"},
+  {year:2017, authors:"M. Seidl, S. Di Marino, A. Gerolin, L. Nenna, K. J. H. Giesbertz, P. Gori-Giorgi", title:"The strictly-correlated electron functional for spherically symmetric systems revisited", venue:"Physical Review A", kind:"pub", topic:"Quantum / DFT", pdf:"https://arxiv.org/abs/1702.05022"},
 
-  {year:2016, authors:"A. Blanchet, G. Carlier, L. Nenna", title:"Computation of Cournot–Nash equilibria by entropic regularization", venue:"Vietnam Journal of Mathematics", kind:"pub", pdf:"https://arxiv.org/abs/1609.02814"},
-  {year:2016, authors:"J.-D. Benamou, G. Carlier, L. Nenna", title:"A numerical method to solve multi-marginal optimal transport problems with Coulomb cost", venue:"Splitting Methods in Communication, Imaging, Science, and Engineering (Springer)", kind:"pub", pdf:"https://www.math.ucla.edu/~wotaoyin/splittingbook/ch17-benamou-carlier.pdf"},
+  {year:2016, authors:"A. Blanchet, G. Carlier, L. Nenna", title:"Computation of Cournot–Nash equilibria by entropic regularization", venue:"Vietnam Journal of Mathematics", kind:"pub", topic:"Math. economics|Entropic OT", pdf:"https://arxiv.org/abs/1609.02814"},
+  {year:2016, authors:"J.-D. Benamou, G. Carlier, L. Nenna", title:"A numerical method to solve multi-marginal optimal transport problems with Coulomb cost", venue:"Splitting Methods in Communication, Imaging, Science, and Engineering (Springer)", kind:"pub", topic:"Computational OT|Quantum / DFT", pdf:"https://www.math.ucla.edu/~wotaoyin/splittingbook/ch17-benamou-carlier.pdf"},
 
-  {year:2015, authors:"J.-D. Benamou, G. Carlier, M. Cuturi, L. Nenna, G. Peyré", title:"Iterative Bregman projections for regularized transportation problems", venue:"SIAM Journal on Scientific Computing", kind:"award", pdf:"https://arxiv.org/abs/1412.5154"},
+  {year:2015, authors:"J.-D. Benamou, G. Carlier, M. Cuturi, L. Nenna, G. Peyré", title:"Iterative Bregman projections for regularized transportation problems", venue:"SIAM Journal on Scientific Computing", kind:"award", topic:"Computational OT|Entropic OT", pdf:"https://arxiv.org/abs/1412.5154"},
 ];
 
 const BADGE = {pub:"Published", pre:"Preprint", award:"Award paper", thesis:"Thesis"};
@@ -186,41 +199,67 @@ const listEl = document.getElementById('list');
 const countEl = document.getElementById('count');
 const qEl = document.getElementById('q');
 let filter = 'all';
+let groupMode = 'year';
 
 function boldNenna(s){ return s.replace(/(L\.\s*Nenna)/g, '<b>$1</b>'); }
+function topicsOf(p){ return p.topic ? p.topic.split('|').map(function(t){return t.trim();}) : []; }
+
+function pubHTML(p){
+  const badgeClass = p.kind;
+  return '<div class="pub">'
+    + (p.topic ? '<div class="topics">'+topicsOf(p).map(function(t){return '<span class="topic" data-topic="'+t+'">'+t+'</span>';}).join('')+'</div>' : '')
+    + '<div class="title">'+p.title+'</div>'
+    + '<div class="authors">'+boldNenna(p.authors)+'</div>'
+    + '<div class="venue">'
+    + (p.kind!=='pre' ? '<span class="journal">'+p.venue+'</span>' : '<span style="color:var(--faint)">Preprint</span>')
+    + ' <span class="badge '+badgeClass+'">'+BADGE[p.kind]+'</span>'
+    + (p.pdf ? ' · <a class="pdf" href="'+p.pdf+'" target="_blank" rel="noopener">PDF</a>' : '')
+    + '</div></div>';
+}
 
 function render(){
   const q = qEl.value.trim().toLowerCase();
-  let items = PUBS.slice().sort((a,b)=>b.year-a.year);
-  items = items.filter(p=>{
+  let items = PUBS.filter(function(p){
     const okF = filter==='all' ? true : (filter==='pub' ? (p.kind==='pub'||p.kind==='award') : p.kind==='pre');
     const okQ = !q || (p.title+' '+p.authors).toLowerCase().includes(q);
     return okF && okQ;
   });
   countEl.textContent = items.length + (items.length===1?' entry':' entries');
   if(!items.length){ listEl.innerHTML = '<p class="empty">No publications match your search.</p>'; return; }
-  let html=''; let lastYear=null;
-  for(const p of items){
-    if(p.year!==lastYear){ if(lastYear!==null) html+='</div>'; html+='<div class="yeargroup"><h2>'+p.year+'</h2>'; lastYear=p.year; }
-    const badgeClass = p.kind;
-    html += '<div class="pub">'
-      + '<div class="title">'+p.title+'</div>'
-      + '<div class="authors">'+boldNenna(p.authors)+'</div>'
-      + '<div class="venue">'
-      + (p.kind!=='pre' ? '<span class="journal">'+p.venue+'</span>' : '<span style="color:var(--faint)">Preprint</span>')
-      + ' <span class="badge '+badgeClass+'">'+BADGE[p.kind]+'</span>'
-      + (p.pdf ? ' · <a class="pdf" href="'+p.pdf+'" target="_blank" rel="noopener">PDF</a>' : '')
-      + '</div></div>';
+  let html='';
+  if(groupMode==='topic'){
+    const groups={};
+    items.forEach(function(p){ topicsOf(p).forEach(function(t){ (groups[t]=groups[t]||[]).push(p); }); });
+    Object.keys(groups).sort().forEach(function(t){
+      html+='<div class="yeargroup"><h2>'+t+' <span style="color:var(--faint);font-size:.85rem;font-weight:400">('+groups[t].length+')</span></h2>';
+      groups[t].slice().sort(function(a,b){return b.year-a.year;}).forEach(function(p){ html+=pubHTML(p); });
+      html+='</div>';
+    });
+  } else {
+    items = items.slice().sort(function(a,b){return b.year-a.year;});
+    let lastYear=null;
+    items.forEach(function(p){
+      if(p.year!==lastYear){ if(lastYear!==null) html+='</div>'; html+='<div class="yeargroup"><h2>'+p.year+'</h2>'; lastYear=p.year; }
+      html+=pubHTML(p);
+    });
+    html+='</div>';
   }
-  html+='</div>';
   listEl.innerHTML = html;
 }
 
+function setGroup(g){
+  groupMode=g;
+  document.querySelectorAll('.gchip').forEach(function(x){ x.classList.toggle('gon', x.dataset.g===g); });
+  render();
+}
+
 qEl.addEventListener('input', render);
-document.querySelectorAll('.chip').forEach(c=>c.addEventListener('click',()=>{
-  document.querySelectorAll('.chip').forEach(x=>x.classList.remove('on'));
+document.querySelectorAll('.chip').forEach(function(c){ c.addEventListener('click',function(){
+  document.querySelectorAll('.chip').forEach(function(x){x.classList.remove('on');});
   c.classList.add('on'); filter=c.dataset.f; render();
-}));
+});});
+document.querySelectorAll('.gchip').forEach(function(c){ c.addEventListener('click',function(){ setGroup(c.dataset.g); }); });
+listEl.addEventListener('click',function(e){ if(e.target.classList.contains('topic')) setGroup('topic'); });
 render();
 </script>
 </body>
