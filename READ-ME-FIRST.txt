@@ -12,6 +12,10 @@ INCLUDED IN THIS ZIP
   calculus-of-variations.html Course page
   gota.html                   ANR GOTA project page
   piquanto.html               PiQuantO (Inria PiQ) project page
+  404.html                    Friendly "page moved" page for old/broken links
+  favicon.svg                 Browser-tab icon (LN monogram)
+  sitemap.xml                 Helps Google index the site
+  robots.txt                  Points crawlers to the sitemap
   .nojekyll                   (empty) tells GitHub to serve the HTML as-is
 
 ADD YOURSELF (copy these in next to the HTML files)
