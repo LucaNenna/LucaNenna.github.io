@@ -11,6 +11,7 @@ INCLUDED IN THIS ZIP
   talks.html                  Talks & seminars (edit the TALKS list to add talks)
   calculus-of-variations.html Course page
   gota.html                   ANR GOTA project page
+  piquanto.html               PiQuantO (Inria PiQ) project page
   .nojekyll                   (empty) tells GitHub to serve the HTML as-is
 
 ADD YOURSELF (copy these in next to the HTML files)
@@ -28,11 +29,12 @@ ADD YOURSELF (copy these in next to the HTML files)
                               of the GOTA page. Your backup has a PDF version;
                               save/export it as ANR-logo.png here.
 
-  logos/paris-saclay.png      Homepage logo strip. Put these 4 institutional
-  logos/lmo.png               logos (PNG or SVG, transparent background ideally)
-  logos/iuf.png               in a folder called "logos". They are shown in
-  logos/inria.png             grayscale and turn colour on hover. Download from
-                              each institution's website, or your press kit.
+  logos/paris-saclay.png      Homepage logo strip + funder logos. Put these
+  logos/lmo.png               logo files (PNG or SVG) in a folder called "logos".
+  logos/iuf.png               inria.png and france2030.png also appear on the
+  logos/inria.png             PiQuantO page. inria.png is already provided in
+  logos/france2030.png        logos-ready.zip; the others come from each
+                              institution's website / press kit.
                               (If a file is missing, that one logo just hides.)
 
 HOW TO UPDATE PUBLICATIONS LATER
