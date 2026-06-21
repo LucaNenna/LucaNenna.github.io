@@ -24,7 +24,7 @@
     --accent:#9a6a3c;   /* restrained ochre, used sparingly */
   }
   *{box-sizing:border-box;margin:0;padding:0;}
-  html{scroll-behavior:smooth;background:var(--paper);}
+  html{scroll-behavior:smooth;background:var(--paper);scroll-padding-top:96px;}
   body{
     font-family:'Inter',system-ui,sans-serif;
     color:var(--ink);
@@ -138,11 +138,11 @@
   .plenary{color:var(--accent);font-weight:600;font-size:.78rem;}
 
   .topbar{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:50;}
-  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:54px;gap:12px;}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;min-height:52px;gap:6px 14px;padding:7px 0;flex-wrap:wrap;}
   .topbar .brand{font-family:'Spectral',serif;font-weight:600;color:var(--ink);font-size:1rem;}
   .topbar .brand:hover{text-decoration:none;color:var(--blue);}
-  .topbar nav{display:flex;flex-wrap:wrap;gap:4px 16px;justify-content:flex-end;}
-  .topbar nav a{color:var(--muted);font-size:.9rem;}
+  .topbar nav{display:flex;flex-wrap:wrap;gap:4px 13px;justify-content:flex-end;}
+  .topbar nav a{color:var(--muted);font-size:.85rem;}
   .topbar nav a:hover{color:var(--blue);}
   .topbar nav a.cv{color:var(--blue);font-weight:600;}
 
@@ -187,10 +187,16 @@
   <div class="wrap">
     <a href="#about" class="brand">Luca Nenna</a>
     <nav>
-      <a href="publications.html">Publications</a>
-      <a href="talks.html">Talks</a>
-      <a href="calculus-of-variations.html">Course</a>
-      <a href="gota.html">GOTA</a>
+      <a href="#about">About</a>
+      <a href="#news">News</a>
+      <a href="#agenda">Agenda</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#talks">Talks</a>
+      <a href="#distinctions">Funding</a>
+      <a href="#publications">Publications</a>
+      <a href="#group">Group</a>
+      <a href="#teaching">Teaching</a>
       <a href="uploads/cv.pdf" class="cv" target="_blank" rel="noopener">CV ↓</a>
     </nav>
   </div>
@@ -241,14 +247,17 @@
 <div class="wrap">
 
   <section class="lead" id="about" style="border-bottom:1px solid var(--line);">
+    <p>I am a <strong>maître de conférences (HDR)</strong> in applied mathematics at Université Paris-Saclay
+    (Laboratoire de mathématiques d'Orsay) and a junior member of the Institut Universitaire de France.
+    I defended my HdR in March 2024; before that I was a post-doc with Mathieu Lewin, following a PhD (2016)
+    under Jean-David Benamou and Guillaume Carlier.</p>
     <p>I work at the intersection of <strong>optimal transport</strong>, mathematical physics,
     mathematical economics and numerical optimization — from the rigorous asymptotic analysis of
     entropic regularization to variational models arising in quantum chemistry and in the
     estimation of risk.</p>
     <p>I am the Principal Investigator of the ANR project <strong><a href="gota.html">GOTA</a></strong>, co-PI of the associate
     team <strong>KarMa</strong> (ParMa–Kantorovich Initiative, PIMS), and a member of the Inria–Saclay
-    team ParMa. I currently supervise <strong>four PhD students and one postdoctoral researcher</strong>,
-    and co-organize the monthly Optimal Transport / PDE / Machine Learning seminar at Orsay.</p>
+    team ParMa. I co-organize the monthly Optimal Transport / PDE / Machine Learning seminar at Orsay.</p>
     <div class="tags">
       <span class="tag">Optimal Transport</span>
       <span class="tag">Mathematical Physics</span>
