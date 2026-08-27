@@ -326,10 +326,12 @@
 
   <section id="talks">
     <h2>Recent &amp; upcoming talks</h2>
-    <div class="row"><span>GdT Contrôle et Optimisation, INSA Rouen</span><span class="meta">Oct 2026</span></div>
-    <div class="row"><span>Analysis Seminar, Nova University, Lisbon</span><span class="meta">Apr 2026</span></div>
-    <div class="row"><span>SMAI–MODE, Université Côte d'Azur</span><span class="meta">Mar 2026</span></div>
-    <div class="row"><span>International Congress of Basic Science, Beijing <span class="plenary">· plenary</span></span><span class="meta">Jul 2025</span></div>
+    <div id="home-talks">
+      <div class="row"><span>GdT Contrôle et Optimisation, INSA Rouen</span><span class="meta">Oct 2026</span></div>
+      <div class="row"><span>Analysis Seminar, Nova University, Lisbon</span><span class="meta">Apr 2026</span></div>
+      <div class="row"><span>SMAI–MODE, Université Côte d'Azur</span><span class="meta">Mar 2026</span></div>
+      <div class="row"><span>International Congress of Basic Science, Beijing <span class="plenary">· plenary</span></span><span class="meta">Jul 2025</span></div>
+    </div>
     <p style="margin-top:14px;font-size:.9rem;"><a href="talks.html">All talks &amp; seminars →</a></p>
   </section>
 
@@ -393,8 +395,8 @@
         <span class="badge pub">Published</span></div>
     </div>
 
-    <div class="subhead">Recent preprints (2025–2026)</div>
-    <ul class="preprints">
+    <div class="subhead">Recent preprints</div>
+    <ul class="preprints" id="home-preprints">
       <li>Ehrlacher, Lelotte, Nenna — A land of monotone plenty, bis repetita: from classical to weak optimal transport <span class="yr">· 2026</span></li>
       <li>Garatti, Nenna, Rota-Nodari, Tamanini — A PDE approach to the Benamou–Brenier formula for the Schrödinger problem <span class="yr">· 2026</span></li>
       <li>Bonnet-Weill, Ehrlacher, Nenna — A reduced-order model for parametrized optimal transport problems <span class="yr">· 2026</span></li>
@@ -456,6 +458,47 @@
     <a href="mailto:luca.nenna@universite-paris-saclay.fr">luca.nenna@universite-paris-saclay.fr</a>
   </div>
 </footer>
+
+<script src="talks-data.js"></script>
+<script src="pubs-data.js"></script>
+<script>
+(function(){
+  var MO = {jan:0,feb:1,mar:2,apr:3,may:4,jun:5,jul:6,aug:7,sep:8,oct:9,nov:10,dec:11};
+  function talkDate(w){
+    var p = String(w).trim().split(/\s+/);
+    var mo = MO[p[0].slice(0,3).toLowerCase()], yr = parseInt(p[p.length-1], 10);
+    if(isNaN(mo) || isNaN(yr)) return null;
+    return new Date(yr, mo, 1);
+  }
+  function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+  var tEl = document.getElementById('home-talks');
+  if(tEl && typeof TALKS !== 'undefined'){
+    var now = new Date(), cur = new Date(now.getFullYear(), now.getMonth(), 1);
+    var rows = TALKS.map(function(t){ return {t:t, d:talkDate(t.when)}; }).filter(function(x){ return x.d; });
+    var future = rows.filter(function(x){ return x.d >= cur; }).sort(function(a,b){ return a.d - b.d; });
+    var past = rows.filter(function(x){ return x.d < cur; }).sort(function(a,b){ return b.d - a.d; });
+    var chosen = future.slice();
+    if(chosen.length < 3) chosen = chosen.concat(past.slice(0, 3 - chosen.length));
+    if(chosen.length){
+      tEl.innerHTML = chosen.map(function(x){
+        var t = x.t, plen = (t.tag === 'plenary') ? ' <span class="plenary">· plenary</span>' : '';
+        return '<div class="row"><span>' + esc(t.what) + ', ' + esc(t.place) + plen + '</span><span class="meta">' + esc(t.when) + '</span></div>';
+      }).join('');
+    }
+  }
+
+  var pEl = document.getElementById('home-preprints');
+  if(pEl && typeof PUBS !== 'undefined'){
+    var pre = PUBS.filter(function(p){ return p.kind === 'pre'; }).sort(function(a,b){ return b.year - a.year; }).slice(0,8);
+    if(pre.length){
+      pEl.innerHTML = pre.map(function(p){
+        return '<li>' + esc(p.authors) + ' — ' + esc(p.title) + ' <span class="yr">· ' + p.year + '</span></li>';
+      }).join('');
+    }
+  }
+})();
+</script>
 
 </body>
 </html>
