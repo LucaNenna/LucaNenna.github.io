@@ -6,6 +6,7 @@
    "topic" may hold one or two tags separated by "|" (e.g. "MMOT|Entropic OT").
    ===================================================================== */
 var PUBS = [
+  {year:2026, authors:"L.Nenna, B. Pass, P. Pegon, L. Tocquec", title:"First-order Γ-expansion for entropic optimal transport with non-degenerate costs", venue:"Preprint", kind:"pre", topic:"OT theory|Entropic OT", pdf:"https://inria.hal.science/hal-05774627"},
   {year:2026, authors:"V. Ehrlacher, R. Lelotte, L. Nenna", title:"A land of monotone plenty, bis repetita: from classical to weak optimal transport", venue:"Preprint", kind:"pre", topic:"OT theory", pdf:"https://cvgmt.sns.it/media/doc/paper/7811/Monotonicity_EhrLelNen.pdf"},
   {year:2026, authors:"M. Garatti, L. Nenna, S. Rota-Nodari, L. Tamanini", title:"A PDE approach to the Benamou–Brenier formula for the Schrödinger problem", venue:"Preprint", kind:"pre", topic:"Entropic OT|Probabilistic OT", pdf:"https://cvgmt.sns.it/media/doc/paper/7691/BB_PDEapproach.pdf"},
   {year:2026, authors:"E. Bonnet-Weill, V. Ehrlacher, L. Nenna", title:"A reduced-order model for parametrized optimal transport problems", venue:"Preprint", kind:"pre", topic:"Computational OT", pdf:"https://inria.hal.science/hal-05587825"},

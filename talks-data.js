@@ -6,6 +6,9 @@
    which talks are upcoming.
    ===================================================================== */
 var TALKS = [
+  {year:2027, when:"Jan 2027", what:"Analysis Seminar", place:"UBO, Brest"},
+
+  {year:2026, when:"Nov 2026", what:"Analysis Seminar", place:"U. of Nantes, Nantes"},
   {year:2026, when:"Nov 2026", what:"EDP Seminar", place:"U. of Strasbourg, Strasbourg"},
   {year:2026, when:"Oct 2026", what:"GdT Optimization and Control", place:"INSA, Rouen"},
   {year:2026, when:"Sep 2026", what:"Generalized Optimal Transport problems", place:"Fondation des Treiles"},
