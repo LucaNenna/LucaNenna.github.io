@@ -167,7 +167,7 @@ function pubHTML(p){
     + '<div class="title">'+p.title+'</div>'
     + '<div class="authors">'+boldNenna(p.authors)+'</div>'
     + '<div class="venue">'
-    + (p.kind!=='pre' ? '<span class="journal">'+p.venue+'</span>' : '<span style="color:var(--faint)">Preprint</span>')
+    + (p.kind!=='pre' ? '<span class="journal">'+p.venue+'</span> ' : '')
     + ' <span class="badge '+badgeClass+'">'+BADGE[p.kind]+'</span>'
     + (p.pdf ? ' · <a class="pdf" href="'+p.pdf+'" target="_blank" rel="noopener">PDF</a>' : '')
     + '</div></div>';

@@ -305,9 +305,11 @@
 
   <section id="agenda">
     <h2>Agenda</h2>
-    <div class="row"><span>Semester on Optimal Transport — Isaac Newton Institute, Cambridge</span><span class="meta">Mar 2027</span></div>
-    <div class="row"><span>Organising a workshop on Optimal Transport — Fondation des Treilles</span><span class="meta">Sep 2026</span></div>
-    <div class="row"><span>Research visit — Brendan Pass, University of Alberta, Edmonton</span><span class="meta">Jun 2026</span></div>
+    <div id="home-agenda">
+      <div class="row" data-when="Mar 2027"><span>Semester on Optimal Transport — Isaac Newton Institute, Cambridge</span><span class="meta">Mar 2027</span></div>
+      <div class="row" data-when="Sep 2026"><span>Organising a workshop on Optimal Transport — Fondation des Treilles</span><span class="meta">Sep 2026</span></div>
+      <div class="row" data-when="Jun 2026"><span>Research visit — Brendan Pass, University of Alberta, Edmonton</span><span class="meta">Jun 2026</span></div>
+    </div>
   </section>
 
   <section id="experience">
@@ -486,6 +488,16 @@
         return '<div class="row"><span>' + esc(t.what) + ', ' + esc(t.place) + plen + '</span><span class="meta">' + esc(t.when) + '</span></div>';
       }).join('');
     }
+  }
+
+  var agEl = document.getElementById('home-agenda');
+  if(agEl){
+    var agCur = new Date(new Date().getFullYear(), new Date().getMonth(), 1), shown = 0;
+    Array.prototype.forEach.call(agEl.querySelectorAll('.row'), function(r){
+      var d = talkDate(r.getAttribute('data-when'));
+      if(d && d < agCur){ r.style.display = 'none'; } else { shown++; }
+    });
+    if(shown === 0){ var ags = document.getElementById('agenda'); if(ags) ags.style.display = 'none'; }
   }
 
   var pEl = document.getElementById('home-preprints');
