@@ -71,6 +71,9 @@
   .venue .journal{color:var(--blue);font-weight:600;}
   .badge{font-size:.72rem;font-weight:600;padding:2px 8px;border-radius:4px;letter-spacing:.02em;}
   .badge.award{background:#f6efe4;color:var(--accent);}
+  .bib{position:relative;margin-top:8px;}
+  .bib pre{background:#fff;border:1px solid var(--line);border-radius:6px;padding:10px 12px;font-size:.78rem;line-height:1.45;overflow-x:auto;white-space:pre;}
+  .bib button{position:absolute;top:6px;right:6px;font:inherit;font-size:.72rem;border:1px solid var(--line);background:#fff;border-radius:4px;padding:2px 8px;cursor:pointer;color:var(--muted);}
   .badge.pub{background:#e8f0e8;color:#3a6b46;}
   .badge.pre{background:#eef1f5;color:var(--muted);}
   .badge.thesis{background:#efeaf4;color:#5b4a86;}
@@ -144,7 +147,7 @@
     Luca Nenna · <a href="index.html">Home</a> ·
     <a href="https://scholar.google.com/citations?user=1_r-io8AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a> ·
     <a href="https://www.researchgate.net/profile/Luca_Nenna" target="_blank" rel="noopener">ResearchGate</a>
-  </div>
+   · <span style="color:var(--faint)">Last updated: November 2026</span></div>
 </footer>
 
 <script src="pubs-data.js"></script>
@@ -160,7 +163,21 @@ let groupMode = 'year';
 function boldNenna(s){ return s.replace(/(L\.\s*Nenna)/g, '<b>$1</b>'); }
 function topicsOf(p){ return p.topic ? p.topic.split('|').map(function(t){return t.trim();}) : []; }
 
-function pubHTML(p){
+function srcLabel(u){ return /arxiv\.org/.test(u)?'arXiv':(/hal\.science|hal\.inria/.test(u)?'HAL':'PDF'); }
+function bibKey(p){ var a=p.authors.split(',')[0].trim().split(/\s+/).pop().normalize('NFD').replace(/[^A-Za-z]/g,'');
+  var w=p.title.normalize('NFD').replace(/[^A-Za-z ]/g,'').split(/\s+/).filter(function(x){return x.length>3;})[0]||'';
+  return a+p.year+w.toLowerCase(); }
+function bibtex(p){
+  var au=p.authors.split(',').map(function(x){return x.trim();}).join(' and ');
+  var f=['  author = {'+au+'}','  title = {'+p.title+'}','  year = {'+p.year+'}'], type;
+  if(p.kind==='pre'){ type='misc'; f.push('  note = {Preprint}'); }
+  else if(/Springer|De Gruyter|\(/.test(p.venue) && !/to appear/.test(p.venue)){ type='incollection'; f.push('  booktitle = {'+p.venue+'}'); }
+  else { type='article'; f.push('  journal = {'+p.venue.replace(/\s*\(to appear\)/,'')+'}'); if(/to appear/.test(p.venue)) f.push('  note = {To appear}'); }
+  if(p.doi) f.push('  doi = {'+p.doi+'}');
+  if(p.pdf) f.push('  url = {'+p.pdf+'}');
+  return '@'+type+'{'+bibKey(p)+',\n'+f.join(',\n')+'\n}';
+}
+function pubHTML(p, i){
   const badgeClass = p.kind;
   return '<div class="pub">'
     + (p.topic ? '<div class="topics">'+topicsOf(p).map(function(t){return '<span class="topic" data-topic="'+t+'">'+t+'</span>';}).join('')+'</div>' : '')
@@ -169,7 +186,9 @@ function pubHTML(p){
     + '<div class="venue">'
     + (p.kind!=='pre' ? '<span class="journal">'+p.venue+'</span> ' : '')
     + ' <span class="badge '+badgeClass+'">'+BADGE[p.kind]+'</span>'
-    + (p.pdf ? ' · <a class="pdf" href="'+p.pdf+'" target="_blank" rel="noopener">PDF</a>' : '')
+    + (p.doi ? ' · <a class="pdf" href="https://doi.org/'+p.doi+'" target="_blank" rel="noopener">Journal</a>' : '')
+    + (p.pdf ? ' · <a class="pdf" href="'+p.pdf+'" target="_blank" rel="noopener">'+srcLabel(p.pdf)+'</a>' : '')
+    + ' · <a class="pdf bibbtn" href="#" data-i="'+PUBS.indexOf(p)+'">BibTeX</a>'
     + '</div></div>';
 }
 
@@ -215,7 +234,19 @@ document.querySelectorAll('.chip').forEach(function(c){ c.addEventListener('clic
   c.classList.add('on'); filter=c.dataset.f; render();
 });});
 document.querySelectorAll('.gchip').forEach(function(c){ c.addEventListener('click',function(){ setGroup(c.dataset.g); }); });
-listEl.addEventListener('click',function(e){ if(e.target.classList.contains('topic')) setGroup('topic'); });
+listEl.addEventListener('click',function(e){
+  if(e.target.classList.contains('topic')) setGroup('topic');
+  if(e.target.classList.contains('bibbtn')){
+    e.preventDefault();
+    var pub=e.target.closest('.pub'), ex=pub.querySelector('.bib');
+    if(ex){ ex.remove(); return; }
+    var box=document.createElement('div'); box.className='bib';
+    var pre=document.createElement('pre'); pre.textContent=bibtex(PUBS[+e.target.dataset.i]);
+    var cp=document.createElement('button'); cp.type='button'; cp.textContent='Copy';
+    cp.addEventListener('click',function(){ try{ navigator.clipboard.writeText(pre.textContent); cp.textContent='Copied'; }catch(err){} });
+    box.appendChild(cp); box.appendChild(pre); pub.appendChild(box);
+  }
+});
 render();
 </script>
 </body>

@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Luca Nenna</title>
 <link rel="icon" href="favicon.svg?v=2" type="image/svg+xml">
+<meta property="og:title" content="Luca Nenna — Applied mathematics, Université Paris-Saclay">
+<meta property="og:description" content="Maître de conférences (HDR) at Université Paris-Saclay, junior member of the Institut Universitaire de France. Optimal transport, mathematical physics, numerical optimization.">
+<meta property="og:type" content="profile">
 <meta property="og:url" content="https://lucanenna.github.io/">
 <meta property="og:image" content="https://lucanenna.github.io/photo.jpg">
 <meta name="twitter:card" content="summary">
@@ -18,6 +21,58 @@
   gtag('config', 'G-HB59E9F5VG');
 </script>
 <meta name="author" content="Luca Nenna">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Person",
+ "name": "Luca Nenna",
+ "jobTitle": "Maître de conférences (HDR) in applied mathematics",
+ "affiliation": [
+  {
+   "@type": "CollegeOrUniversity",
+   "name": "Université Paris-Saclay"
+  },
+  {
+   "@type": "Organization",
+   "name": "Laboratoire de mathématiques d'Orsay"
+  },
+  {
+   "@type": "ResearchOrganization",
+   "name": "Inria, ParMa team"
+  },
+  {
+   "@type": "Organization",
+   "name": "Institut Universitaire de France"
+  }
+ ],
+ "alumniOf": [
+  {
+   "@type": "CollegeOrUniversity",
+   "name": "Université Paris-Dauphine"
+  },
+  {
+   "@type": "CollegeOrUniversity",
+   "name": "Politecnico di Milano"
+  }
+ ],
+ "email": "mailto:luca.nenna@universite-paris-saclay.fr",
+ "url": "https://lucanenna.github.io/",
+ "image": "https://lucanenna.github.io/photo.jpg",
+ "knowsAbout": [
+  "Optimal transport",
+  "Multi-marginal optimal transport",
+  "Entropic optimal transport",
+  "Density functional theory",
+  "Mean field games",
+  "Numerical optimization"
+ ],
+ "sameAs": [
+  "https://scholar.google.com/citations?user=1_r-io8AAAAJ",
+  "https://www.researchgate.net/profile/Luca_Nenna",
+  "https://www.iufrance.fr/les-membres-de-liuf/membre/2843-luca-nenna.html"
+ ]
+}
+</script>
 <meta name="description" content="Luca Nenna — Maître de conférences (HDR) in applied mathematics, Université Paris-Saclay. Optimal transport, mathematical physics, mathematical economics, numerical optimization.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,7 +109,7 @@
   .logobar .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:30px 44px;padding:20px 24px;}
   .logobar img{height:46px;width:auto;max-width:180px;object-fit:contain;opacity:1;transition:opacity .2s;}
   .logobar a:hover img{opacity:.78;}
-  @media (max-width:560px){.logobar img{height:34px;}.logobar .wrap{gap:20px 26px;}}
+  @media (max-width:560px){.logobar img{height:24px;}.logobar .wrap{gap:10px 18px;flex-wrap:nowrap;padding:12px 16px;}}
   .wrap{max-width:820px;margin:0 auto;padding:0 24px;}
   a{color:var(--blue);text-decoration:none;}
   a:hover{text-decoration:underline;}
@@ -119,6 +174,17 @@
   }
 
   /* ---------- DISTINCTIONS & FUNDING ---------- */
+  .theme{padding:12px 0;border-bottom:1px solid var(--line);}
+  .theme:last-of-type{border-bottom:none;}
+  .theme h3{font-family:'Spectral',serif;font-size:1.08rem;font-weight:600;color:var(--ink);margin-bottom:4px;}
+  .theme p{font-size:.94rem;margin-bottom:6px;}
+  .theme .refs{font-size:.84rem;color:var(--muted);}
+  .orgs .row .meta{min-width:90px;}
+  details.hist{margin-top:14px;font-size:.92rem;}
+  details.hist summary{cursor:pointer;color:var(--blue);font-weight:500;}
+  details.hist ul{list-style:none;margin-top:8px;}
+  details.hist li{padding:6px 0;border-bottom:1px solid var(--line);color:#2c3340;}
+  details.hist li .sub{color:var(--muted);font-size:.85rem;}
   .df{display:grid;grid-template-columns:1fr 1fr;gap:28px;}
   .df h3{font-family:'Spectral',serif;font-size:1.05rem;font-weight:600;margin-bottom:12px;}
   .df ul{list-style:none;}
@@ -176,6 +242,9 @@
     .id h1{font-size:1.9rem;}
     .row{flex-direction:column;gap:2px;}
     .row .meta{text-align:left;}
+    .topbar nav{flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;width:100%;padding-bottom:2px;scrollbar-width:none;}
+    .topbar nav::-webkit-scrollbar{display:none;}
+    .topbar nav a{white-space:nowrap;}
   }
 </style>
 </head>
@@ -209,17 +278,15 @@
   <div class="wrap">
     <a href="#about" class="brand">Luca Nenna</a>
     <nav>
-      <a href="#about">About</a>
-      <a href="#news">News</a>
-      <a href="#agenda">Agenda</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
-      <a href="#talks">Talks</a>
-      <a href="#distinctions">Funding</a>
+      <a href="research.html">Research</a>
       <a href="#publications">Publications</a>
-      <a href="#group">Group</a>
+      <a href="students.html">Group</a>
+      <a href="#distinctions">Funding</a>
+      <a href="#talks">Talks</a>
       <a href="#teaching">Teaching</a>
       <a href="#service">Service</a>
+      <a href="#news">News</a>
+      <a href="#experience">Career</a>
       <a href="uploads/cv.pdf" class="cv" target="_blank" rel="noopener">CV ↓</a>
     </nav>
   </div>
@@ -281,8 +348,10 @@
     following a PhD (2016) under
     <a href="https://who.rocq.inria.fr/Jean-David.Benamou/" target="_blank" rel="noopener">Jean-David Benamou</a> and
     <a href="https://www.ceremade.dauphine.fr/~carlier/" target="_blank" rel="noopener">Guillaume Carlier</a>.</p>
-    <p>My research develops <strong>generalized optimal transport</strong> models and methods, with
-    applications to mathematical physics, economics and numerical optimization (and sometimes PDEs).</p>
+    <p>My research develops the theory and numerics of <strong>generalized optimal transport</strong>
+    (multi-marginal, entropic, unbalanced, quantum), using tools from the calculus of variations, PDEs and
+    numerical analysis, with applications to quantum chemistry (density functional theory), mean field games
+    and economics. <a href="research.html">More about my research →</a></p>
     <p>I am the Principal Investigator of the ANR project <strong><a href="gota.html">GOTA</a></strong>, of the PiQ project <strong><a href="piquanto.html">PiQuantO</a></strong>, co-PI of the associate
     team <strong>KarMa</strong> (ParMa–Kantorovich Initiative, PIMS), and a member of the Inria–Saclay
     team ParMa. </p>
@@ -294,9 +363,178 @@
     </div>
   </section>
 
+
+  <section id="publications">
+    <h2>Selected publications</h2>
+
+    <div class="pub">
+      <div class="topic">Quantum / DFT</div><div class="topic">MMOT</div>
+      <div class="title"><a href="https://doi.org/10.1137/24M167634X" target="_blank" rel="noopener" style="color:inherit">A sparse approximation of the Lieb functional with moment constraints</a></div>
+      <div class="authors">V. Ehrlacher, L. Nenna</div>
+      <div class="venue"><span class="journal">SIAM Journal on Mathematical Analysis</span>, 2026
+        <span class="badge pub">Published</span></div>
+    </div>
+
+    <div class="pub">
+      <div class="topic">Quantum / DFT</div><div class="topic">MMOT</div>
+      <div class="title"><a href="https://doi.org/10.1007/s00205-024-02080-x" target="_blank" rel="noopener" style="color:inherit">Grand-Canonical Optimal Transport</a></div>
+      <div class="authors">S. Di Marino, M. Lewin, L. Nenna</div>
+      <div class="venue"><span class="journal">Archive for Rational Mechanics and Analysis</span>, 2025
+        <span class="badge pub">Published</span></div>
+    </div>
+
+    <div class="pub">
+      <div class="topic">Entropic OT</div><div class="topic">MMOT</div>
+      <div class="title"><a href="https://doi.org/10.4153/S0008414X24000257" target="_blank" rel="noopener" style="color:inherit">Convergence rate of entropy-regularized multi-marginal optimal transport costs</a></div>
+      <div class="authors">L. Nenna, P. Pegon</div>
+      <div class="venue"><span class="journal">Canadian Journal of Mathematics</span>, 2025
+        <span class="badge pub">Published</span></div>
+    </div>
+
+    <div class="pub">
+      <div class="topic">Entropic OT</div><div class="topic">Computational OT</div>
+      <div class="title"><a href="https://doi.org/10.1007/s00211-025-01499-y" target="_blank" rel="noopener" style="color:inherit">An ordinary differential equation for entropic optimal transport and its linearly constrained variants</a></div>
+      <div class="authors">J. Z. G. Hiew, L. Nenna, B. Pass</div>
+      <div class="venue"><span class="journal">Numerische Mathematik</span>, 2025
+        <span class="badge pub">Published</span></div>
+    </div>
+
+    <div class="pub">
+      <div class="topic">Computational OT</div><div class="topic">Entropic OT</div>
+      <div class="title"><a href="https://doi.org/10.1137/141000439" target="_blank" rel="noopener" style="color:inherit">Iterative Bregman projections for regularized transportation problems</a></div>
+      <div class="authors">J.-D. Benamou, G. Carlier, M. Cuturi, L. Nenna, G. Peyré</div>
+      <div class="venue"><span class="journal">SIAM Journal on Scientific Computing</span>, 2015
+        <span class="badge award">Frontiers of Science Award 2024</span></div>
+    </div>
+
+    <div class="subhead">Recent preprints</div>
+    <ul class="preprints" id="home-preprints">
+      <li>Ehrlacher, Lelotte, Nenna — A land of monotone plenty, bis repetita: from classical to weak optimal transport <span class="yr">· 2026</span></li>
+      <li>Garatti, Nenna, Rota-Nodari, Tamanini — A PDE approach to the Benamou–Brenier formula for the Schrödinger problem <span class="yr">· 2026</span></li>
+      <li>Cancès, Nenna, Omarov, Pass — Ordinary differential equations for regularized variational problems involving semi-discrete optimal transport <span class="yr">· 2026</span></li>
+      <li>Cancès, Mérigot, Nenna — A particle method for a nonlinear multi-marginal optimal transport problem <span class="yr">· 2026</span></li>
+      <li>Nenna, Pegon, Tocquec — Convergence rates for regularized unbalanced optimal transport: the discrete case <span class="yr">· 2025</span></li>
+      <li>Nenna, Omarov, Pass — Characterizing and computing solutions to regularized semi-discrete OT via an ODE <span class="yr">· 2025</span></li>
+      <li>Casteras, Monsaingeon, Nenna — Large deviations for sticky-reflecting Brownian motion with boundary diffusion <span class="yr">· 2025</span></li>
+    </ul>
+    <p style="margin-top:14px;font-size:.9rem;"><a href="publications.html">All publications →</a></p>
+  </section>
+
+  <section id="group">
+    <h2>Group</h2>
+    <ul class="sup">
+      <li><a href="https://sites.google.com/view/alessandrocosenza/home" target="_blank" rel="noopener">Alessandro Cosenza</a> <span class="sub">— postdoc, 2025–</span></li>
+      <li><a href="https://irma.math.unistra.fr/~schnoebelen/" target="_blank" rel="noopener">Claire Schnoebelen</a> <span class="sub">— postdoc, from Jan 2027</span></li>
+      <li><a href="https://www.imo.universite-paris-saclay.fr/en/perso/adrien-cances/" target="_blank" rel="noopener">Adrien Cancès</a> <span class="sub">— PhD 2022–2026 (w/ Q. Mérigot), defence 27 Nov 2026</span></li>
+      <li><a href="https://l-tocquec.github.io" target="_blank" rel="noopener">Louis Tocquec</a> <span class="sub">— PhD 2024– (w/ P. Pegon)</span></li>
+      <li><a href="https://elisebonnetweill.github.io" target="_blank" rel="noopener">Élise Bonnet-Weill</a> <span class="sub">— PhD 2024– (w/ V. Ehrlacher)</span></li>
+      <li><a href="https://mattiagaratti.github.io" target="_blank" rel="noopener">Mattia Garatti</a> <span class="sub">— PhD 2025– (w/ S. Rota-Nodari)</span></li>
+    </ul>
+    <p style="margin-top:14px;font-size:.9rem;"><a href="students.html">Students &amp; postdocs →</a></p>
+  </section>
+
+  <section id="distinctions">
+    <h2>Distinctions &amp; funding</h2>
+    <div class="df">
+      <div>
+        <h3>Distinctions</h3>
+        <ul>
+          <li><span class="t">Institut Universitaire de France</span><span class="sub">Junior member · 2025–2030</span></li>
+          <li><span class="t">Frontiers of Science Award (ICBS)</span><span class="sub">2024 — regularized transportation problems</span></li>
+          <li><span class="t">Young Researchers Prize</span><span class="sub">Fondation Paris-Dauphine &amp; Accuracy · 2017</span></li>
+          <li><span class="t">RIPEC C3</span><span class="sub">2024–2027</span></li>
+          <li><span class="t">PEDR</span><span class="sub">2020–2024</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Funding</h3>
+        <ul>
+          <li><span class="t"><a href="piquanto.html">PiQ — PiQuantO</a></span><span class="sub">Quantum OT · PI · awarded 2026 · 2026–2030 · 475 k€</span></li>
+          <li><span class="t"><a href="gota.html">ANR GOTA</a></span><span class="sub">PI · 2023–2027 · 253 k€</span></li>
+          <li><span class="t">KarMa (ParMa–Kantorovich Initiative, PIMS)</span><span class="sub">Co-PI · 2024–</span></li>
+          <li><span class="t">PGMO grants</span><span class="sub">2022–2026</span></li>
+          <li><span class="t">H-code Paris-Saclay · PEPS CNRS</span><span class="sub">2020–2024</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="talks">
+    <h2>Recent &amp; upcoming talks</h2>
+    <div id="home-talks">
+      <div class="row"><span>GdT Contrôle et Optimisation, INSA Rouen</span><span class="meta">Oct 2026</span></div>
+      <div class="row"><span>Analysis Seminar, Nova University, Lisbon</span><span class="meta">Apr 2026</span></div>
+      <div class="row"><span>SMAI–MODE, Université Côte d'Azur</span><span class="meta">Mar 2026</span></div>
+      <div class="row"><span>International Congress of Basic Science, Beijing <span class="plenary">· plenary</span></span><span class="meta">Jul 2025</span></div>
+    </div>
+    <p style="margin-top:14px;font-size:.9rem;"><a href="talks.html">All talks &amp; seminars →</a></p>
+  </section>
+
+  <section id="teaching">
+    <h2>Teaching · 2026–2027</h2>
+    <div class="row"><span><a href="calculus-of-variations.html">Calculus of Variations</a> <span style="color:var(--muted);font-size:.84rem;">— M2 OPT/AMS</span></span><span class="meta">Université Paris-Saclay</span></div>
+    <div class="row"><span><a href="teaching/cours-MSVOptim.pdf" target="_blank" rel="noopener">Optimisation et simulation numérique</a> <span style="color:var(--muted);font-size:.84rem;">— M2 MSV</span></span><span class="meta">Université Paris-Saclay</span></div>
+    <details class="hist">
+      <summary>Teaching since 2014</summary>
+      <ul>
+        <li><strong>Calculus of Variations</strong> <span class="sub">— M2 · lectures, tutorials, labs · 2024–</span></li>
+        <li><strong>Optimisation (M2 MSV)</strong> <span class="sub">— M2 · lectures · 2023–</span></li>
+        <li><strong>Introduction to Optimization</strong> <span class="sub">— M2 · lectures, tutorials, labs · 2022–2025</span></li>
+        <li><strong>Introduction to Numerical Analysis for PDEs</strong> <span class="sub">— M2 · lectures, tutorials, labs · 2023–2024</span></li>
+        <li><strong>Optimal Transport</strong> <span class="sub">— M2 Optimization · lectures · 2019–2022</span></li>
+        <li><strong>Optimization (M1 Mathematics &amp; AI)</strong> <span class="sub">— M1 · lectures, tutorials, labs · 2022–2025</span></li>
+        <li><strong>Optimization (M1 MA)</strong> <span class="sub">— M1 · lectures, tutorials, labs · 2018–2022</span></li>
+        <li><strong>Optimization (M1 ENSTA)</strong> <span class="sub">— M1 · tutorials, labs · 2018–2022</span></li>
+        <li><strong>Numerical Analysis for PDEs (M1 MFA)</strong> <span class="sub">— M1 · lectures, tutorials, labs · 2018–2022</span></li>
+        <li><strong>Numerical Analysis for ODEs</strong> <span class="sub">— L3 · lectures, tutorials, labs · 2018–2023</span></li>
+        <li><strong>Optimization</strong> <span class="sub">— L3 · tutorials, labs · 2018–2022</span></li>
+        <li><strong>Calculus II–III, Numerical Analysis, Optimization</strong> <span class="sub">— L1–L3 · teaching assistant, Université Paris-Dauphine · 2014–2017</span></li>
+        <li><strong>Erasmus coordinator</strong> <span class="sub">— international exchanges, Department of Mathematics, Université Paris-Saclay</span></li>
+      </ul>
+    </details>
+  </section>
+
+  <section id="service">
+    <h2>Service &amp; responsibilities</h2>
+    <div class="df">
+      <div>
+        <h3>Refereeing &amp; reviewing</h3>
+        <ul>
+          <li><span class="t">Journals</span><span class="sub">JOTA · SIAM J. Math. Anal. · Math. of Oper. Res. · J. Global Optim. · SIAM J. Sci. Comput. · ESAIM: M2AN · M3AS · JFA</span></li>
+          <li><span class="t">Grant &amp; panel reviewing</span><span class="sub">DFG · Inria Quadrant (PiQ) · NSERC</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Committees &amp; administration</h3>
+        <ul>
+          <li class="feat"><span class="t">Frontiers of Science Awards — committee</span><span class="sub">Scientific computing section · 2025 &amp; 2026</span></li>
+          <li><span class="t">MCF hiring committee</span><span class="sub">LMO, Université Paris-Saclay</span></li>
+          <li><span class="t">PhD juries</span><span class="sub">R. Coyaud (2020) · X. Bacon (2022)</span></li>
+          <li><span class="t">SMAI-MODE board</span><span class="sub">Elected member · 2021–2027</span></li>
+          <li><span class="t">Erasmus coordinator</span><span class="sub">Dept. of Mathematics, Université Paris-Saclay</span></li>
+        </ul>
+      </div>
+    </div>
+    <h3 style="font-family:'Spectral',serif;font-size:1.05rem;font-weight:600;margin:26px 0 6px;">Organisation of conferences, workshops &amp; seminars</h3>
+    <div class="orgs">
+      <div class="row"><span>Workshop <em>Numerical Optimal Transport</em>, Isaac Newton Institute, Cambridge</span><span class="meta">Mar 2027</span></div>
+      <div class="row"><span>Workshop <em>Transport optimal généralisé et applications</em>, Fondation des Treilles (with M. Laborde, P. Pegon)</span><span class="meta">Sep 2026</span></div>
+      <div class="row"><span>Session <em>New trends in Optimal Transport</em>, PGMO Days, Palaiseau</span><span class="meta">Nov 2025</span></div>
+      <div class="row"><span>Optimal transport session, PGMO Days, Palaiseau</span><span class="meta">Nov 2024</span></div>
+      <div class="row"><span>MOKA10 meeting</span><span class="meta">Jun 2024</span></div>
+      <div class="row"><span>Optimal transport session, CANUM 2024</span><span class="meta">May 2024</span></div>
+      <div class="row"><span>Optimal transport session, PGMO Days, Palaiseau</span><span class="meta">Nov 2023</span></div>
+      <div class="row"><span>Working group <em>Optimal Transport – PDE – Machine Learning</em>, Orsay (with Q. Mérigot)</span><span class="meta">2021–</span></div>
+      <div class="row"><span>Journées ANR MAGA, Orsay (with L. Chizat)</span><span class="meta">Nov 2019</span></div>
+      <div class="row"><span>BIRS workshop <em>Optimal Transport Tools in Density Functional Theory</em>, Banff (with M. Lewin, P. Gori-Giorgi, B. Pass)</span><span class="meta">Feb 2019</span></div>
+    </div>
+  </section>
+
   <section id="news">
     <h2>News</h2>
     <ul class="news">
+      <li><span class="when">2027</span><span><strong><a href="https://irma.math.unistra.fr/~schnoebelen/" target="_blank" rel="noopener">Claire Schnoebelen</a></strong> joins the group as a postdoc in January 2027.</span></li>
+      <li><span class="when">2026</span><span><strong>Adrien Cancès</strong> defends his PhD on 27 November 2026 (co-supervised with Q.&nbsp;Mérigot).</span></li>
       <li><span class="when">2026</span><span>Awarded an <strong>Inria PiQ</strong> project, <em><a href="piquanto.html">PiQuantO — Problems in Quantum Optimal Transport</a></em>, with <a href="https://rodriguel.github.io" target="_blank" rel="noopener">R.&nbsp;Lelotte</a>.</span></li>
       <li><span class="when">2027</span><span>Co-organizing a workshop on <strong>Numerical Optimal Transport at the Newton Institute</strong> (Cambridge), within the semester programme on Optimal Transport.</span></li>
       <li><span class="when">2026</span><span>Co-organizing a workshop at the <strong>Fondation des Treilles</strong> with M.&nbsp;Laborde and P.&nbsp;Pegon.</span></li>
@@ -307,6 +545,7 @@
     <h2>Agenda</h2>
     <div id="home-agenda">
       <div class="row" data-when="Mar 2027"><span>Semester on Optimal Transport — Isaac Newton Institute, Cambridge</span><span class="meta">Mar 2027</span></div>
+      <div class="row" data-when="Nov 2026"><span>PhD defence of Adrien Cancès — Université Paris-Saclay</span><span class="meta">27 Nov 2026</span></div>
       <div class="row" data-when="Sep 2026"><span>Organising a workshop on Optimal Transport — Fondation des Treilles</span><span class="meta">Sep 2026</span></div>
       <div class="row" data-when="Jun 2026"><span>Research visit — Brendan Pass, University of Alberta, Edmonton</span><span class="meta">Jun 2026</span></div>
     </div>
@@ -326,139 +565,13 @@
     <div class="row"><span><strong>MSc in Mathematical Engineering</strong> — Politecnico di Milano</span><span class="meta">2013</span></div>
   </section>
 
-  <section id="talks">
-    <h2>Recent &amp; upcoming talks</h2>
-    <div id="home-talks">
-      <div class="row"><span>GdT Contrôle et Optimisation, INSA Rouen</span><span class="meta">Oct 2026</span></div>
-      <div class="row"><span>Analysis Seminar, Nova University, Lisbon</span><span class="meta">Apr 2026</span></div>
-      <div class="row"><span>SMAI–MODE, Université Côte d'Azur</span><span class="meta">Mar 2026</span></div>
-      <div class="row"><span>International Congress of Basic Science, Beijing <span class="plenary">· plenary</span></span><span class="meta">Jul 2025</span></div>
-    </div>
-    <p style="margin-top:14px;font-size:.9rem;"><a href="talks.html">All talks &amp; seminars →</a></p>
-  </section>
-
-  <section id="distinctions">
-    <h2>Distinctions &amp; funding</h2>
-    <div class="df">
-      <div>
-        <h3>Distinctions</h3>
-        <ul>
-          <li><span class="t">Institut Universitaire de France</span><span class="sub">Junior member · 2025–2030</span></li>
-          <li><span class="t">Frontiers of Science Award (ICBS)</span><span class="sub">2024 — regularized transportation problems</span></li>
-          <li><span class="t">Young Researchers Prize</span><span class="sub">Fondation Paris-Dauphine &amp; Accuracy · 2017</span></li>
-        </ul>
-      </div>
-      <div>
-        <h3>Funding</h3>
-        <ul>
-          <li><span class="t"><a href="piquanto.html">PiQ — PiQuantO</a></span><span class="sub">Quantum OT · PI · awarded 2026 · 2026–2030 · 475 k€</span></li>
-          <li><span class="t"><a href="gota.html">ANR GOTA</a></span><span class="sub">PI · 2023–2027 · 253 k€</span></li>
-          <li><span class="t">KarMa (ParMa–Kantorovich Initiative, PIMS)</span><span class="sub">Co-PI · 2024–</span></li>
-          <li><span class="t">RIPEC C3</span><span class="sub">2024–2027</span></li>
-          <li><span class="t">PGMO grants</span><span class="sub">2022–2026</span></li>
-          <li><span class="t">H-code Paris-Saclay · PEPS CNRS · PEDR</span><span class="sub">2020–2024</span></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section id="publications">
-    <h2>Selected publications</h2>
-
-    <div class="pub">
-      <div class="topic">Quantum / DFT</div><div class="topic">MMOT</div>
-      <div class="title">A sparse approximation of the Lieb functional with moment constraints</div>
-      <div class="authors">V. Ehrlacher, L. Nenna</div>
-      <div class="venue"><span class="journal">SIAM Journal on Mathematical Analysis</span>, 2026
-        <span class="badge pub">Published</span></div>
-    </div>
-
-    <div class="pub">
-      <div class="topic">MMOT</div><div class="topic">Computational OT</div>
-      <div class="title">An ODE characterisation of multi-marginal optimal transport for pairwise costs</div>
-      <div class="authors">L. Nenna, B. Pass</div>
-      <div class="venue"><span class="journal">IMA Journal of Numerical Analysis</span>, 2025
-        <span class="badge pub">Published</span></div>
-    </div>
-
-    <div class="pub">
-      <div class="topic">Computational OT</div><div class="topic">Entropic OT</div>
-      <div class="title">Iterative Bregman projections for regularized transportation problems</div>
-      <div class="authors">J.-D. Benamou, G. Carlier, M. Cuturi, L. Nenna, G. Peyré</div>
-      <div class="venue"><span class="journal">SIAM Journal on Scientific Computing</span>, 2015
-        <span class="badge award">Frontiers of Science Award 2024</span></div>
-    </div>
-
-    <div class="pub">
-      <div class="topic">Quantum / DFT</div><div class="topic">MMOT</div>
-      <div class="title">Grand-Canonical Optimal Transport</div>
-      <div class="authors">S. Di Marino, M. Lewin, L. Nenna</div>
-      <div class="venue"><span class="journal">Archive for Rational Mechanics and Analysis</span>, 2025
-        <span class="badge pub">Published</span></div>
-    </div>
-
-    <div class="subhead">Recent preprints</div>
-    <ul class="preprints" id="home-preprints">
-      <li>Ehrlacher, Lelotte, Nenna — A land of monotone plenty, bis repetita: from classical to weak optimal transport <span class="yr">· 2026</span></li>
-      <li>Garatti, Nenna, Rota-Nodari, Tamanini — A PDE approach to the Benamou–Brenier formula for the Schrödinger problem <span class="yr">· 2026</span></li>
-      <li>Bonnet-Weill, Ehrlacher, Nenna — A reduced-order model for parametrized optimal transport problems <span class="yr">· 2026</span></li>
-      <li>Cancès, Nenna, Omarov, Pass — Ordinary differential equations for regularized variational problems involving semi-discrete optimal transport <span class="yr">· 2026</span></li>
-      <li>Cancès, Mérigot, Nenna — A particle method for a nonlinear multi-marginal optimal transport problem <span class="yr">· 2026</span></li>
-      <li>Nenna, Pegon, Tocquec — Convergence rates for regularized unbalanced optimal transport: the discrete case <span class="yr">· 2025</span></li>
-      <li>Nenna, Omarov, Pass — Characterizing and computing solutions to regularized semi-discrete OT via an ODE <span class="yr">· 2025</span></li>
-      <li>Casteras, Monsaingeon, Nenna — Large deviations for sticky-reflecting Brownian motion with boundary diffusion <span class="yr">· 2025</span></li>
-    </ul>
-    <p style="margin-top:14px;font-size:.9rem;"><a href="publications.html">All publications →</a></p>
-  </section>
-
-  <section id="group">
-    <h2>Group</h2>
-    <ul class="sup">
-      <li><a href="https://sites.google.com/view/alessandrocosenza/home" target="_blank" rel="noopener">Alessandro Cosenza</a> <span class="sub">— postdoc</span></li>
-      <li><a href="https://www.imo.universite-paris-saclay.fr/en/perso/adrien-cances/" target="_blank" rel="noopener">Adrien Cancès</a> <span class="sub">— PhD (w/ Q. Mérigot)</span></li>
-      <li><a href="https://l-tocquec.github.io" target="_blank" rel="noopener">Louis Tocquec</a> <span class="sub">— PhD (w/ P. Pegon)</span></li>
-      <li><a href="https://elisebonnetweill.github.io" target="_blank" rel="noopener">Élise Bonnet-Weill</a> <span class="sub">— PhD (w/ V. Ehrlacher)</span></li>
-      <li><a href="https://mattiagaratti.github.io" target="_blank" rel="noopener">Mattia Garatti</a> <span class="sub">— PhD (w/ S. Rota-Nodari)</span></li>
-    </ul>
-  </section>
-
-  <section id="teaching">
-    <h2>Teaching · 2026–2027</h2>
-    <div class="row"><span><a href="calculus-of-variations.html">Calculus of Variations</a> <span style="color:var(--muted);font-size:.84rem;">— M2 OPT/AMS</span></span><span class="meta">Université Paris-Saclay</span></div>
-    <div class="row"><span><a href="teaching/cours-MSVOptim.pdf" target="_blank" rel="noopener">Optimisation et simulation numérique</a> <span style="color:var(--muted);font-size:.84rem;">— M2 MSV</span></span><span class="meta">Université Paris-Saclay</span></div>
-  </section>
-
-  <section id="service">
-    <h2>Service &amp; responsibilities</h2>
-    <div class="df">
-      <div>
-        <h3>Refereeing &amp; reviewing</h3>
-        <ul>
-          <li><span class="t">Journals</span><span class="sub">JOTA · SIAM J. Math. Anal. · Math. of Oper. Res. · J. Global Optim. · SIAM J. Sci. Comput. · ESAIM: M2AN · M3AS · JFA</span></li>
-          <li><span class="t">Grant &amp; panel reviewing</span><span class="sub">DFG · Inria Quadrant (PiQ) · NSERC</span></li>
-          <li><span class="t">Seminar organisation</span><span class="sub">Co-organiser, GdT Optimal Transport–PDE–ML (since 2021)</span></li>
-        </ul>
-      </div>
-      <div>
-        <h3>Committees &amp; administration</h3>
-        <ul>
-          <li class="feat"><span class="t">Frontiers of Science Awards — committee</span><span class="sub">Scientific computing section · 2025 &amp; 2026</span></li>
-          <li><span class="t">MCF hiring committee</span><span class="sub">LMO, Université Paris-Saclay</span></li>
-          <li><span class="t">PhD juries</span><span class="sub">R. Coyaud (2020) · X. Bacon (2022)</span></li>
-          <li><span class="t">SMAI-MODE board</span><span class="sub">Elected member · 2021–2024</span></li>
-          <li><span class="t">Erasmus coordinator</span><span class="sub">Dept. of Mathematics, Université Paris-Saclay</span></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
 </div>
 
 <footer>
   <div class="wrap">
     Luca Nenna · Bâtiment 307, rue Michel Magat, Faculté des Sciences d'Orsay, 91405 Orsay ·
     <a href="mailto:luca.nenna@universite-paris-saclay.fr">luca.nenna@universite-paris-saclay.fr</a>
-  </div>
+   · <span style="color:var(--faint)">Last updated: November 2026</span></div>
 </footer>
 
 <script src="talks-data.js"></script>

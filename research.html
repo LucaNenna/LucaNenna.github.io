@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research · Luca Nenna</title>
+<link rel="icon" href="favicon.svg?v=2" type="image/svg+xml">
+<meta property="og:title" content="Research · Luca Nenna">
+<meta property="og:description" content="Research of Luca Nenna: multi-marginal and entropic optimal transport, optimal transport in quantum mechanics, mean field games, numerical methods.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lucanenna.github.io/research.html">
+<meta property="og:image" content="https://lucanenna.github.io/photo.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://lucanenna.github.io/photo.jpg">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HB59E9F5VG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HB59E9F5VG');
+</script>
+<meta name="description" content="Research of Luca Nenna: multi-marginal and entropic optimal transport, optimal transport in quantum mechanics, mean field games, numerical methods.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1a1d24;--muted:#5b6573;--faint:#8a94a3;--line:#e3e7ed;
+    --paper:#fbfaf7;--blue:#1f4e79;--blue-soft:#eef3f8;--accent:#9a6a3c;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{background:var(--paper);}
+  body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:transparent;line-height:1.65;font-size:16px;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:820px;margin:0 auto;padding:0 24px;}
+  a{color:var(--blue);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+
+  /* molecules + formulae watermark */
+  .sci-bg{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none;color:var(--blue);opacity:.055;}
+  .sci-bg span{position:absolute;white-space:nowrap;font-size:1.3rem;}
+  .sci-bg svg{position:absolute;}
+  .sci-bg circle{fill:currentColor;}
+  .sci-bg line,.sci-bg polygon{stroke:currentColor;stroke-width:2;fill:none;}
+
+  .topbar{border-bottom:1px solid var(--line);background:#fff;}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:56px;}
+  .back{font-family:'Spectral',serif;font-weight:600;color:var(--ink);font-size:1rem;}
+  .back:hover{text-decoration:none;color:var(--blue);}
+  .topbar nav a{color:var(--muted);font-size:.9rem;margin-left:16px;}
+
+  header.head{padding:44px 0 8px;}
+  header.head .eyebrow{font-size:.78rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);}
+  header.head h1{font-family:'Spectral',serif;font-weight:600;font-size:2.2rem;letter-spacing:-0.02em;margin-top:6px;}
+  header.head .full{color:var(--muted);margin-top:8px;font-size:1.02rem;}
+  .meta-line{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;}
+  .pill{font-size:.8rem;background:var(--blue-soft);color:var(--blue);padding:4px 11px;border-radius:20px;font-weight:500;}
+
+  section{padding:30px 0;border-top:1px solid var(--line);}
+  h2{font-family:'Spectral',serif;font-weight:600;font-size:1.3rem;color:var(--blue);margin-bottom:14px;}
+  p{color:#2c3340;margin-bottom:12px;}
+  p strong{color:var(--ink);}
+
+  ul.people{list-style:none;}
+  ul.people li{font-size:.95rem;padding:8px 0;border-bottom:1px solid var(--line);color:#2c3340;}
+  ul.people li:last-child{border-bottom:none;}
+  ul.people li .role{color:var(--muted);font-size:.86rem;}
+
+  .btn{display:inline-block;background:var(--blue);color:#fff;font-weight:600;font-size:.92rem;padding:11px 18px;border-radius:9px;}
+  .btn:hover{text-decoration:none;filter:brightness(1.08);}
+  .funders{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff;}
+  .funders .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:24px 40px;padding:18px 24px;}
+  .funders img{height:62px;width:auto;max-width:200px;object-fit:contain;}
+
+  footer{border-top:1px solid var(--line);padding:26px 0 46px;color:var(--muted);font-size:.88rem;}
+  footer a{color:var(--muted);}
+  @media (max-width:560px){header.head h1{font-size:1.8rem;}}
+
+  .person{padding:16px 0;border-bottom:1px solid var(--line);}
+  .person:last-child{border-bottom:none;}
+  .person .name{font-family:'Spectral',serif;font-weight:600;font-size:1.12rem;color:var(--ink);}
+  .person .role{color:var(--muted);font-size:.88rem;margin-top:2px;}
+  .person .topic{font-size:.93rem;color:#2c3340;margin-top:6px;}
+  .person .tag{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--accent);background:#f6efe4;padding:2px 8px;border-radius:4px;margin-left:8px;vertical-align:middle;}
+  .person ul.joint{list-style:none;margin-top:8px;}
+  .person ul.joint li{font-size:.86rem;color:var(--muted);padding:3px 0 3px 14px;position:relative;}
+  .person ul.joint li:before{content:"·";position:absolute;left:2px;color:var(--faint);}
+
+  .wrap{max-width:900px;}
+  section p{font-size:1rem;}
+  .refs{font-size:.86rem;color:var(--muted);margin-top:4px;}
+  figure.strip{margin:18px 0 14px;}
+  .frames{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;align-items:start;}
+  @media (max-width:640px){.frames{grid-template-columns:repeat(3,1fr);}}
+  .frames div{text-align:center;}
+  .frames img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:6px;background:#fff;}
+  .frames span{display:block;font-size:.78rem;line-height:1.3;color:var(--muted);margin-top:4px;}
+  figure.single{margin:18px 0 14px;}
+  figure.single img{display:block;max-width:min(100%,760px);height:auto;margin:0 auto;border:1px solid var(--line);border-radius:6px;background:#fff;padding:6px;}
+  section.intro-fig{border-top:none;padding-top:0;}
+  figcaption{font-size:.84rem;color:var(--muted);margin-top:8px;font-style:italic;}
+  figure.sce{margin:20px 0 14px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 14px 10px;}
+  .sce-top{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap;}
+  .sce-n{display:flex;align-items:center;gap:6px;font-size:.85rem;color:var(--muted);}
+  .sce button{font:inherit;font-size:.82rem;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:6px;padding:3px 10px;cursor:pointer;}
+  .sce button.on{background:var(--blue);border-color:var(--blue);color:#fff;}
+  .sce-body{display:grid;grid-template-columns:2.1fr 1fr;gap:14px;align-items:center;}
+  .sce canvas{width:100%;display:block;touch-action:none;}
+  .sce-main{height:240px;cursor:grab;outline:none;border-radius:6px;}
+  .sce-main:focus-visible{box-shadow:0 0 0 2px var(--blue-soft);}
+  .sce-plan{aspect-ratio:1/1;height:auto;}
+  @media (max-width:640px){.sce-body{grid-template-columns:1fr;}.sce-plan{max-width:260px;margin:0 auto;}}
+  figure.mfg{margin:20px 0 14px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 14px 10px;}
+  .mfg button{font:inherit;font-size:.82rem;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:6px;padding:3px 10px;cursor:pointer;}
+  .mfg-ctl{display:flex;align-items:center;gap:8px;font-size:.85rem;color:var(--muted);}
+  .mfg-ctl input{width:150px;accent-color:#1f4e79;}
+  .mfg-status{font-size:.8rem;color:var(--faint);min-width:110px;text-align:center;}
+  .mfg-cv{width:100%;max-width:760px;margin:0 auto;aspect-ratio:3/2;display:block;border-radius:6px;touch-action:none;cursor:default;}
+  .mfg-time{display:flex;align-items:center;gap:10px;font-size:.8rem;color:var(--muted);margin-top:8px;}
+  .mfg-time input{flex:1;accent-color:#c0703a;}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <a href="index.html" class="back">← Luca Nenna</a>
+    <nav>
+      <a href="publications.html">Publications</a>
+      <a href="students.html">Group</a>
+      <a href="gota.html">GOTA</a>
+      <a href="piquanto.html">PiQuantO</a>
+    </nav>
+  </div>
+</div>
+
+<header class="head">
+  <div class="wrap">
+    <div class="eyebrow">Research</div>
+    <h1>Generalized optimal transport</h1>
+    <div class="full">Optimal transport starts from a very concrete question, first asked by Monge in 1781: given a pile of sand and a hole of the same volume, what is the cheapest way to move the sand into the hole? In modern language: given two probability distributions and a cost for moving a unit of mass from one point to another, find the transport plan of minimal total cost. This simple question connects geometry, PDEs, probability, physics and economics. My work is about generalisations of this problem, and about how to compute their solutions.</div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section class="intro-fig">
+      <figure class="single">
+        <img style="max-width:min(100%,900px)" src="research/mccann.png" alt="A cloud of particles transported onto a crescent" loading="lazy">
+        <figcaption>Optimal transport moves a cloud of particles (left) onto a crescent (right). Each particle keeps its colour: the optimal plan tells every particle where to go, and the intermediate snapshots show the optimal way of getting there.</figcaption>
+      </figure>
+  </section>
+
+  <section>
+    <h2>Many marginals, and the price of blurring</h2>
+    <p>In the classical problem one matches <em>two</em> distributions. Many applications need to match several at once: the positions of N electrons, or N populations of agents. This is <strong>multi-marginal optimal transport</strong>: the unknown becomes a joint distribution of N variables whose marginals are prescribed.</p><p>These problems are hard to solve exactly. A standard trick is to add a small amount of <strong>entropy</strong>, which <em>blurs</em> the optimal plan: the blurred problem can be solved by a simple and fast rescaling procedure, the <strong>Sinkhorn algorithm</strong>. The price is that the answer is slightly off. A large part of my work measures this error: how fast the blurred cost approaches the true one as the blur ε goes to zero (<strong>convergence rates</strong>), and, when the original problem has several solutions, which one the blurred problem picks out in the limit (<strong>selection principles</strong>).</p>
+      <figure class="strip">
+        <div class="frames">
+          <div><img src="research/regularization-20.png" alt="ε = 20" loading="lazy"><span><i>ε</i> = 20</span></div>
+          <div><img src="research/regularization-5.png" alt="ε = 5" loading="lazy"><span><i>ε</i> = 5</span></div>
+          <div><img src="research/regularization-1.png" alt="ε = 1" loading="lazy"><span><i>ε</i> = 1</span></div>
+          <div><img src="research/regularization-0.01.png" alt="ε = 0.01" loading="lazy"><span><i>ε</i> = 0.01</span></div>
+          <div><img src="research/regularization-0.002.png" alt="ε = 0.002" loading="lazy"><span><i>ε</i> = 0.002</span></div>
+        </div>
+        <figcaption>Support of the entropic transport plan for the Coulomb cost as the blur <i>ε</i> decreases. As <i>ε</i> goes to zero, the blurred plan concentrates on thin curves: the solution of the original problem.</figcaption>
+      </figure>
+    <div class="refs">Key papers: <a href="https://doi.org/10.4153/S0008414X24000257" target="_blank" rel="noopener">CJM 2025</a> · <a href="https://inria.hal.science/hal-05774627" target="_blank" rel="noopener">Γ-expansion, 2026</a> · <a href="https://arxiv.org/abs/2507.07917" target="_blank" rel="noopener">Unbalanced OT, 2025</a> · <a href="https://doi.org/10.1016/j.matpur.2020.05.004" target="_blank" rel="noopener">JMPA 2020</a> · <a href="https://arxiv.org/abs/2606.19516" target="_blank" rel="noopener">Weak OT, 2026</a></div>
+  </section>
+
+  <section>
+    <h2>Electrons as a transport problem</h2>
+    <p>In a molecule, electrons are described by a density ρ: how likely it is to find one at each point of space. <strong>Density functional theory</strong>, the workhorse of quantum chemistry, tries to compute the energy of a molecule from ρ alone.</p><p>When the repulsion between electrons dominates, they arrange themselves as far apart from each other as ρ allows: knowing where one electron is essentially tells you where all the others are. Finding this arrangement is exactly a multi-marginal transport problem, with N copies of ρ as marginals and the <strong>Coulomb repulsion</strong> as the cost. I study this connection and its extensions: what happens when the number of electrons may vary (<strong>grand-canonical transport</strong>, with S. Di Marino and M. Lewin), whether the energy is <strong>convex</strong> as a function of the number of electrons (it is not always!), and how to approximate the full quantum <strong>Lieb functional</strong> using only a few well-chosen configurations (with V. Ehrlacher).</p>
+      <figure class="sce" id="sce">
+        <div class="sce-top">
+          <div class="sce-n" role="group" aria-label="Number of electrons">
+            <span>Electrons:</span>
+            <button type="button" data-n="2">2</button><button type="button" data-n="3" class="on">3</button><button type="button" data-n="4">4</button>
+          </div>
+          <button type="button" class="sce-play" aria-pressed="true">❚❚ Pause</button>
+        </div>
+        <div class="sce-body">
+          <canvas class="sce-main" tabindex="0" aria-label="Drag the highlighted electron along the line; the others follow"></canvas>
+          <canvas class="sce-plan" aria-label="Position of the other electrons as a function of electron 1"></canvas>
+        </div>
+        <figcaption><strong>Try it:</strong> drag the large electron along the line (or use the arrow keys). The density is cut into N parts of equal mass and the other electrons sit at the same “relative position” in the other parts, as far away as the density allows. On the right, their positions as a function of the first one: the curves are the <em>co-motion functions</em>, the support of the optimal multi-marginal transport plan.</figcaption>
+      </figure>
+    <div class="refs">Key papers: <a href="https://doi.org/10.1007/s00205-024-02080-x" target="_blank" rel="noopener">ARMA 2025</a> · <a href="https://doi.org/10.1021/acs.jpca.4c06345" target="_blank" rel="noopener">J. Phys. Chem. A 2024</a> · <a href="https://doi.org/10.1137/24M167634X" target="_blank" rel="noopener">SIMA 2026</a> · <a href="https://doi.org/10.1007/s11005-023-01729-0" target="_blank" rel="noopener">Lett. Math. Phys. 2023</a> · <a href="https://arxiv.org/abs/2611.24688" target="_blank" rel="noopener">Moment approximations, 2026</a></div>
+  </section>
+
+  <section>
+    <h2>Crowds, games and random motion</h2>
+    <p>Think of a crowd leaving a stadium, or of traffic on a road network: everyone chooses a route to minimise their own travel time, but the best route depends on what everybody else does. <strong>Mean field games</strong> describe the equilibria of such systems when the number of agents is very large.</p><p>Many of these equilibria can be rewritten as optimal transport or entropy-minimisation problems, which makes them easier to study and to compute. I use this point of view for games with <strong>several interacting populations</strong> and for <strong>economic equilibria</strong> (Cournot–Nash), and for other random dynamics: the <strong>Schrödinger problem</strong> (the most likely evolution of a cloud of diffusing particles observed at two different times) or particles that “stick” to a boundary (<strong>sticky diffusions</strong>).</p>
+      <figure class="mfg" id="mfg">
+        <div class="sce-top">
+          <label class="mfg-ctl">Congestion
+            <input type="range" min="0" max="100" value="30" class="mfg-c" aria-label="Congestion penalty">
+          </label>
+          <span class="mfg-status" aria-live="polite"></span>
+          <span style="display:flex;gap:6px;">
+            <button type="button" class="mfg-play" aria-pressed="true">❚❚ Pause</button>
+            <button type="button" class="mfg-reset">Reset</button>
+          </span>
+        </div>
+        <canvas class="mfg-cv" aria-label="Crowd density moving from left to right around obstacles; the obstacles can be dragged"></canvas>
+        <div class="mfg-time"><span>t = 0</span><input type="range" min="0" max="24" value="0" class="mfg-t" aria-label="Time"><span>t = T</span></div>
+        <figcaption><strong>Try it:</strong> drag the grey obstacles and change the congestion. A crowd must go from the left region to the right one in a fixed time; every agent pays for its kinetic energy and for crowded places, and moves with a little noise. The equilibrium of this mean field game is recomputed live in your browser by a generalised Sinkhorn algorithm, the entropic method of <a href="https://doi.org/10.1142/S0218202519500283" target="_blank" rel="noopener">M3AS 2019</a>.</figcaption>
+      </figure>
+      <figure class="mfg" id="mpop">
+        <div class="sce-top">
+          <label class="mfg-ctl">Repulsion
+            <input type="range" min="0" max="100" value="60" class="mp-l" aria-label="Repulsion between populations">
+          </label>
+          <span class="mfg-status" aria-live="polite"></span>
+          <span style="display:flex;gap:6px;">
+            <button type="button" class="mfg-play" aria-pressed="true">❚❚ Pause</button>
+            <button type="button" class="mfg-reset">Reset</button>
+          </span>
+        </div>
+        <canvas class="mfg-cv" aria-label="Three populations crossing each other; their targets can be dragged"></canvas>
+        <div class="mfg-time"><span>t = 0</span><input type="range" min="0" max="20" value="0" class="mfg-t" aria-label="Time"><span>t = T</span></div>
+        <figcaption><strong>Try it:</strong> three populations must cross the same region: blue goes left to right, orange right to left, green top to bottom (dashed circles are the starting areas, the coloured dots are the targets — drag them). Agents of different populations repel each other, so instead of colliding the populations negotiate lanes around each other. Turn the repulsion to zero and they simply pass through one another. Computed live with the multi-population extension of the same entropic algorithm (<a href="https://doi.org/10.1007/s00030-026-01256-6" target="_blank" rel="noopener">NoDEA 2026</a>).</figcaption>
+      </figure>
+      <figure class="strip">
+        <div class="frames">
+          <div><img src="research/2dplanning_torus_obstacles_01_0_sq.png" alt="start" loading="lazy"><span>start</span></div>
+          <div><img src="research/2dplanning_torus_obstacles_01_14_sq.png" alt="" loading="lazy"><span>&nbsp;</span></div>
+          <div><img src="research/2dplanning_torus_obstacles_01_16_sq.png" alt="" loading="lazy"><span>&nbsp;</span></div>
+          <div><img src="research/2dplanning_torus_obstacles_01_24_sq.png" alt="" loading="lazy"><span>&nbsp;</span></div>
+          <div><img src="research/2dplanning_torus_obstacles_01_32_sq.png" alt="end" loading="lazy"><span>end</span></div>
+        </div>
+        <figcaption>A mean field planning problem with obstacles: the density of a crowd evolves from an initial to a final configuration while avoiding the obstacles.</figcaption>
+      </figure>
+    <div class="refs">Key papers: <a href="https://doi.org/10.1142/S0218202519500283" target="_blank" rel="noopener">M3AS 2019</a> · <a href="https://doi.org/10.1007/s00030-026-01256-6" target="_blank" rel="noopener">NoDEA 2026</a> · <a href="https://cvgmt.sns.it/media/doc/paper/7691/BB_PDEapproach.pdf" target="_blank" rel="noopener">Schrödinger problem, 2026</a> · <a href="https://inria.hal.science/hal-04895784" target="_blank" rel="noopener">Sticky diffusions, 2025</a> · <a href="https://doi.org/10.1007/s10957-024-02438-x" target="_blank" rel="noopener">JOTA 2024</a></div>
+  </section>
+
+  <section>
+    <h2>Computing the solutions</h2>
+    <p>Multi-marginal problems suffer from the <strong>curse of dimensionality</strong>. Discretise each marginal with 100 points: two marginals give a 100×100 transport plan, but ten marginals give 100<sup>10</sup> = 10<sup>20</sup> unknowns, far more than any computer can store.</p><p>My numerical work is about getting around this: <strong>Sinkhorn-type algorithms</strong>, which work with N potentials instead of the full plan; <strong>ODEs</strong> that follow the solution as the blur parameter changes; <strong>particle methods</strong>, which describe the solution by a moving cloud of points; <strong>reduced-order models</strong>, which solve a whole family of related problems at once; and <strong>column generation</strong> (project PiQuantO), which builds a sparse solution one configuration at a time.</p>
+      <figure class="strip">
+        <div class="frames">
+          <div><img src="research/2d_10pnts_t0.png" alt="t = 0" loading="lazy"><span><i>t</i> = 0</span></div>
+          <div><img src="research/2d_10pnts_t025.png" alt="t = 0.25" loading="lazy"><span><i>t</i> = 0.25</span></div>
+          <div><img src="research/2d_10pnts_t05.png" alt="t = 0.5" loading="lazy"><span><i>t</i> = 0.5</span></div>
+          <div><img src="research/2d_10pnts_t075.png" alt="t = 0.75" loading="lazy"><span><i>t</i> = 0.75</span></div>
+          <div><img src="research/2d_10pnts_t1.png" alt="t = 1" loading="lazy"><span><i>t</i> = 1</span></div>
+        </div>
+        <figcaption>ODE method for semi-discrete entropic transport: evolution of the Laguerre cells along the ODE (10 points, uniform source on the unit square).</figcaption>
+      </figure>
+    <div class="refs">Key papers: <a href="https://doi.org/10.1137/141000439" target="_blank" rel="noopener">SISC 2015</a> · <a href="https://doi.org/10.1007/s00211-018-0995-x" target="_blank" rel="noopener">Numer. Math. 2019</a> · <a href="https://doi.org/10.1007/s00211-025-01499-y" target="_blank" rel="noopener">Numer. Math. 2025</a> · <a href="https://doi.org/10.1093/imanum/draf067" target="_blank" rel="noopener">IMA JNA 2025</a> · <a href="https://arxiv.org/abs/2603.25584" target="_blank" rel="noopener">Particle method, 2026</a> · <a href="https://inria.hal.science/hal-05587825" target="_blank" rel="noopener">SIIMS, to appear</a></div>
+  </section>
+
+  <section>
+    <p style="font-size:.92rem;"><a href="publications.html">All publications →</a> · <a href="talks.html">Talks →</a></p>
+  </section>
+
+</div>
+
+<footer>
+  <div class="wrap">Luca Nenna · <a href="index.html">Home</a> · <a href="publications.html">Publications</a> · <a href="https://scholar.google.com/citations?user=1_r-io8AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a> · <span style="color:var(--faint)">Last updated: November 2026</span></div>
+</footer>
+
+<script>
+(function(){
+  var root=document.getElementById('sce'); if(!root) return;
+  var cv=root.querySelector('.sce-main'), cp=root.querySelector('.sce-plan'), playBtn=root.querySelector('.sce-play');
+  var COLS=['#c0703a','#2a9d8f','#7a3e9d','#d1495b'], BLUE='#1f4e79', MUT='#8a94a3', LINE='#e3e7ed';
+  var SH=['rgba(31,78,121,0.10)','rgba(192,112,58,0.12)'];
+  var A=-4, B=4, M=801, xs=[], rho=[], F=[];
+  function g(x,m,s){return Math.exp(-0.5*(x-m)*(x-m)/(s*s))/(s*Math.sqrt(2*Math.PI));}
+  for(var i=0;i<M;i++){var x=A+(B-A)*i/(M-1); xs.push(x); rho.push(0.55*g(x,-1.3,0.7)+0.45*g(x,1.45,0.6));}
+  var c=0; F.push(0); for(i=1;i<M;i++){c+=0.5*(rho[i]+rho[i-1])*(xs[i]-xs[i-1]); F.push(c);} for(i=0;i<M;i++) F[i]/=c;
+  var rmax=Math.max.apply(null,rho);
+  function interp(v,X,Y){ if(v<=X[0]) return Y[0]; if(v>=X[X.length-1]) return Y[Y.length-1];
+    var lo=0,hi=X.length-1; while(hi-lo>1){var mid=(lo+hi)>>1; if(X[mid]<=v) lo=mid; else hi=mid;}
+    var t=(v-X[lo])/(X[hi]-X[lo]||1); return Y[lo]+t*(Y[hi]-Y[lo]); }
+  var Finv=function(m){return interp(m,F,xs);}, Fx=function(x){return interp(x,xs,F);};
+  var N=3, m1=0.08, playing=true, dragging=false, last=null;
+  try{ if(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches){ playing=false; } }catch(e){}
+  function positions(){ var p=[]; for(var k=0;k<N;k++){ var m=(m1+k/N)%1; m=Math.min(Math.max(m,0.002),0.998); p.push(Finv(m)); } return p; }
+  function setup(canvas){ var r=canvas.getBoundingClientRect(), d=window.devicePixelRatio||1;
+    canvas.width=Math.round(r.width*d); canvas.height=Math.round(r.height*d);
+    var ctx=canvas.getContext('2d'); ctx.setTransform(d,0,0,d,0,0); return {ctx:ctx,w:r.width,h:r.height}; }
+  var X0=-3.6, X1=3.6;
+  function drawMain(){
+    var s=setup(cv), ctx=s.ctx, w=s.w, h=s.h, base=h-58, top=16;
+    var sx=function(x){return 12+(w-24)*(x-X0)/(X1-X0);}, sy=function(r){return base-(base-top)*r/rmax*0.95;};
+    ctx.clearRect(0,0,w,h);
+    // equal-mass parts
+    var edges=[X0]; for(var k=1;k<N;k++) edges.push(Finv(k/N)); edges.push(X1);
+    for(k=0;k<N;k++){ ctx.beginPath(); ctx.moveTo(sx(edges[k]),base);
+      for(var i=0;i<M;i++){ if(xs[i]>=edges[k]&&xs[i]<=edges[k+1]) ctx.lineTo(sx(xs[i]),sy(rho[i])); }
+      ctx.lineTo(sx(edges[k+1]),sy(interp(edges[k+1],xs,rho))); ctx.lineTo(sx(edges[k+1]),base); ctx.closePath();
+      ctx.fillStyle=SH[k%2]; ctx.fill(); }
+    ctx.strokeStyle='#fff'; ctx.lineWidth=2;
+    for(k=1;k<N;k++){ ctx.beginPath(); ctx.moveTo(sx(edges[k]),base); ctx.lineTo(sx(edges[k]),sy(interp(edges[k],xs,rho))); ctx.stroke(); }
+    ctx.beginPath(); for(i=0;i<M;i++){ var X=sx(xs[i]),Y=sy(rho[i]); if(xs[i]<X0||xs[i]>X1) continue; i&&xs[i-1]>=X0?ctx.lineTo(X,Y):ctx.moveTo(X,Y);} 
+    ctx.strokeStyle=BLUE; ctx.lineWidth=2; ctx.stroke();
+    ctx.strokeStyle=LINE; ctx.lineWidth=1; ctx.beginPath(); ctx.moveTo(8,base+0.5); ctx.lineTo(w-8,base+0.5); ctx.stroke();
+    // electrons + repulsion arcs
+    var p=positions(), ey=base+24, order=p.map(function(v,i){return [v,i];}).sort(function(a,b){return a[0]-b[0];});
+    for(k=0;k<order.length-1;k++){ var a=sx(order[k][0]), b=sx(order[k+1][0]);
+      ctx.beginPath(); ctx.moveTo(a,ey); ctx.quadraticCurveTo((a+b)/2,ey+22,b,ey); ctx.strokeStyle='rgba(91,101,115,0.35)'; ctx.setLineDash([3,3]); ctx.lineWidth=1.2; ctx.stroke(); ctx.setLineDash([]); }
+    for(k=p.length-1;k>=0;k--){ var X=sx(p[k]), r=k===0?11:8;
+      ctx.beginPath(); ctx.moveTo(X,base); ctx.lineTo(X,ey-r); ctx.strokeStyle='rgba(91,101,115,0.25)'; ctx.lineWidth=1; ctx.stroke();
+      var gr=ctx.createRadialGradient(X,ey,0,X,ey,r*2.4); gr.addColorStop(0,COLS[k]+'55'); gr.addColorStop(1,COLS[k]+'00');
+      ctx.fillStyle=gr; ctx.beginPath(); ctx.arc(X,ey,r*2.4,0,7); ctx.fill();
+      ctx.beginPath(); ctx.arc(X,ey,r,0,7); ctx.fillStyle=COLS[k]; ctx.fill(); ctx.lineWidth=2; ctx.strokeStyle='#fff'; ctx.stroke();
+      if(k===0){ ctx.beginPath(); ctx.arc(X,ey,r+5,0,7); ctx.strokeStyle=COLS[0]+'88'; ctx.lineWidth=1.2; ctx.stroke(); } }
+    ctx.fillStyle=MUT; ctx.font='12px Inter, system-ui, sans-serif'; ctx.textAlign='left';
+    ctx.fillText(dragging?'':'drag me', Math.min(Math.max(sx(p[0])-22,6),w-60), ey+30);
+    ctx.fillText('density ρ, cut into '+N+' parts of equal mass',14,14);
+    return {sx:sx, ey:ey};
+  }
+  var geo=null;
+  function drawPlan(){
+    var s=setup(cp), ctx=s.ctx, w=s.w, h=s.h, pad=30;
+    var px=function(x){return pad+(w-pad-8)*(x-X0)/(X1-X0);}, py=function(y){return h-pad-(h-pad-8)*(y-X0)/(X1-X0);};
+    ctx.clearRect(0,0,w,h);
+    ctx.strokeStyle=LINE; ctx.lineWidth=1; ctx.strokeRect(pad,8,w-pad-8,h-pad-8);
+    ctx.fillStyle=MUT; ctx.font='11px Inter, system-ui, sans-serif'; ctx.textAlign='center';
+    ctx.fillText('electron 1',pad+(w-pad-8)/2,h-10);
+    ctx.save(); ctx.translate(12,8+(h-pad-8)/2); ctx.rotate(-Math.PI/2); ctx.fillText('the others',0,0); ctx.restore();
+    ctx.save(); ctx.beginPath(); ctx.rect(pad,8,w-pad-8,h-pad-8); ctx.clip();
+    for(var k=1;k<N;k++){ ctx.strokeStyle=COLS[k]; ctx.globalAlpha=0.6; ctx.lineWidth=2; ctx.beginPath(); var prev=null;
+      for(var j=0;j<=400;j++){ var m=0.002+0.996*j/400, x=Finv(m), y=Finv(Math.min(Math.max((m+k/N)%1,0.002),0.998));
+        if(prev!==null && Math.abs(y-prev)>2){ ctx.stroke(); ctx.beginPath(); ctx.moveTo(px(x),py(y)); } else if(prev===null) ctx.moveTo(px(x),py(y)); else ctx.lineTo(px(x),py(y)); prev=y; }
+      ctx.stroke(); ctx.globalAlpha=1; }
+    var p=positions();
+    ctx.setLineDash([3,3]); ctx.strokeStyle='rgba(91,101,115,0.4)'; ctx.beginPath(); ctx.moveTo(px(p[0]),8); ctx.lineTo(px(p[0]),h-pad); ctx.stroke(); ctx.setLineDash([]);
+    for(k=1;k<N;k++){ ctx.beginPath(); ctx.arc(px(p[0]),py(p[k]),5.5,0,7); ctx.fillStyle=COLS[k]; ctx.fill(); ctx.strokeStyle='#fff'; ctx.lineWidth=1.5; ctx.stroke(); }
+    ctx.restore();
+  }
+  function draw(){ geo=drawMain(); drawPlan(); }
+  function tick(t){ if(playing && !dragging){ if(last!==null){ m1=(m1+(t-last)*0.00005)%1; } last=t; draw(); } else last=null; requestAnimationFrame(tick); }
+  function toX(e){ var r=cv.getBoundingClientRect(); var x=X0+(X1-X0)*((e.clientX-r.left)-12)/(r.width-24); return Math.min(Math.max(x,X0),X1); }
+  cv.addEventListener('pointerdown',function(e){ dragging=true; cv.setPointerCapture(e.pointerId); cv.style.cursor='grabbing'; m1=Math.min(Math.max(Fx(toX(e)),0.002),0.998); draw(); });
+  cv.addEventListener('pointermove',function(e){ if(!dragging) return; m1=Math.min(Math.max(Fx(toX(e)),0.002),0.998); draw(); });
+  function end(){ if(!dragging) return; dragging=false; cv.style.cursor='grab'; setPlay(false); draw(); }
+  cv.addEventListener('pointerup',end); cv.addEventListener('pointercancel',end);
+  cv.addEventListener('keydown',function(e){ var d=e.key==='ArrowRight'?0.01:e.key==='ArrowLeft'?-0.01:0; if(!d) return; e.preventDefault(); setPlay(false); m1=Math.min(Math.max(m1+d,0.002),0.998); draw(); });
+  function setPlay(v){ playing=v; playBtn.textContent=v?'❚❚ Pause':'▶ Play'; playBtn.setAttribute('aria-pressed',v?'true':'false'); }
+  playBtn.addEventListener('click',function(){ setPlay(!playing); draw(); });
+  root.querySelectorAll('[data-n]').forEach(function(b){ b.addEventListener('click',function(){ N=+b.dataset.n;
+    root.querySelectorAll('[data-n]').forEach(function(x){x.classList.toggle('on',x===b);}); draw(); }); });
+  window.addEventListener('resize',draw);
+  draw(); setPlay(playing); requestAnimationFrame(tick);
+})();
+</script>
+
+<script>
+(function(){
+/* ---------- shared entropic (Sinkhorn-type) solver for MFG planning problems ---------- */
+function Grid(W,H,S,AL){
+  var n=W*H, g={W:W,H:H,n:n,S:S,AL:AL,mask:new Uint8Array(n),free:null,nb:null,deg:null,t1:new Float64Array(n),t2:new Float64Array(n)};
+  g.setMask=function(fn){ var f=[]; for(var y=0;y<H;y++)for(var x=0;x<W;x++){var i=y*W+x; g.mask[i]=fn(x,y)?1:0; if(g.mask[i]) f.push(i);}
+    g.free=Int32Array.from(f); g.nb=new Int32Array(4*f.length).fill(-1); g.deg=new Float64Array(f.length);
+    for(var k=0;k<f.length;k++){ var i=f[k], x=i%W, y=(i/W)|0, d=0, c=[x>0?i-1:-1,x<W-1?i+1:-1,y>0?i-W:-1,y<H-1?i+W:-1];
+      for(var q=0;q<4;q++){ if(c[q]>=0&&g.mask[c[q]]){ g.nb[4*k+d]=c[q]; d++; } } g.deg[k]=d; } };
+  g.K=function(src,out){ var a=src,b=g.t1,F=g.free,NB=g.nb,D=g.deg,A=g.AL,m=F.length;
+    for(var s=0;s<g.S;s++){ for(var k=0;k<m;k++){ var i=F[k],j=4*k,acc=0; for(var q=0;q<D[k];q++) acc+=a[NB[j+q]]; b[i]=a[i]*(1-A*D[k])+A*acc; }
+      a=b; b=(b===g.t1)?g.t2:g.t1; }
+    for(var k2=0;k2<m;k2++){ var i2=F[k2]; out[i2]=a[i2]; } };
+  return g;
+}
+function Pop(g,T){ var P={a:[],fw:[],bw:[],rho:[],r0:new Float64Array(g.n),rT:new Float64Array(g.n),T:T,buf:new Float64Array(g.n)};
+  for(var t=0;t<=T;t++){P.a.push(new Float64Array(g.n).fill(1));P.fw.push(new Float64Array(g.n));P.bw.push(new Float64Array(g.n));P.rho.push(new Float64Array(g.n));} return P; }
+function blob(g,arr,cx,cy,s){ var tot=0; arr.fill(0); for(var y=0;y<g.H;y++)for(var x=0;x<g.W;x++){var i=y*g.W+x; if(!g.mask[i]) continue; var v=Math.exp(-((x-cx)*(x-cx)+(y-cy)*(y-cy))/(2*s*s)); arr[i]=v; tot+=v;} for(var i2=0;i2<g.n;i2++) arr[i2]/=tot; }
+function lambertW(z){ if(z<=0) return 0; var w=z<1?z*(1-z+1.5*z*z):Math.log(1+z); for(var k=0;k<8;k++){var e=Math.exp(w),f=w*e-z; w-=f/(e*(w+1)-f*(w+2)/(2*w+2));} return w; }
+/* one sweep: cong>0 -> quadratic congestion prox; pot (array over t of exp(-Phi)) -> interaction potential */
+function sweep(g,P,cong,pot){
+  var T=P.T,F=g.free,m=F.length,t,k,i,B=P.buf;
+  for(k=0;k<m;k++) P.bw[T][F[k]]=1;
+  for(t=T-1;t>=0;t--){ var at=P.a[t+1],bt=P.bw[t+1]; for(k=0;k<m;k++){i=F[k]; B[i]=at[i]*bt[i];} g.K(B,P.bw[t]); }
+  var change=0, mx=1e-300;
+  for(t=0;t<=T;t++){
+    if(t===0){ for(k=0;k<m;k++) P.fw[0][F[k]]=1; }
+    else { var ap=P.a[t-1],fp=P.fw[t-1]; for(k=0;k<m;k++){i=F[k]; B[i]=ap[i]*fp[i];} g.K(B,P.fw[t]); }
+    var A=P.a[t],FW=P.fw[t],BW=P.bw[t],R=P.rho[t],PT=pot?pot[t]:null;
+    for(k=0;k<m;k++){ i=F[k]; var mm=FW[i]*BW[i], na;
+      if(!(mm>1e-300)) na=A[i];
+      else if(t===0) na=P.r0[i]/mm; else if(t===T) na=P.rT[i]/mm;
+      else if(PT) na=PT[i];
+      else if(cong>0) na=lambertW(cong*mm)/(cong*mm);
+      else na=1;
+      var nr=na*mm; if(t>0&&t<T){ var d=Math.abs(nr-R[i]); if(d>change) change=d; if(nr>mx) mx=nr; }
+      A[i]=na; R[i]=nr; }
+  }
+  return change/mx;
+}
+function hidpi(cv){ var r=cv.getBoundingClientRect(), d=window.devicePixelRatio||1; cv.width=Math.round(r.width*d); cv.height=Math.round(r.height*d); var ctx=cv.getContext('2d'); ctx.setTransform(d,0,0,d,0,0); return {ctx:ctx,w:r.width,h:r.height}; }
+function lerp3(a,b,u){ return [a[0]+u*(b[0]-a[0]),a[1]+u*(b[1]-a[1]),a[2]+u*(b[2]-a[2])]; }
+var reduce=false; try{ reduce=matchMedia('(prefers-reduced-motion: reduce)').matches; }catch(e){}
+
+/* ---------- widget 1: one crowd, obstacles, congestion ---------- */
+(function(){
+  var root=document.getElementById('mfg'); if(!root) return;
+  var cv=root.querySelector('.mfg-cv'), cS=root.querySelector('.mfg-c'), tS=root.querySelector('.mfg-t'), playB=root.querySelector('.mfg-play'), resetB=root.querySelector('.mfg-reset'), stat=root.querySelector('.mfg-status');
+  var W=96,H=64,T=24; tS.max=T; var g=Grid(W,H,10,0.24), P=Pop(g,T), sc=W/60;
+  var OB0=[{x:30,y:20,r:6.5},{x:22,y:8,r:4.5},{x:38,y:32,r:4.5}], obs, cong=0, conv=false, iter=0, playing=!reduce, tShow=0, drag=-1, lastStep=0;
+  var ST=[13.6*1,32*1], TG=[83.2,32];
+  function build(){ g.setMask(function(x,y){ for(var k=0;k<obs.length;k++){var o=obs[k],dx=x/sc-o.x,dy=y/sc-o.y; if(dx*dx+dy*dy<o.r*o.r) return false;} return true; });
+    blob(g,P.r0,ST[0],ST[1],6.7); blob(g,P.rT,TG[0],TG[1],6.7);
+    for(var t=0;t<=T;t++){ var A=P.a[t]; for(var i=0;i<g.n;i++){ if(!g.mask[i]){A[i]=0;P.rho[t][i]=0;} else if(A[i]===0) A[i]=1; } }
+    conv=false; iter=0; }
+  var off=document.createElement('canvas'); off.width=W; off.height=H; var octx=off.getContext('2d'), img=octx.createImageData(W,H);
+  var STOPS=[[0,[255,255,255]],[0.18,[214,228,241]],[0.45,[107,154,196]],[0.72,[224,180,140]],[1,[178,84,30]]];
+  function cmap(v){ v=Math.max(0,Math.min(1,v)); for(var k=1;k<STOPS.length;k++) if(v<=STOPS[k][0]) return lerp3(STOPS[k-1][1],STOPS[k][1],(v-STOPS[k-1][0])/(STOPS[k][0]-STOPS[k-1][0])); return STOPS[4][1]; }
+  function draw(){ var s=hidpi(cv),ctx=s.ctx,w=s.w,h=s.h,sx=w/W,sy=h/H,R=P.rho[tShow],mx=1e-300,i;
+    for(i=0;i<g.n;i++) if(R[i]>mx) mx=R[i];
+    for(i=0;i<g.n;i++){ var c=g.mask[i]?cmap(Math.pow(R[i]/mx,0.7)):[236,239,243]; img.data[4*i]=c[0];img.data[4*i+1]=c[1];img.data[4*i+2]=c[2];img.data[4*i+3]=255; }
+    octx.putImageData(img,0,0); ctx.imageSmoothingEnabled=true; ctx.imageSmoothingQuality='high'; ctx.drawImage(off,0,0,w,h);
+    ctx.setLineDash([4,4]); ctx.lineWidth=1.2; ctx.font='12px Inter, system-ui, sans-serif'; ctx.textAlign='center';
+    [[ST,'rgba(31,78,121,0.6)','start'],[TG,'rgba(192,112,58,0.8)','target']].forEach(function(z){ ctx.strokeStyle=z[1]; ctx.beginPath(); ctx.arc((z[0][0]+.5)*sx,(z[0][1]+.5)*sy,11.5*sx,0,7); ctx.stroke(); ctx.fillStyle=z[1]; ctx.fillText(z[2],(z[0][0]+.5)*sx,(z[0][1]+.5)*sy-11.5*sx-6); });
+    ctx.setLineDash([]);
+    for(var k=0;k<obs.length;k++){ var o=obs[k],X=(o.x*sc+.5)*sx,Y=(o.y*sc+.5)*sy; ctx.beginPath(); ctx.arc(X,Y,o.r*sc*sx,0,7); ctx.fillStyle=drag===k?'#9aa6b4':'#b7c1cc'; ctx.fill(); ctx.lineWidth=1.5; ctx.strokeStyle='#fff'; ctx.stroke(); ctx.fillStyle='#fff'; ctx.font='16px system-ui'; ctx.fillText('✥',X,Y+6); }
+    tS.value=tShow; }
+  function loop(ts){ if(!conv){ var t0=performance.now(),ch; do{ ch=sweep(g,P,cong,null); iter++; }while(performance.now()-t0<16); if(ch<2e-3&&iter>30) conv=true; stat.textContent=conv?'equilibrium reached':'computing… ('+iter+')'; }
+    if(playing&&drag<0&&ts-lastStep>100){ tShow=(tShow+1)%(T+1); lastStep=ts+((tShow===0||tShow===T)?500:0); }
+    draw(); requestAnimationFrame(loop); }
+  function pos(e){ var r=cv.getBoundingClientRect(); return {x:(e.clientX-r.left)/r.width*W/sc, y:(e.clientY-r.top)/r.height*H/sc}; }
+  function hit(p){ for(var k=obs.length-1;k>=0;k--){var o=obs[k]; if((p.x-o.x)*(p.x-o.x)+(p.y-o.y)*(p.y-o.y)<(o.r+1.5)*(o.r+1.5)) return k;} return -1; }
+  cv.addEventListener('pointerdown',function(e){ var k=hit(pos(e)); if(k>=0){ drag=k; cv.setPointerCapture(e.pointerId); cv.style.cursor='grabbing'; } });
+  cv.addEventListener('pointermove',function(e){ var p=pos(e); if(drag<0){ cv.style.cursor=hit(p)>=0?'grab':'default'; return; } var o=obs[drag]; o.x=Math.max(17,Math.min(43,p.x)); o.y=Math.max(2,Math.min(38,p.y)); build(); });
+  function end(){ if(drag<0) return; drag=-1; cv.style.cursor='grab'; } cv.addEventListener('pointerup',end); cv.addEventListener('pointercancel',end);
+  function cf(){ var v=+cS.value; return v===0?0:20*Math.pow(10,v/100*3)*sc*sc; }
+  cS.addEventListener('input',function(){ cong=cf(); conv=false; iter=0; });
+  tS.addEventListener('input',function(){ tShow=+tS.value; setPlay(false); });
+  function setPlay(v){ playing=v; playB.textContent=v?'❚❚ Pause':'▶ Play'; playB.setAttribute('aria-pressed',v?'true':'false'); }
+  playB.addEventListener('click',function(){ setPlay(!playing); });
+  resetB.addEventListener('click',function(){ obs=OB0.map(function(o){return {x:o.x,y:o.y,r:o.r};}); cS.value=30; cong=cf(); P.a.forEach(function(A){A.fill(1);}); build(); });
+  window.addEventListener('resize',draw);
+  obs=OB0.map(function(o){return {x:o.x,y:o.y,r:o.r};}); cong=cf(); build(); setPlay(playing); requestAnimationFrame(loop);
+})();
+
+/* ---------- widget 2: several populations repelling each other ---------- */
+(function(){
+  var root=document.getElementById('mpop'); if(!root) return;
+  var cv=root.querySelector('.mfg-cv'), lS=root.querySelector('.mp-l'), tS=root.querySelector('.mfg-t'), playB=root.querySelector('.mfg-play'), resetB=root.querySelector('.mfg-reset'), stat=root.querySelector('.mfg-status');
+  var W=90,H=60,T=20; tS.max=T; var g=Grid(W,H,9,0.24); g.setMask(function(){return true;});
+  var COL=[[31,78,121],[192,112,58],[42,157,143]];
+  var D0=[{s:[14,30],e:[76,30]},{s:[76,30],e:[14,30]},{s:[45,8],e:[45,52]}], D;
+  var NP=3, P=[0,1,2].map(function(){return Pop(g,T);}), bar=[], pot=[];
+  for(var p=0;p<NP;p++){ var b=[],q=[]; for(var t=0;t<=T;t++){ b.push(new Float64Array(g.n)); q.push(new Float64Array(g.n).fill(1)); } bar.push(b); pot.push(q); }
+  var lam=0, conv=false, iter=0, playing=!reduce, tShow=0, drag=null, lastStep=0, tmpA=new Float64Array(g.n), tmpB=new Float64Array(g.n);
+  function setup(){ for(var p=0;p<NP;p++){ blob(g,P[p].r0,D[p].s[0],D[p].s[1],5); blob(g,P[p].rT,D[p].e[0],D[p].e[1],5); } conv=false; iter=0; }
+  function boxH(a,b,r){ for(var y=0;y<H;y++){ var o=y*W,s=0,k; for(k=-r;k<=r;k++) s+=a[o+Math.min(W-1,Math.max(0,k))];
+      for(var x=0;x<W;x++){ b[o+x]=s/(2*r+1); s+=a[o+Math.min(W-1,x+r+1)]-a[o+Math.max(0,x-r)]; } } }
+  function boxV(a,b,r){ for(var x=0;x<W;x++){ var s=0,k; for(k=-r;k<=r;k++) s+=a[Math.min(H-1,Math.max(0,k))*W+x];
+      for(var y=0;y<H;y++){ b[y*W+x]=s/(2*r+1); s+=a[Math.min(H-1,y+r+1)*W+x]-a[Math.max(0,y-r)*W+x]; } } }
+  function blur(src,dst,r){ boxH(src,tmpA,r); boxV(tmpA,tmpB,r); boxH(tmpB,tmpA,r); boxV(tmpA,dst,r); }
+  var acc=new Float64Array(g.n), bl=new Float64Array(g.n);
+  function step(){ var change=0;
+    for(var p=0;p<NP;p++){
+      for(var t=1;t<T;t++){ acc.fill(0); for(var q=0;q<NP;q++){ if(q===p) continue; var B=bar[q][t]; for(var i=0;i<g.n;i++) acc[i]+=B[i]; }
+        blur(acc,bl,4); var PT=pot[p][t]; for(i=0;i<g.n;i++) PT[i]=Math.exp(-lam*bl[i]); }
+      sweep(g,P[p],0,lam>0?pot[p]:null);
+      for(t=1;t<T;t++){ var R=P[p].rho[t], Bp=bar[p][t]; for(i=0;i<g.n;i++){ var nv=0.7*Bp[i]+0.3*R[i]; var d=Math.abs(nv-Bp[i]); if(d>change) change=d; Bp[i]=nv; } }
+    }
+    iter++; return change; }
+  var off=document.createElement('canvas'); off.width=W; off.height=H; var octx=off.getContext('2d'), img=octx.createImageData(W,H);
+  function draw(){ var s=hidpi(cv),ctx=s.ctx,w=s.w,h=s.h,sx=w/W,sy=h/H,p,i;
+    var mx=[1e-300,1e-300,1e-300]; for(p=0;p<NP;p++){ var R=P[p].rho[tShow]; for(i=0;i<g.n;i++) if(R[i]>mx[p]) mx[p]=R[i]; }
+    for(i=0;i<g.n;i++){ var r=255,gg=255,bb=255; for(p=0;p<NP;p++){ var u=Math.pow(P[p].rho[tShow][i]/mx[p],0.75)*0.95; r-=u*(255-COL[p][0]); gg-=u*(255-COL[p][1]); bb-=u*(255-COL[p][2]); }
+      img.data[4*i]=Math.max(0,r); img.data[4*i+1]=Math.max(0,gg); img.data[4*i+2]=Math.max(0,bb); img.data[4*i+3]=255; }
+    octx.putImageData(img,0,0); ctx.imageSmoothingEnabled=true; ctx.imageSmoothingQuality='high'; ctx.drawImage(off,0,0,w,h);
+    for(p=0;p<NP;p++){ var c='rgb('+COL[p].join(',')+')', S_=D[p].s, E=D[p].e;
+      ctx.setLineDash([4,4]); ctx.strokeStyle=c; ctx.globalAlpha=0.5; ctx.lineWidth=1.2; ctx.beginPath(); ctx.arc((S_[0]+.5)*sx,(S_[1]+.5)*sy,9*sx,0,7); ctx.stroke(); ctx.setLineDash([]); ctx.globalAlpha=1;
+      var ax=(S_[0]+.5)*sx, ay=(S_[1]+.5)*sy, bx=(E[0]+.5)*sx, by=(E[1]+.5)*sy, L=Math.hypot(bx-ax,by-ay)||1, ux=(bx-ax)/L, uy=(by-ay)/L;
+      ctx.globalAlpha=0.35; ctx.strokeStyle=c; ctx.lineWidth=1.5; ctx.setLineDash([2,5]); ctx.beginPath(); ctx.moveTo(ax+ux*9*sx,ay+uy*9*sx); ctx.lineTo(bx-ux*14,by-uy*14); ctx.stroke(); ctx.setLineDash([]);
+      ctx.beginPath(); ctx.moveTo(bx-ux*13,by-uy*13); ctx.lineTo(bx-ux*21-uy*5,by-uy*21+ux*5); ctx.lineTo(bx-ux*21+uy*5,by-uy*21-ux*5); ctx.closePath(); ctx.fillStyle=c; ctx.fill(); ctx.globalAlpha=1;
+      ctx.beginPath(); ctx.arc((E[0]+.5)*sx,(E[1]+.5)*sy,9,0,7); ctx.fillStyle=c; ctx.fill(); ctx.lineWidth=2; ctx.strokeStyle='#fff'; ctx.stroke();
+      ctx.fillStyle='#fff'; ctx.font='bold 10px system-ui'; ctx.textAlign='center'; ctx.fillText('✥',(E[0]+.5)*sx,(E[1]+.5)*sy+3.5); }
+    tS.value=tShow; }
+  function loop(ts){ if(!conv){ var t0=performance.now(),ch; do{ ch=step(); }while(performance.now()-t0<18); var mxb=1e-300; for(var p=0;p<NP;p++){var B=bar[p][T>>1]; for(var i=0;i<g.n;i++) if(B[i]>mxb) mxb=B[i];}
+      if(ch<3e-3*mxb&&iter>25) conv=true; stat.textContent=conv?'equilibrium reached':'computing… ('+iter+')'; }
+    if(playing&&!drag&&ts-lastStep>110){ tShow=(tShow+1)%(T+1); lastStep=ts+((tShow===0||tShow===T)?500:0); }
+    draw(); requestAnimationFrame(loop); }
+  function pos(e){ var r=cv.getBoundingClientRect(); return [(e.clientX-r.left)/r.width*W-.5,(e.clientY-r.top)/r.height*H-.5]; }
+  function hit(q){ var r=cv.getBoundingClientRect(), tol=14*W/r.width; for(var p=0;p<NP;p++){ var E=D[p].e; if(Math.hypot(q[0]-E[0],q[1]-E[1])<tol) return p; } return -1; }
+  cv.addEventListener('pointerdown',function(e){ var p=hit(pos(e)); if(p>=0){ drag={p:p}; cv.setPointerCapture(e.pointerId); cv.style.cursor='grabbing'; } });
+  cv.addEventListener('pointermove',function(e){ var q=pos(e); if(!drag){ cv.style.cursor=hit(q)>=0?'grab':'default'; return; } D[drag.p].e=[Math.max(6,Math.min(W-7,q[0])),Math.max(6,Math.min(H-7,q[1]))]; setup(); });
+  function end(){ if(!drag) return; drag=null; cv.style.cursor='grab'; } cv.addEventListener('pointerup',end); cv.addEventListener('pointercancel',end);
+  function lf(){ var v=+lS.value; return v===0?0:40*Math.pow(10,v/100*2.2); }
+  lS.addEventListener('input',function(){ lam=lf(); conv=false; iter=0; });
+  tS.addEventListener('input',function(){ tShow=+tS.value; setPlay(false); });
+  function setPlay(v){ playing=v; playB.textContent=v?'❚❚ Pause':'▶ Play'; playB.setAttribute('aria-pressed',v?'true':'false'); }
+  playB.addEventListener('click',function(){ setPlay(!playing); });
+  resetB.addEventListener('click',function(){ D=D0.map(function(d){return {s:d.s.slice(),e:d.e.slice()};}); lS.value=60; lam=lf(); P.forEach(function(Q){Q.a.forEach(function(A){A.fill(1);});}); bar.forEach(function(b){b.forEach(function(B){B.fill(0);});}); setup(); });
+  window.addEventListener('resize',draw);
+  D=D0.map(function(d){return {s:d.s.slice(),e:d.e.slice()};}); lam=lf(); setup(); setPlay(playing); requestAnimationFrame(loop);
+})();
+})();
+</script>
+
+</body>
+</html>
