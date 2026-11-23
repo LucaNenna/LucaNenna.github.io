@@ -7,6 +7,7 @@
    "topic" may hold one or two tags separated by "|" (e.g. "MMOT|Entropic OT").
    ===================================================================== */
 var PUBS = [
+  {year:2026, authors:"A. Cosenza, L. Nenna", title:"Small noise limit for entropic variational mean-field games", venue:"Preprint", kind:"pre", topic:"Mean field games|Entropic OT", pdf:"https://arxiv.org/abs/2611.27695"},
   {year:2026, authors:"L. De Pascale, L. Nenna, I. Pinheiro", title:"Moment approximations in optimal transport: geometric estimates and a semiclassical limit", venue:"Preprint", kind:"pre", topic:"OT theory|Quantum / DFT", pdf:"https://arxiv.org/abs/2611.24688"},
   {year:2026, authors:"L. Nenna, B. Pass, P. Pegon, L. Tocquec", title:"First-order Γ-expansion for entropic optimal transport with non-degenerate costs", venue:"Preprint", kind:"pre", topic:"OT theory|Entropic OT", pdf:"https://inria.hal.science/hal-05774627"},
   {year:2026, authors:"V. Ehrlacher, R. Lelotte, L. Nenna", title:"A land of monotone plenty, bis repetita: from classical to weak optimal transport", venue:"Preprint", kind:"pre", topic:"OT theory", pdf:"https://arxiv.org/abs/2606.19516"},
